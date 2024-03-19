@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=3 uid="uid://brc8du16j5pyu"]
+[gd_scene load_steps=94 format=3 uid="uid://brc8du16j5pyu"]
 
 [ext_resource type="Script" path="res://ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_atoqy"]
 [ext_resource type="Script" path="res://ſɟᴜ }ʃᴜ.gd" id="1_v0y80"]
@@ -17,6 +17,30 @@
 [ext_resource type="Texture2D" uid="uid://cq4l148jf3mvx" path="res://textures/ꞁȷ̀ɜƴ/Grass003_2K-PNG_Color.png" id="8_o3l0l"]
 [ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://textures/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="9_ecjmj"]
 [ext_resource type="SphereMesh" uid="uid://dy0awvra2tl1t" path="res://textures/}ʃᴜ ſɭɜ ı],ᴜ/ſɭɜꞇ ſɟᴜ ɭl̀ᴜ.tres" id="9_iow03"]
+
+[sub_resource type="Gradient" id="Gradient_xi0so"]
+offsets = PackedFloat32Array(0, 0.5, 1)
+colors = PackedColorArray(0.996078, 0.901961, 0.764706, 1, 1, 1, 1, 1, 0.996078, 0.901961, 0.764706, 1)
+
+[sub_resource type="Curve" id="Curve_tfbk1"]
+_data = [Vector2(0.20297, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(0.80198, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_gp3xy"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.501407, 0.501406, 0.501406, 1)
+
+[sub_resource type="Curve" id="Curve_68s0g"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.247368, 0), 0.0, 0.0, 0, 0, Vector2(0.747368, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="Gradient_y0ts7"]
+offsets = PackedFloat32Array(0, 0.375, 0.625, 1)
+colors = PackedColorArray(0.227451, 0.403922, 0.760784, 1, 0.501961, 0.576471, 0.694118, 1, 0.501961, 0.576471, 0.694118, 1, 0.227451, 0.403922, 0.760784, 1)
+
+[sub_resource type="Gradient" id="Gradient_ycfho"]
+offsets = PackedFloat32Array(0, 0.25, 0.5, 0.75, 1)
+colors = PackedColorArray(0.227451, 0.403922, 0.760784, 1, 0.760784, 0.505882, 0.372549, 1, 0.752941, 0.768627, 0.8, 1, 0.760784, 0.505882, 0.372549, 1, 0.227451, 0.403922, 0.760784, 1)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6cecn"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -333,8 +357,14 @@ radial_segments = 4
 
 [node name="ſɟᴜ }ʃᴜ" type="Node3D" parent="."]
 script = ExtResource("1_v0y80")
+"វេហិសុត្សិ" = SubResource("Gradient_xi0so")
+"ត្លុហេនីសុត្សិ" = SubResource("Curve_tfbk1")
+"វេហិពាលិ" = SubResource("Gradient_gp3xy")
+"ត្លុហេនីពាលិ" = SubResource("Curve_68s0g")
+"វេហិពឺចានា" = SubResource("Gradient_y0ts7")
+"វេហិចានា" = SubResource("Gradient_ycfho")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="ſɟᴜ }ʃᴜ"]
+[node name="ſןw ſɟᴜ }ʃᴜ" type="WorldEnvironment" parent="ſɟᴜ }ʃᴜ"]
 environment = SubResource("Environment_w7q46")
 
 [node name="j͑ʃɜ ſᶘɹ" type="DirectionalLight3D" parent="ſɟᴜ }ʃᴜ"]
@@ -343,7 +373,6 @@ shadow_enabled = true
 
 [node name="ſןᴜ j͐ʃɹ" type="DirectionalLight3D" parent="ſɟᴜ }ʃᴜ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
-visible = false
 shadow_enabled = true
 sky_mode = 1
 
