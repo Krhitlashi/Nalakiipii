@@ -15,6 +15,10 @@ run/main_scene="res://j͐ʃɜȝ.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ.png"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/terrain_3d/plugin.cfg")
