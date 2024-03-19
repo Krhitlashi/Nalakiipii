@@ -10,5 +10,5 @@ func _on_body_exited(body):
 
 func _process(delta):
 	if ក្យេចិហិ == true:
-		if Input.is_action_just_pressed("ui_accept"):
+		if Input.is_action_just_pressed("ſɭɔ˞ꞇ ɽ͑ʃɹ"):
 			get_tree().change_scene_to_file("res://ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗.tscn")

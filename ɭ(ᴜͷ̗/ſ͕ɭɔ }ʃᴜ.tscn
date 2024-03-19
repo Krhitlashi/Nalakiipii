@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ctsr30lx7d80f"]
 
-[ext_resource type="Script" path="res://ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_dnhg5"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="2_jbel5"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f3x5i"]
@@ -13,7 +13,7 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 
 [node name="ŋᷠᴜ ſɭᴜ ŋᷠᴜ" type="CharacterBody3D" parent="." node_paths=PackedStringArray("ព្តាមា")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
-script = ExtResource("1_dnhg5")
+script = ExtResource("1_td461")
 "ព្តាមា" = NodePath("../Control/UI/ſןƨᴜ ŋᷠᴜ")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]

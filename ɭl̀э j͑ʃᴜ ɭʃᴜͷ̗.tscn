@@ -1,8 +1,8 @@
 [gd_scene load_steps=27 format=3 uid="uid://mtmehldeug66"]
 
 [ext_resource type="Material" uid="uid://r5ltwadino00" path="res://textures/ſןᴜȝ.tres" id="1_n00sf"]
-[ext_resource type="Script" path="res://ſɟᴜ }ʃᴜ.gd" id="1_t8jn0"]
-[ext_resource type="Script" path="res://j͐ʃwc̭ ɭʃᴜꞇ j͑ʃᴜ ɭʃᴜͷ̗.gd" id="2_kp7w7"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɟᴜ }ʃᴜ.gd" id="1_t8jn0"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͐ʃwc̭ ɭʃᴜꞇ j͑ʃᴜ ɭʃᴜͷ̗.gd" id="2_kp7w7"]
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="2_lxwr3"]
 
 [sub_resource type="Gradient" id="Gradient_6miud"]
