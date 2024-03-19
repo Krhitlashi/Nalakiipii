@@ -1,7 +1,7 @@
 extends Node3D
 
 var ស្តីភេហិ : float
-@export var ស្តាភ្លិ : float = 200.0
+@export var ស្តាភ្លិ : float = 240.0
 @export var សាជេនី : float = 0.4
 var សាកានី : float
 
