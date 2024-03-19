@@ -1,8 +1,9 @@
 extends CharacterBody3D
 
-
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
+
+@export var ព្តាមា : VirtualJoystick
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -41,3 +42,10 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	សាហ្វុ()
+
+# j͑ʃᴜ ʃɜ
+func សាហ្វុ():
+	លារ.rotate_y(-ព្តាមា.output.x * 0.01)
+	ងេនា.rotate_x(-ព្តាមា.output.y * 0.01)
+	ងេនា.rotation.x = clamp(ងេនា.rotation.x, -30, 60)
