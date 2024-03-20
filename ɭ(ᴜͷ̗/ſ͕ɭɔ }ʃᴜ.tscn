@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://ctsr30lx7d80f"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
-[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="2_jbel5"]
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/ſɭᴜ ŋᷠᴜ.tscn" id="2_jbel5"]
 [ext_resource type="Texture2D" uid="uid://bkvmydfn5saxg" path="res://addons/virtual_joystick/textures/joystick_tip.png" id="3_1vr80"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f3x5i"]
@@ -59,10 +59,9 @@ custom_minimum_size = Vector2(400, 0)
 anchors_preset = 9
 anchor_top = 0.0
 offset_top = 0.0
-offset_right = 0.0
+offset_right = 400.0
 offset_bottom = 0.0
 grow_vertical = 2
-joystick_mode = 2
 visibility_mode = 2
 
 [node name="ſןƨᴜ ŋᷠᴜ" parent="Control/UI" instance=ExtResource("2_jbel5")]
@@ -76,13 +75,21 @@ offset_right = 0.0
 offset_bottom = 0.0
 grow_horizontal = 0
 grow_vertical = 2
-joystick_mode = 2
 visibility_mode = 2
 use_input_actions = false
 
 [node name="ſןw" type="TouchScreenButton" parent="Control/UI"]
-position = Vector2(32, 32)
+position = Vector2(40, 40)
+scale = Vector2(1.5, 1.5)
 texture_normal = ExtResource("3_1vr80")
 shape_visible = false
 action = "ſןw"
+visibility_mode = 1
+
+[node name="ſɭɔ˞ꞇ ɽ͑ʃɹ" type="TouchScreenButton" parent="Control/UI"]
+position = Vector2(40, 224)
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("3_1vr80")
+shape_visible = false
+action = "ſɭɔ˞ꞇ ɽ͑ʃɹ"
 visibility_mode = 1
