@@ -75,12 +75,6 @@ func _ready() -> void:
 	
 	if visibility_mode == Visibility_mode.WHEN_TOUCHED:
 		hide()
-	
-	match OS.get_name():
-		"Windows", "macOS", "Linux":
-			visible = false
-		"Android", "iOS":
-			visible = true
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:

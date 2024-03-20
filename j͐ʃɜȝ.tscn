@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://brc8du16j5pyu"]
+[gd_scene load_steps=75 format=3 uid="uid://brc8du16j5pyu"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɟᴜ }ʃᴜ.gd" id="1_v0y80"]
 [ext_resource type="Terrain3DStorage" uid="uid://jm6plie14b6t" path="res://ꞁȷ̀ɜƴ.res" id="1_xlteh"]
@@ -266,6 +266,14 @@ points = PackedVector3Array(0.25, 0.125, 4, 0.25, -0.125, 4, 0.25, 0.125, -4, -0
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_c4iaq"]
 points = PackedVector3Array(0.25, 0.125, 4, 0.25, -0.125, 4, 0.25, 0.125, -4, -0.25, 0.125, 4, -0.25, -0.125, 4, 0.25, -0.125, -4, -0.25, 0.125, -4, -0.25, -0.125, -4)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ebmwp"]
+material = ExtResource("8_erbdw")
+size = Vector3(0.5, 0.25, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_y8lln"]
+material = ExtResource("8_erbdw")
+size = Vector3(2, 0.25, 0.5)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_q7o0u"]
 
@@ -860,13 +868,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 12)
 shape = SubResource("ConvexPolygonShape3D_oryvl")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ/j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ ɿ"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, -68)
-mesh = SubResource("BoxMesh_wrku4")
-surface_material_override/0 = ExtResource("8_erbdw")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, -69.5)
+mesh = SubResource("BoxMesh_ebmwp")
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ/j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ ɿ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, -68)
 shape = SubResource("ConvexPolygonShape3D_vu5ws")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ/j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ ɿ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -79.25)
+mesh = SubResource("BoxMesh_y8lln")
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ/j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ ɿ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, -48)
