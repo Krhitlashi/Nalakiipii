@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c32xdb3sqvvjq"]
+
+[ext_resource type="PackedScene" uid="uid://nfto11oefe6o" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="1_27acj"]
+[ext_resource type="BoxMesh" uid="uid://t8bgjsr0a5sd" path="res://textures/}ʃᴜ ſɭɜ ı],ᴜ/ſɟɔ }ʃɹ ᶅſw ſɭɹ.tres" id="2_kb1s5"]
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ ſןᴜȝ ᶅſɜ ſɭɹ" type="Node3D"]
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗" parent="." instance=ExtResource("1_27acj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
+
+[node name="MeshInstance3D5" type="CSGMesh3D" parent="ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -8, 4)
+use_collision = true
+mesh = ExtResource("2_kb1s5")
