@@ -45,7 +45,7 @@ offset_top = 0.0
 offset_right = 0.0
 offset_bottom = 0.0
 grow_vertical = 2
-joystick_mode = 1
+joystick_mode = 2
 visibility_mode = 2
 
 [node name="ſןƨᴜ ŋᷠᴜ" parent="Control/UI" instance=ExtResource("2_jbel5")]
@@ -59,12 +59,12 @@ offset_right = 0.0
 offset_bottom = 0.0
 grow_horizontal = 0
 grow_vertical = 2
-joystick_mode = 1
+joystick_mode = 2
 visibility_mode = 2
 use_input_actions = false
 
 [node name="ſןw" type="TouchScreenButton" parent="Control/UI"]
-position = Vector2(990, 500)
+position = Vector2(32, 32)
 texture_normal = ExtResource("3_1vr80")
 shape_visible = false
 action = "ſןw"
