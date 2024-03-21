@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://ig2si02tkchh"]
+[gd_scene load_steps=13 format=3 uid="uid://ig2si02tkchh"]
 
 [ext_resource type="Material" uid="uid://r5ltwadino00" path="res://textures/ſןᴜȝ.tres" id="1_fjeyu"]
 [ext_resource type="PackedScene" uid="uid://nfto11oefe6o" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="2_smv7v"]
-[ext_resource type="Script" path="res://ſןᴜȝ/ſɭw ſ̀ȷᴜꞇ j͑ʃᴜ ɭʃᴜͷ̗.gd" id="4_6rkm1"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="3_i0216"]
+[ext_resource type="PackedScene" uid="uid://mtmehldeug66" path="res://ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="4_pp451"]
 [ext_resource type="PackedScene" uid="uid://6qa6i8b4g334" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭɔⰱ.tscn" id="4_r3lb8"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_17838"]
@@ -97,7 +98,8 @@ shape = SubResource("ConvexPolygonShape3D_k0of7")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("4_6rkm1")
+script = ExtResource("3_i0216")
+"អារាង" = ExtResource("4_pp451")
 
 [node name="ꞁȷ̀ᴜ ſ̀ȷɔ" type="CollisionShape3D" parent="j͑ʃᴜ ɭʃᴜͷ̗/ſɭɔⰱ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0.5)

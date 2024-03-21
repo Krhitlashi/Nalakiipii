@@ -1,10 +1,10 @@
 extends Control
 
-var ហ្វ៍សាជេ : String
+var សាកានី = []
+var ហ្វ៍សាជេ = 0
 
-func _ready():
-	$Timer.start()
-
-func _on_timer_timeout():
-	get_tree().change_scene_to_file(ហ្វ៍សាជេ)
-	Kiitse.ហ្វ៍តេមិ.queue_free()
+func ងឹមាអារាង(កិរេអារាង):
+	ResourceLoader.load_threaded_request(កិរេអារាង)
+	ហ្វ៍សាជេ = ResourceLoader.load_threaded_get_status(កិរេអារាង, សាកានី)
+	if ហ្វ៍សាជេ == ResourceLoader.THREAD_LOAD_LOADED:
+		get_tree().change_scene_to_file(កិរេអារាង)

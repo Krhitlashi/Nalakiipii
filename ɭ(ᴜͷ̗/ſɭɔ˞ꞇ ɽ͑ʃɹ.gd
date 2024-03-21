@@ -7,6 +7,6 @@ func _process(delta):
 		if អេស្កេក.is_in_group("ꞁȷ̀ɜ ſɭɔ˞ꞇ ɽ͑ʃɹ"):
 			$"ſɭɔ˞ꞇ ɽ͑ʃɹ".show()
 			if Input.is_action_just_pressed("ſɭɔ˞ꞇ ɽ͑ʃɹ"):
-				អេស្កេក.ក្សីរិ()
+				Kootlai.ក្សីរិ(អេស្កេក.អារាង)
 	else:
 		$"ſɭɔ˞ꞇ ɽ͑ʃɹ".hide()

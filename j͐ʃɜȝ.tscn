@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://brc8du16j5pyu"]
+[gd_scene load_steps=53 format=3 uid="uid://brc8du16j5pyu"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɟᴜ }ʃᴜ.gd" id="1_v0y80"]
 [ext_resource type="Terrain3DStorage" uid="uid://jm6plie14b6t" path="res://ꞁȷ̀ɜƴ.res" id="1_xlteh"]
@@ -14,8 +14,10 @@
 [ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://textures/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="9_ecjmj"]
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="11_jhkj2"]
 [ext_resource type="PackedScene" uid="uid://dwntpur850x6h" path="res://ſɭˬᴜȝ/ſɭˬᴜ j͑ʃɔ ı],ᴜƴ.tscn" id="13_cg7d8"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="14_onmfh"]
 [ext_resource type="PackedScene" uid="uid://ig2si02tkchh" path="res://ſןᴜȝ/j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="14_s4lxq"]
 [ext_resource type="PackedScene" uid="uid://yfj0rq2t3lom" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſɭэ ֭ſɭэ j͑ʃп́ɔ ſןᴜȝ.tscn" id="15_2ucqq"]
+[ext_resource type="PackedScene" uid="uid://0uc3drt81x6r" path="res://j͑ʃɔ ı],ᴜƴ.tscn" id="15_ublcu"]
 [ext_resource type="PackedScene" uid="uid://cvq5nvlx3pf3m" path="res://ſןᴜȝ/ſןᴜȝ ᶅſw ſɭɹ.tscn" id="16_gh4em"]
 [ext_resource type="PackedScene" uid="uid://bjt1uw3m5f3jr" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſȷƽᴜ ʃɔ j͑ʃᴜꞇ ſᶘɹ ɭʃᴜ }ʃꞇ.tscn" id="17_00t3j"]
 [ext_resource type="PackedScene" uid="uid://nqidhy6hoswp" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ.tscn" id="17_t8c36"]
@@ -152,6 +154,10 @@ bottom_radius = 3.5
 height = 0.375
 radial_segments = 8
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ycjww"]
+height = 44.0
+radius = 4.0
+
 [sub_resource type="BoxMesh" id="BoxMesh_4ttvo"]
 material = ExtResource("7_5l6pv")
 size = Vector3(2, 0.25, 94)
@@ -214,7 +220,17 @@ mesh = SubResource("CylinderMesh_v6cii")
 mesh = SubResource("CylinderMesh_lmned")
 
 [node name="ſɭˬᴜ j͑ʃɔ ı],ᴜƴ" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ" instance=ExtResource("13_cg7d8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.25, 0)
+
+[node name="Area3D" type="Area3D" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ" groups=["ꞁȷ̀ɜ ſɭɔ˞ꞇ ɽ͑ʃɹ"]]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("14_onmfh")
+"អារាង" = ExtResource("15_ublcu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 22, 0)
+shape = SubResource("CylinderShape3D_ycjww")
 
 [node name="j͑ʃᴜ ɭʃɔ˞ͷ̗" type="Node3D" parent="."]
 

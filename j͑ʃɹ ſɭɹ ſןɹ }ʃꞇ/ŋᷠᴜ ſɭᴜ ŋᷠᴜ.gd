@@ -49,7 +49,3 @@ func សាហ្វុ():
 	លារ.rotate_y(-ព្តាមា.output.x * 0.01)
 	ងេនា.rotate_x(-ព្តាមា.output.y * 0.01)
 	ងេនា.rotation.x = clamp(ងេនា.rotation.x, -30, 60)
-
-
-func _on_child_entered_tree(node):
-	Kiitse.ក្យេចិហិ = true

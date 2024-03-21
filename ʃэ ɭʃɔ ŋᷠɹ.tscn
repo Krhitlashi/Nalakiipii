@@ -45,7 +45,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_syidk")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ɭʃᴜ ſᶘɜ ſɭɜ" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -54,7 +54,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="ColorRect"]
+[node name="Label" type="Label" parent="ɭʃᴜ ſᶘɜ ſɭɜ"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -67,20 +67,30 @@ offset_right = 20.0
 offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "ŋᷠɹ
+text = "
 ɭʃɔ
 ʃэ"
 label_settings = SubResource("LabelSettings_vlrl7")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect"]
+[node name="ſɭɹ ſȷɔ" type="Label" parent="ɭʃᴜ ſᶘɜ ſɭɜ"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 32.0
+offset_right = 20.0
+offset_bottom = 119.0
+grow_horizontal = 2
+text = "0"
+label_settings = SubResource("LabelSettings_vlrl7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ɭʃᴜ ſᶘɜ ſɭɜ"]
 libraries = {
 "": SubResource("AnimationLibrary_qendt")
 }
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 10.0
-autostart = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

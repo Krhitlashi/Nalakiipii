@@ -1,14 +1,15 @@
-[gd_scene load_steps=24 format=3 uid="uid://mtmehldeug66"]
+[gd_scene load_steps=25 format=3 uid="uid://mtmehldeug66"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɟᴜ }ʃᴜ.gd" id="1_t8jn0"]
-[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͐ʃwc̭ ɭʃᴜꞇ j͑ʃᴜ ɭʃᴜͷ̗.gd" id="2_kp7w7"]
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="2_lxwr3"]
 [ext_resource type="Material" uid="uid://1rf78skb04u4" path="res://textures/ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗ ſɭэƽ ꞁȷ̀ɜƴ.tres" id="3_ax7ab"]
 [ext_resource type="Texture2D" uid="uid://031ovo1etafe" path="res://textures/ſןᴜȝ/Metal032_2K-PNG_Metalness.png" id="4_aqxrn"]
 [ext_resource type="Texture2D" uid="uid://b6vx0o1idsrtg" path="res://textures/ſןᴜȝ/herringbone_parquet_nor_gl_4k.png" id="5_px3ut"]
 [ext_resource type="Texture2D" uid="uid://t14ohbe8fatd" path="res://textures/ſןᴜȝ/Metal032_2K-PNG_Roughness.png" id="6_kn5e4"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="7_8dwdt"]
 [ext_resource type="PackedScene" uid="uid://6qa6i8b4g334" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭɔⰱ.tscn" id="8_1iix6"]
 [ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://textures/ɭʃэ ſ͔ɭэ.tres" id="8_sma2q"]
+[ext_resource type="PackedScene" uid="uid://brc8du16j5pyu" path="res://j͐ʃɜȝ.tscn" id="8_wlr0i"]
 
 [sub_resource type="Gradient" id="Gradient_6miud"]
 offsets = PackedFloat32Array(0, 0.5, 1)
@@ -128,10 +129,11 @@ mesh = SubResource("BoxMesh_jbcdr")
 transform = Transform3D(-1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 0, 0.5, 16)
 collision_layer = 2
 collision_mask = 0
-script = ExtResource("2_kp7w7")
+script = ExtResource("7_8dwdt")
+"អារាង" = ExtResource("8_wlr0i")
 
 [node name="ꞁȷ̀ᴜ ſ̀ȷɔ" type="CollisionShape3D" parent="ſɭɔⰱ"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 8.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 8.5)
 shape = SubResource("ConvexPolygonShape3D_s507h")
 
 [node name="ſɭɔⰱ" parent="ſɭɔⰱ" instance=ExtResource("8_1iix6")]
