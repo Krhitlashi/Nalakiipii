@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://brc8du16j5pyu"]
+[gd_scene load_steps=50 format=3 uid="uid://brc8du16j5pyu"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɟᴜ }ʃᴜ.gd" id="1_v0y80"]
 [ext_resource type="Terrain3DStorage" uid="uid://jm6plie14b6t" path="res://ꞁȷ̀ɜƴ.res" id="1_xlteh"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cq4l148jf3mvx" path="res://textures/ꞁȷ̀ɜƴ/Grass003_2K-PNG_Color.png" id="8_o3l0l"]
 [ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://textures/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="9_ecjmj"]
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="11_jhkj2"]
+[ext_resource type="PackedScene" uid="uid://dwntpur850x6h" path="res://ſɭˬᴜȝ/ſɭˬᴜ j͑ʃɔ ı],ᴜƴ.tscn" id="13_cg7d8"]
 [ext_resource type="PackedScene" uid="uid://ig2si02tkchh" path="res://ſןᴜȝ/j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="14_s4lxq"]
 [ext_resource type="PackedScene" uid="uid://yfj0rq2t3lom" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſɭэ ֭ſɭэ j͑ʃп́ɔ ſןᴜȝ.tscn" id="15_2ucqq"]
 [ext_resource type="PackedScene" uid="uid://cvq5nvlx3pf3m" path="res://ſןᴜȝ/ſןᴜȝ ᶅſw ſɭɹ.tscn" id="16_gh4em"]
@@ -22,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://neg41uixrbwd" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſɟɹ }ʃᴜ ſɭэ ֭ſɭэ.tscn" id="18_bha0w"]
 [ext_resource type="PackedScene" uid="uid://bms47dji6d3yl" path="res://ſןᴜȝ/֭ſɭwʞ ᶅſw ſɭɹ.tscn" id="20_o6gq8"]
 [ext_resource type="PackedScene" uid="uid://b2xluur0jujrn" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ.tscn" id="20_or4ka"]
+[ext_resource type="PackedScene" uid="uid://dyp7ol62cxg0v" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſןw ſɭᴜƴ ꞁȷ̀ᴜꞇ ſɭэ ֭ſɭэ.tscn" id="21_7u5jf"]
 
 [sub_resource type="Gradient" id="Gradient_xi0so"]
 offsets = PackedFloat32Array(0, 0.5, 1)
@@ -102,17 +104,8 @@ _shader_parameters = {
 "noise2_scale": null,
 "noise3_scale": null,
 "noise_texture": SubResource("NoiseTexture2D_histc"),
-"tri_scale_reduction": null,
-"world_noise_blend_far": null,
-"world_noise_blend_near": null,
-"world_noise_height": null,
-"world_noise_lod_distance": null,
-"world_noise_max_octaves": null,
-"world_noise_min_octaves": null,
-"world_noise_offset": null,
-"world_noise_scale": null
+"tri_scale_reduction": null
 }
-world_background = 2
 texture_filtering = 1
 auto_shader = true
 dual_scaling = true
@@ -207,11 +200,21 @@ storage = ExtResource("1_xlteh")
 material = SubResource("Terrain3DMaterial_cmjm4")
 texture_list = SubResource("Terrain3DTextureList_416dt")
 
-[node name="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ2" type="CSGMesh3D" parent="."]
+[node name="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ" type="CSGMesh3D" parent="."]
 mesh = SubResource("CylinderMesh_v6cii")
 
-[node name="MeshInstance3D" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ2"]
+[node name="MeshInstance3D" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
 mesh = SubResource("CylinderMesh_lmned")
+
+[node name="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ" type="CSGMesh3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, -176)
+mesh = SubResource("CylinderMesh_v6cii")
+
+[node name="MeshInstance3D" type="CSGMesh3D" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ"]
+mesh = SubResource("CylinderMesh_lmned")
+
+[node name="ſɭˬᴜ j͑ʃɔ ı],ᴜƴ" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ" instance=ExtResource("13_cg7d8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 0)
 
 [node name="j͑ʃᴜ ɭʃɔ˞ͷ̗" type="Node3D" parent="."]
 
@@ -369,17 +372,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95, 0, -78)
 [node name="j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("17_t8c36")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -112, 0, 4.88758e-06)
 
-[node name="ſȷƽᴜ ʃɔ j͑ʃᴜꞇ ſᶘɹ ɭʃᴜ }ʃꞇ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("17_00t3j")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -112, 0, -78)
-
 [node name="j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("20_or4ka")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 0, -78)
 
-[node name="ſȷƽᴜ ʃɔ j͑ʃᴜꞇ ſᶘɹ ɭʃᴜ }ʃꞇ2" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("17_00t3j")]
+[node name="ſȷƽᴜ ʃɔ j͑ʃᴜꞇ ſᶘɹ ɭʃᴜ }ʃꞇ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("17_00t3j")]
 transform = Transform3D(2.18557e-07, 8.74228e-08, 1, 1.14641e-14, -1, 8.74228e-08, 1, -7.64274e-15, -2.18557e-07, -112, 0, 22)
 
-[node name="ſɟɹ }ʃᴜ ſɭэ ֭ſɭэ2" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("18_bha0w")]
+[node name="ſɟɹ }ʃᴜ ſɭэ ֭ſɭэ ɿ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("18_bha0w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95, 0, 22)
+
+[node name="ц" type="Node3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
+
+[node name="j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ц" instance=ExtResource("20_or4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -112, 0, -78)
+
+[node name="ſɟɹ }ʃᴜ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ц" instance=ExtResource("18_bha0w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -151, 0, -78)
+
+[node name="ſןw ſɭᴜƴ ꞁȷ̀ᴜꞇ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ц" instance=ExtResource("21_7u5jf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168, 0, -78)
 
 [node name="֭ſɭwʞ ᶅſw ſɭɹ" type="Node3D" parent="."]
 
