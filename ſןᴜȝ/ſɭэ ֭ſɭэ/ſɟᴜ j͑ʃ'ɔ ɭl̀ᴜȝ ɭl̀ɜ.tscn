@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2jkdljh7s7ty"]
+
+[ext_resource type="Material" uid="uid://dq3juhalicjmq" path="res://textures/ɭʃэ ֭ſɭc̗ᴜ.tres" id="1_ekd85"]
+[ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://textures/ɭʃэ ſ͔ɭэ.tres" id="2_32pbe"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gepwk"]
+material = ExtResource("1_ekd85")
+size = Vector3(2, 8, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aff57"]
+material = ExtResource("2_32pbe")
+size = Vector3(1.5, 0.25, 0.125)
+
+[node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="Node3D"]
+
+[node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="CSGMesh3D" parent="." groups=["ꞁȷ̀ɜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]]
+mesh = SubResource("BoxMesh_gepwk")
+
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0.25)
+mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D5" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.75, 0.25)
+mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.25)
+mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D6" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0.25)
+mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D7" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.25)
+mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D8" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0.25)
+mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D9" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0.25)
+mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D10" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.75, 0.25)
+mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D12" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0.25)
+mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D11" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.25, 0.25)
+mesh = SubResource("BoxMesh_aff57")

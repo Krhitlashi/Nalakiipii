@@ -19,6 +19,7 @@ config/icon="res://}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ.png"
 
 Kootlai="*res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd"
 Xaatemii="*res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ʃэ ɭʃɔ ŋᷠɹ.gd"
+Makama="*res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd"
 
 [display]
 
@@ -28,6 +29,10 @@ window/stretch/aspect="expand"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/terrain_3d/plugin.cfg")
+
+[filesystem]
+
+import/blender/enabled=false
 
 [input]
 

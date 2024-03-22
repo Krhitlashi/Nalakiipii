@@ -1,9 +1,9 @@
 [gd_scene load_steps=15 format=3 uid="uid://d0rgxksn5gkxu"]
 
 [ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://textures/j͐ʃᴜ ŋᷠɹⰱ.tres" id="1_e60rj"]
-[ext_resource type="PackedScene" uid="uid://2xlkcd4vbqr8" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ ſɭᴜ ſ͔ɭɔȝ.tscn" id="2_s34bp"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="3_kun1m"]
 [ext_resource type="PackedScene" uid="uid://mtmehldeug66" path="res://ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="4_7v04o"]
+[ext_resource type="PackedScene" uid="uid://nfto11oefe6o" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="4_eqgsg"]
 [ext_resource type="Material" uid="uid://uin6ou7p74p2" path="res://textures/ſɟɹ j͐ʃᴜɔ˞.tres" id="5_1u5mb"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_v882m"]
@@ -51,96 +51,115 @@ size = Vector3(0.5, 2.5, 0.25)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1)
 mesh = SubResource("BoxMesh_v882m")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="MeshInstance3D" instance=ExtResource("2_s34bp")]
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, -1)
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="MeshInstance3D" instance=ExtResource("2_s34bp")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
-
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="MeshInstance3D" instance=ExtResource("2_s34bp")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
-
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="MeshInstance3D" instance=ExtResource("2_s34bp")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
-
-[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D"]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2.5, 3.5)
+[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 4.5, 4.5)
 mesh = SubResource("PrismMesh_4qtlj")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 2.5, 0)
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 4.5, 1)
 mesh = SubResource("PrismMesh_4qtlj")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="MeshInstance3D"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.5, -3.5)
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="MeshInstance3D/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 4.5, -2.5)
 mesh = SubResource("PrismMesh_4qtlj")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="MeshInstance3D"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.5, 2.5, 0)
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="MeshInstance3D/CSGCombiner3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.5, 4.5, 1)
 mesh = SubResource("PrismMesh_4qtlj")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="MeshInstance3D" instance=ExtResource("4_eqgsg")]
+material = ExtResource("5_1u5mb")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="MeshInstance3D" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 5, 0, 5)
+material = ExtResource("5_1u5mb")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="MeshInstance3D" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 5, 0, -5)
+material = ExtResource("5_1u5mb")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="MeshInstance3D" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -5, 0, -5)
+material = ExtResource("5_1u5mb")
 
 [node name="MeshInstance3D2" type="CSGMesh3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 1)
 mesh = SubResource("BoxMesh_he2fx")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="MeshInstance3D2" instance=ExtResource("2_s34bp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="MeshInstance3D2"]
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="MeshInstance3D2" instance=ExtResource("2_s34bp")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1, 0, -1)
-
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="MeshInstance3D2" instance=ExtResource("2_s34bp")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -1, 0, 1)
-
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="MeshInstance3D2" instance=ExtResource("2_s34bp")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 1, 0, 1)
-
-[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D2"]
+[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D2/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2.5, 2.5)
 mesh = SubResource("PrismMesh_yydm5")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D2"]
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D2/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.5, 0)
 mesh = SubResource("PrismMesh_yydm5")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="MeshInstance3D2"]
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="MeshInstance3D2/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.5, -2.5)
 mesh = SubResource("PrismMesh_yydm5")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="MeshInstance3D2"]
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="MeshInstance3D2/CSGCombiner3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.5, 2.5, 0)
 mesh = SubResource("PrismMesh_yydm5")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="MeshInstance3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -4, 0, 4)
+material = ExtResource("5_1u5mb")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="MeshInstance3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 4, 0, 4)
+material = ExtResource("5_1u5mb")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="MeshInstance3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 4, 0, -4)
+material = ExtResource("5_1u5mb")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="MeshInstance3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -4, 0, -4)
+material = ExtResource("5_1u5mb")
 
 [node name="MeshInstance3D3" type="CSGMesh3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 1)
 mesh = SubResource("BoxMesh_kthr8")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="MeshInstance3D3" instance=ExtResource("2_s34bp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="MeshInstance3D3"]
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="MeshInstance3D3" instance=ExtResource("2_s34bp")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2, 0, -2)
-
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="MeshInstance3D3" instance=ExtResource("2_s34bp")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -2, 0, 2)
-
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="MeshInstance3D3" instance=ExtResource("2_s34bp")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, 2)
-
-[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D3"]
+[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D3/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2.5, 1.5)
 mesh = SubResource("PrismMesh_mfcr4")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D3"]
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D3/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.5, 0)
 mesh = SubResource("PrismMesh_mfcr4")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="MeshInstance3D3"]
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="MeshInstance3D3/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.5, -1.5)
 mesh = SubResource("PrismMesh_mfcr4")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="MeshInstance3D3"]
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="MeshInstance3D3/CSGCombiner3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.5, 2.5, 0)
 mesh = SubResource("PrismMesh_mfcr4")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="MeshInstance3D3" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -3, 0, 3)
+material = ExtResource("5_1u5mb")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="MeshInstance3D3" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 3, 0, 3)
+material = ExtResource("5_1u5mb")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="MeshInstance3D3" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 3, 0, -3)
+material = ExtResource("5_1u5mb")
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="MeshInstance3D3" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -3, 0, -3)
+material = ExtResource("5_1u5mb")
 
 [node name="ſɭɔⰱ" type="Area3D" parent="." groups=["ꞁȷ̀ɜ ſɭɔ˞ꞇ ɽ͑ʃɹ"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 5)

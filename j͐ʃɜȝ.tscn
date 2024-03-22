@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://brc8du16j5pyu"]
+[gd_scene load_steps=54 format=3 uid="uid://brc8du16j5pyu"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɟᴜ }ʃᴜ.gd" id="1_v0y80"]
 [ext_resource type="Terrain3DStorage" uid="uid://jm6plie14b6t" path="res://ꞁȷ̀ɜƴ.res" id="1_xlteh"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://0uc3drt81x6r" path="res://j͑ʃɔ ı],ᴜƴ.tscn" id="15_7xwe7"]
 [ext_resource type="PackedScene" uid="uid://ig2si02tkchh" path="res://ſןᴜȝ/j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="16_2uivu"]
 [ext_resource type="PackedScene" uid="uid://yfj0rq2t3lom" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſɭэ ֭ſɭэ j͑ʃп́ɔ ſןᴜȝ.tscn" id="17_6xc0a"]
+[ext_resource type="PackedScene" uid="uid://d0rgxksn5gkxu" path="res://ſןᴜȝ/ſɭᴜ ſ͔ɭɔȝ.tscn" id="18_ewhrr"]
 [ext_resource type="PackedScene" uid="uid://cvq5nvlx3pf3m" path="res://ſןᴜȝ/ſןᴜȝ ᶅſw ſɭɹ.tscn" id="18_f6sa0"]
 [ext_resource type="PackedScene" uid="uid://bjt1uw3m5f3jr" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſȷƽᴜ ʃɔ j͑ʃᴜꞇ ſᶘɹ ɭʃᴜ }ʃꞇ.tscn" id="19_jdbro"]
 [ext_resource type="PackedScene" uid="uid://neg41uixrbwd" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſɟɹ }ʃᴜ ſɭэ ֭ſɭэ.tscn" id="20_av4va"]
@@ -215,7 +216,7 @@ mesh = SubResource("CylinderMesh_v6cii")
 mesh = SubResource("CylinderMesh_lmned")
 
 [node name="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ" type="CSGMesh3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, -176)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, -231)
 mesh = SubResource("CylinderMesh_v6cii")
 
 [node name="MeshInstance3D" type="CSGMesh3D" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ"]
@@ -300,13 +301,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -130)
 [node name="ſɭэ ֭ſɭэ" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ı" instance=ExtResource("17_6xc0a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -114)
 
-[node name="ſןᴜȝ ᶅſw ſɭɹ ɿ" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ı" instance=ExtResource("18_f6sa0")]
+[node name="ſɭᴜ ſ͔ɭɔȝ ɿ" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ı" instance=ExtResource("18_ewhrr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -130)
 
 [node name="ſɭэ ֭ſɭэ ɿ" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ı" instance=ExtResource("17_6xc0a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, -114)
 
-[node name="ſןᴜȝ ᶅſw ſɭɹ ц" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ı" instance=ExtResource("18_f6sa0")]
+[node name="ſɭᴜ ſ͔ɭɔȝ ц" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ı" instance=ExtResource("18_ewhrr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, -130)
 
 [node name="ſɭэ ֭ſɭэ ц" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ı" instance=ExtResource("17_6xc0a")]
@@ -317,6 +318,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, -130)
 
 [node name="ſɭэ ֭ſɭэ э" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ı" instance=ExtResource("17_6xc0a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, -114)
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" type="Node3D" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -35)
+
+[node name="ſɭᴜ ſ͔ɭɔȝ" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" instance=ExtResource("18_ewhrr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 60, 0, -115)
+
+[node name="ſɭэ ֭ſɭэ" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" instance=ExtResource("17_6xc0a")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 60, 0, -131)
+
+[node name="ſןᴜȝ ᶅſw ſɭɹ ɿ" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" instance=ExtResource("18_f6sa0")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 40, 0, -115)
+
+[node name="ſɭэ ֭ſɭэ ɿ" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" instance=ExtResource("17_6xc0a")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 40, 0, -131)
+
+[node name="ſןᴜȝ ᶅſw ſɭɹ ц" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" instance=ExtResource("18_f6sa0")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 20, 0, -115)
+
+[node name="ſɭэ ֭ſɭэ ц" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" instance=ExtResource("17_6xc0a")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 20, 0, -131)
+
+[node name="ſɭᴜ ſ͔ɭɔȝ э" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" instance=ExtResource("18_ewhrr")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -115)
+
+[node name="ſɭэ ֭ſɭэ э" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗/ɿ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" instance=ExtResource("17_6xc0a")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -131)
 
 [node name="j͑ʃᴜ ɭʃᴜͷ̗" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗" instance=ExtResource("16_2uivu")]
 transform = Transform3D(-2, 0, 3.01992e-07, 0, 2, 0, -3.01992e-07, 0, -2, 30, 0, 30)
@@ -390,6 +418,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95, 0, -78)
 [node name="j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("22_bvjuo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -112, 0, 4.88758e-06)
 
+[node name="j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ2" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("22_bvjuo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -168, 0, -56)
+
 [node name="j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("23_lknlk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 0, -78)
 
@@ -407,8 +438,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -112, 0, -78)
 [node name="ſɟɹ }ʃᴜ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ц" instance=ExtResource("20_av4va")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -151, 0, -78)
 
-[node name="ſןw ſɭᴜƴ ꞁȷ̀ᴜꞇ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ц" instance=ExtResource("24_lutsa")]
+[node name="э" type="Node3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
+
+[node name="j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/э" instance=ExtResource("23_lknlk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168, 0, -78)
+
+[node name="ſɟɹ }ʃᴜ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/э" instance=ExtResource("20_av4va")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -207, 0, -78)
+
+[node name="ſןw ſɭᴜƴ ꞁȷ̀ᴜꞇ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/э" instance=ExtResource("24_lutsa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -224, 0, -78)
 
 [node name="֭ſɭwʞ ᶅſw ſɭɹ" type="Node3D" parent="."]
 

@@ -1,25 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://nfto11oefe6o"]
+[gd_scene load_steps=2 format=3 uid="uid://nfto11oefe6o"]
 
-[ext_resource type="BoxMesh" uid="uid://b3avfcfcst6kh" path="res://textures/}ʃᴜ ſɭɜ ı],ᴜ/ſɟɔ }ʃɹ.tres" id="1_q7jq7"]
 [ext_resource type="Material" uid="uid://ry6d8y443e3w" path="res://textures/ſɭᴜc̗ ɭʃɜ }ʃꞇ ſןᴜȝ.tres" id="2_e3w5c"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_337ke"]
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗" type="CSGPolygon3D"]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -5, 0, 5)
+polygon = PackedVector2Array(0.935415, 2.25987, 0.625, 2.725, 0.25, 3, 1, 3, 1.5, 2.845, 1.875, 2.5, 2, 1.75, 2, -2, 1, -2, 1, 1.75)
+mode = 1
+spin_degrees = 28.0
+spin_sides = 8
+smooth_faces = true
 material = ExtResource("2_e3w5c")
-
-[sub_resource type="BoxMesh" id="BoxMesh_r55n8"]
-material = ExtResource("2_e3w5c")
-
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗" type="Node3D"]
-
-[node name="MeshInstance3D4" type="CSGMesh3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
-use_collision = true
-mesh = ExtResource("1_q7jq7")
-
-[node name="MeshInstance3D10" type="CSGMesh3D" parent="MeshInstance3D4"]
-transform = Transform3D(0.997564, -0.0697564, 0, 0.0695865, 0.995134, -0.0697564, 0.00486596, 0.0695865, 0.997564, -0.0310001, 2.4, 0.0310001)
-mesh = SubResource("BoxMesh_337ke")
-
-[node name="MeshInstance3D11" type="CSGMesh3D" parent="MeshInstance3D4"]
-transform = Transform3D(0.978147, -0.207912, 0, 0.203368, 0.956772, -0.207912, 0.0432273, 0.203368, 0.978147, -0.13, 3.283, 0.129999)
-mesh = SubResource("BoxMesh_r55n8")

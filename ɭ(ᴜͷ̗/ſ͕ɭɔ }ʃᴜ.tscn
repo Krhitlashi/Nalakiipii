@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/ſɭᴜ ŋᷠᴜ.tscn" id="2_jbel5"]
-[ext_resource type="Script" path="res://ɭ(ᴜͷ̗/ſɭɔ˞ꞇ ɽ͑ʃɹ.gd" id="2_upj7l"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭɔ˞ꞇ ɽ͑ʃɹ.gd" id="2_upj7l"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="3_5tvy8"]
 [ext_resource type="Texture2D" uid="uid://cd5j66cj27tkg" path="res://textures/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ.png" id="5_p4mj6"]
 
