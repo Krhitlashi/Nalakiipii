@@ -20,6 +20,10 @@ func _unhandled_input(event):
 			លារ.rotate_y(-event.relative.x * 0.01)
 			ងេនា.rotate_x(-event.relative.y * 0.01)
 			ងេនា.rotation.x = clamp(ងេនា.rotation.x, -30, 60)
+	if event is InputEventScreenDrag:
+			លារ.rotate_y(-event.relative.x * 0.01)
+			ងេនា.rotate_x(-event.relative.y * 0.01)
+			ងេនា.rotation.x = clamp(ងេនា.rotation.x, -30, 60)
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -42,10 +46,3 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
-	សាហ្វុ()
-
-# j͑ʃᴜ ʃɜ
-func សាហ្វុ():
-	លារ.rotate_y(-ព្តាមា.output.x * 0.01)
-	ងេនា.rotate_x(-ព្តាមា.output.y * 0.01)
-	ងេនា.rotation.x = clamp(ងេនា.rotation.x, -30, 60)

@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=6 format=3 uid="uid://uin6ou7p74p2"]
+
+[ext_resource type="Texture2D" uid="uid://lrhbkmevihyt" path="res://textures/ſןᴜȝ/WoodFloor014_4K-PNG_Color.png" id="1_15c7r"]
+[ext_resource type="Texture2D" uid="uid://dwe2h6iouocmv" path="res://textures/ſןᴜȝ/WoodFloor014_4K-PNG_AmbientOcclusion.png" id="2_e0hqq"]
+[ext_resource type="Texture2D" uid="uid://sa4e67iy1f15" path="res://textures/ſןᴜȝ/WoodFloor014_4K-PNG_Displacement.png" id="3_awusq"]
+[ext_resource type="Texture2D" uid="uid://bitat8syc2gi8" path="res://textures/ſןᴜȝ/WoodFloor014_4K-PNG_NormalGL.png" id="4_om2wn"]
+[ext_resource type="Texture2D" uid="uid://b31rmr83q1tpf" path="res://textures/ſןᴜȝ/WoodFloor014_4K-PNG_Roughness.png" id="5_1snjs"]
+
+[resource]
+albedo_texture = ExtResource("1_15c7r")
+roughness_texture = ExtResource("5_1snjs")
+normal_enabled = true
+normal_texture = ExtResource("4_om2wn")
+ao_enabled = true
+ao_texture = ExtResource("2_e0hqq")
+heightmap_enabled = true
+heightmap_texture = ExtResource("3_awusq")

@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/ſɭᴜ ŋᷠᴜ.tscn" id="2_jbel5"]
 [ext_resource type="Script" path="res://ɭ(ᴜͷ̗/ſɭɔ˞ꞇ ɽ͑ʃɹ.gd" id="2_upj7l"]
-[ext_resource type="Texture2D" uid="uid://bkvmydfn5saxg" path="res://addons/virtual_joystick/textures/joystick_tip.png" id="3_1vr80"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="3_5tvy8"]
+[ext_resource type="Texture2D" uid="uid://cd5j66cj27tkg" path="res://textures/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ.png" id="5_p4mj6"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f3x5i"]
 radius = 0.3
@@ -30,7 +30,7 @@ size = Vector2(200, 200)
 [sub_resource type="LabelSettings" id="LabelSettings_i2p8m"]
 line_spacing = 0.0
 font = ExtResource("3_5tvy8")
-font_size = 32
+font_size = 320
 font_color = Color(0, 0, 0, 1)
 
 [node name="ſ͕ɭɔ }ʃᴜ" type="Node3D"]
@@ -38,7 +38,7 @@ font_color = Color(0, 0, 0, 1)
 [node name="ŋᷠᴜ ſɭᴜ ŋᷠᴜ" type="CharacterBody3D" parent="." node_paths=PackedStringArray("ព្តាមា") groups=["ſ͕ɭɔ }ʃᴜ"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_td461")
-"ព្តាមា" = NodePath("../Control/UI/ſןƨᴜ ŋᷠᴜ")
+"ព្តាមា" = NodePath("")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
@@ -121,18 +121,9 @@ offset_bottom = 40.0
 [node name="ſɟƨᴜ ŋᷠᴜ" parent="Control/UI" instance=ExtResource("2_jbel5")]
 offset_top = -400.0
 offset_right = 400.0
+deadzone_size = 8.0
+clampzone_size = 80.0
 visibility_mode = 2
-
-[node name="ſןƨᴜ ŋᷠᴜ" parent="Control/UI" instance=ExtResource("2_jbel5")]
-anchors_preset = 3
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -400.0
-offset_top = -400.0
-offset_right = 0.0
-grow_horizontal = 0
-visibility_mode = 2
-use_input_actions = false
 
 [node name="ſןw" type="Control" parent="Control/UI"]
 custom_minimum_size = Vector2(100, 100)
@@ -150,22 +141,23 @@ grow_horizontal = 0
 grow_vertical = 0
 
 [node name="ſןw" type="TouchScreenButton" parent="Control/UI/ſןw"]
-texture_normal = ExtResource("3_1vr80")
+position = Vector2(-2, -2)
+scale = Vector2(0.094, 0.094)
+texture_normal = ExtResource("5_p4mj6")
 shape_visible = false
 action = "ſןw"
 visibility_mode = 1
 
-[node name="Label" type="Label" parent="Control/UI/ſןw"]
-layout_mode = 1
+[node name="Label" type="Label" parent="Control/UI/ſןw/ſןw"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -26.5
-offset_top = -51.5
-offset_right = 26.5
-offset_bottom = 51.5
+offset_left = -220.0
+offset_top = -220.0
+offset_right = 220.0
+offset_bottom = 220.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "ſןw"
