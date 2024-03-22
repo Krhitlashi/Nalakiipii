@@ -18,10 +18,12 @@ config/icon="res://}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ.png"
 [autoload]
 
 Kootlai="*res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd"
+Xaatemii="*res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ʃэ ɭʃɔ ŋᷠɹ.gd"
 
 [display]
 
-window/stretch/aspect="keep_height"
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 

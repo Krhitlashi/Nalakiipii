@@ -1,10 +1,11 @@
 extends Area3D
 
 var ហ្វ៍សាជេ
-@export var អារាង : PackedScene
+@export var អារាង : PackedScene = load("res://j͐ʃɜȝ.tscn")
 
-func ក្សីរិ(អារាង):
-	if អារាង == null:
-		get_tree().change_scene_to_file("res://j͐ʃɜȝ.tscn")
+func ក្សីរិ(កឺត្លអារាង):
+	if កឺត្លអារាង == null:
+		Xaatemii.ងឹមាអារាង("res://j͐ʃɜȝ.tscn")
 	else:
-		get_tree().change_scene_to_packed(អារាង)
+		Xaatemii.ងឹមាអារាង(កឺត្លអារាង.resource_path)
+	

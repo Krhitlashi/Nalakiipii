@@ -1,6 +1,6 @@
 extends RayCast3D
 
-func _process(delta):
+func _process(_delta):
 	var អេស្កេក = self.get_collider()
 	
 	if self.is_colliding():
