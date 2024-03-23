@@ -163,3 +163,43 @@ text = "ſןw"
 label_settings = SubResource("LabelSettings_i2p8m")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="֭ſɭɔⅎ ɭʃᴜƴ" type="Control" parent="Control/UI"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -204.0
+offset_top = -328.0
+offset_right = -104.0
+offset_bottom = -228.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="֭ſɭɔⅎ ɭʃᴜƴ" type="TouchScreenButton" parent="Control/UI/֭ſɭɔⅎ ɭʃᴜƴ"]
+position = Vector2(-2, -2)
+scale = Vector2(0.094, 0.094)
+texture_normal = ExtResource("5_p4mj6")
+shape_visible = false
+action = "֭ſɭɔⅎ ɭʃᴜƴ"
+visibility_mode = 1
+
+[node name="Label" type="Label" parent="Control/UI/֭ſɭɔⅎ ɭʃᴜƴ/֭ſɭɔⅎ ɭʃᴜƴ"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = -220.0
+offset_right = 220.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "֭ſɭɔⅎ"
+label_settings = SubResource("LabelSettings_i2p8m")
+horizontal_alignment = 1
+vertical_alignment = 1
