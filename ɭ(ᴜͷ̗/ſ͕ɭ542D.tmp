@@ -65,7 +65,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 [node name="RayCast3D" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, -0.375)
 target_position = Vector3(0, 0, 1)
-collision_mask = 2
+collision_mask = 3
 hit_from_inside = true
 collide_with_areas = true
 script = ExtResource("2_upj7l")
@@ -85,7 +85,7 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ſɭɔʞ" type="Label" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
+[node name="Label" type="Label" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -132,10 +132,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -204.0
-offset_top = -208.0
-offset_right = -104.0
-offset_bottom = -108.0
+offset_left = -140.0
+offset_top = -140.0
+offset_right = -40.0
+offset_bottom = -40.0
 grow_horizontal = 0
 grow_vertical = 0
 

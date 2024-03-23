@@ -36,25 +36,25 @@ bottom_radius = 1.0
 height = 0.125
 radial_segments = 8
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3cwt5"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4nq7"]
 albedo_color = Color(1, 0.815686, 0.698039, 1)
 emission_enabled = true
 emission = Color(1, 1, 0.129412, 1)
 emission_energy_multiplier = 12.4
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_1on7g"]
-material = SubResource("StandardMaterial3D_3cwt5")
+material = SubResource("StandardMaterial3D_i4nq7")
 top_radius = 0.25
 bottom_radius = 0.375
 height = 1.0
 radial_segments = 4
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vahjq"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ica82"]
 emission_enabled = true
 emission = Color(0.94902, 0.929412, 0, 1)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_af5o3"]
-material = SubResource("StandardMaterial3D_vahjq")
+material = SubResource("StandardMaterial3D_ica82")
 top_radius = 0.75
 bottom_radius = 0.125
 height = 0.5
@@ -79,11 +79,11 @@ mesh = SubResource("CylinderMesh_80esq")
 [node name="MeshInstance3D4" type="CSGMesh3D" parent="MeshInstance3D3/MeshInstance3D5"]
 mesh = SubResource("CylinderMesh_23k8p")
 
-[node name="ſᶘꞇ ɭl̀ɔ" type="CSGMesh3D" parent="."]
+[node name="ſᶘꞇ ɭl̀ɔ" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5, 0)
 mesh = SubResource("CylinderMesh_1on7g")
 
-[node name="MeshInstance3D5" type="CSGMesh3D" parent="ſᶘꞇ ɭl̀ɔ"]
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="ſᶘꞇ ɭl̀ɔ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.375, 0)
 mesh = SubResource("CylinderMesh_af5o3")
 

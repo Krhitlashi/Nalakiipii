@@ -14,6 +14,9 @@ size = Vector3(1.5, 0.25, 0.125)
 [node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="Node3D"]
 
 [node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="CSGMesh3D" parent="." groups=["ꞁȷ̀ɜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]]
+use_collision = true
+collision_layer = 3
+collision_mask = 0
 mesh = SubResource("BoxMesh_gepwk")
 
 [node name="CSGMesh3D3" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]

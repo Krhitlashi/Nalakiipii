@@ -225,7 +225,7 @@ mesh = SubResource("CylinderMesh_lmned")
 [node name="ſɭˬᴜ j͑ʃɔ ı],ᴜƴ" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ" instance=ExtResource("13_cg7d8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.25, 0)
 
-[node name="Area3D" type="Area3D" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ" groups=["ꞁȷ̀ɜ ſɭɔ˞ꞇ ɽ͑ʃɹ"]]
+[node name="Area3D" type="Area3D" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ" groups=["ꞁȷ̀ɜ ſɭw ſ̀ȷᴜꞇ", "ꞁȷ̀ɜ ſɭɔ˞ꞇ ɽ͑ʃɹ"]]
 collision_layer = 2
 collision_mask = 0
 script = ExtResource("14_wl0vq")

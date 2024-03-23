@@ -95,7 +95,7 @@ transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -3, 0, -3)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 1)
 shape = SubResource("ConvexPolygonShape3D_k0of7")
 
-[node name="ſɭɔⰱ" type="Area3D" parent="j͑ʃᴜ ɭʃᴜͷ̗" groups=["ꞁȷ̀ɜ ſɭɔ˞ꞇ ɽ͑ʃɹ"]]
+[node name="ſɭɔⰱ" type="Area3D" parent="j͑ʃᴜ ɭʃᴜͷ̗" groups=["ꞁȷ̀ɜ ſɭw ſ̀ȷᴜꞇ", "ꞁȷ̀ɜ ſɭɔ˞ꞇ ɽ͑ʃɹ"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
 collision_layer = 2
 collision_mask = 0
