@@ -9,9 +9,9 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var ងេនា = $"j͐ʃᴜƴ/Camera3D"
 
 func _unhandled_input(event):
-	if event is InputEventMouseButton:
+	if event is InputEventMouseButton && get_tree().has_group("ſ͕ɭɔ }ʃᴜ"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	elif event.is_action_released("ui_cancel") || get_tree().current_scene.name == "res://j͑ʃɔ ı],ꞇ.tscn":
+	elif event.is_action_released("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion || event is InputEventScreenDrag:
@@ -22,7 +22,7 @@ func _physics_process(delta):
 	# ſɭc̗ᴜ ֭ſɭɔⅎ ɭʃᴜƴ
 	if !is_on_floor() && Kiitse.ហ្តេយាង្យុ == false:
 		velocity.y -= gravity * delta
-		if Kiitse.ហ្តេយាង្យុ == true || get_tree().current_scene.name == "res://j͑ʃɔ ı],ᴜƴ.tscn":
+		if Kiitse.ហ្តេយាង្យុ == true:
 			velocity.y -= 0 * delta
 	
 	# ſןw

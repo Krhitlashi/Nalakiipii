@@ -62,7 +62,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 
 [node name="ɭʃᴜ ŋᷠᴜ" type="Node3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
 
-[node name="RayCast3D" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ"]
+[node name="RayCast3D" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ" groups=["ſ͕ɭɔ }ʃᴜ"]]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, -0.375)
 target_position = Vector3(0, 0, 1)
 collision_mask = 2

@@ -103,7 +103,7 @@ points = PackedVector3Array(-0.625, -1.25, -0.125, -0.625, -1.25, 0.5, -0.625, 1
 
 [node name="ſɭˬᴜ j͑ʃɔ ı],ᴜƴ" type="Node3D"]
 
-[node name="ſɭˬᴜȝ" type="CSGCombiner3D" parent="."]
+[node name="ſɭˬᴜȝ" type="CSGCombiner3D" parent="." groups=["ꞁȷ̀ɜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]]
 use_collision = true
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="ſɭˬᴜȝ"]

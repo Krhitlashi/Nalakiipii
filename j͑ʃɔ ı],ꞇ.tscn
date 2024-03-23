@@ -33,18 +33,17 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -20.0
 offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_right = 12.0
+offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ſ͔ɭɹƴ ſ͔ɭɹ"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_right = 32.0
+offset_bottom = 78.0
 text = "
-
 
 ſ͔ɭɹ
 ſ͔ɭɹƴ"
