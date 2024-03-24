@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dyp7ol62cxg0v"]
+[gd_scene load_steps=12 format=3 uid="uid://dyp7ol62cxg0v"]
 
 [ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://textures/ɭʃэ ſ͔ɭэ.tres" id="1_tq01t"]
 [ext_resource type="Material" uid="uid://dq3juhalicjmq" path="res://textures/ɭʃэ ֭ſɭc̗ᴜ.tres" id="2_rmqce"]
@@ -6,6 +6,19 @@
 [sub_resource type="BoxMesh" id="BoxMesh_657kw"]
 material = ExtResource("1_tq01t")
 size = Vector3(1, 0.25, 2)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_io5n6"]
+points = PackedVector3Array(0.5, 0.125, 1, 0.5, -0.125, 1, 0.5, 0.125, -1, -0.5, 0.125, 1, -0.5, -0.125, 1, 0.5, -0.125, -1, -0.5, 0.125, -1, -0.5, -0.125, -1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_whi5h"]
+material = ExtResource("2_rmqce")
+size = Vector3(1, 0.25, 0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j1g6w"]
+points = PackedVector3Array(-0.5, -0.125, -0.25, -0.5, 0.125, -0.25, 0.5, -0.125, -0.25, -0.5, -0.125, 0.25, -0.5, 0.125, 0.25, 0.5, 0.125, -0.25, 0.5, -0.125, 0.25, 0.5, 0.125, 0.25)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kg8wh"]
+points = PackedVector3Array(-0.5, -0.125, -0.25, -0.5, 0.125, -0.25, 0.5, -0.125, -0.25, -0.5, -0.125, 0.25, -0.5, 0.125, 0.25, 0.5, 0.125, -0.25, 0.5, -0.125, 0.25, 0.5, 0.125, 0.25)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_kup8q"]
 material = ExtResource("2_rmqce")
@@ -27,40 +40,48 @@ height = 0.25
 material = ExtResource("1_tq01t")
 size = Vector3(1, 0.25, 2)
 
-[sub_resource type="BoxMesh" id="BoxMesh_whi5h"]
-material = ExtResource("2_rmqce")
-size = Vector3(1, 0.25, 0.5)
-
 [node name="ſןw ſɭᴜƴ ꞁȷ̀ᴜꞇ ſɭэ ֭ſɭэ" type="Node3D"]
 
-[node name="MeshInstance3D" type="CSGMesh3D" parent="."]
+[node name="ſɭэ ֭ſɭэ" type="StaticBody3D" parent="."]
+
+[node name="ɭʃэ ſ͔ɭэ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
-use_collision = true
 mesh = SubResource("BoxMesh_657kw")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_io5n6")
+
+[node name="ɭʃэ ֭ſɭc̗ᴜ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -1.25)
+mesh = SubResource("BoxMesh_whi5h")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -1.25)
+shape = SubResource("ConvexPolygonShape3D_j1g6w")
+
+[node name="ɭʃэ ֭ſɭc̗ᴜ ɿ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 1.25)
+mesh = SubResource("BoxMesh_whi5h")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 1.25)
+shape = SubResource("ConvexPolygonShape3D_kg8wh")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="."]
 mesh = SubResource("CylinderMesh_kup8q")
 
-[node name="MeshInstance3D" type="CSGMesh3D" parent="MeshInstance3D/CSGMesh3D2"]
+[node name="MeshInstance3D" type="CSGMesh3D" parent="CSGMesh3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
 operation = 1
 use_collision = true
 mesh = SubResource("BoxMesh_5t01q")
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D/CSGMesh3D2"]
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGMesh3D2"]
 mesh = SubResource("CylinderMesh_vsbgh")
 
-[node name="MeshInstance3D" type="CSGMesh3D" parent="MeshInstance3D/CSGMesh3D2/CSGMesh3D"]
+[node name="MeshInstance3D" type="CSGMesh3D" parent="CSGMesh3D2/CSGMesh3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
 operation = 1
 use_collision = true
 mesh = SubResource("BoxMesh_upu0j")
-
-[node name="MeshInstance3D2" type="CSGMesh3D" parent="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.25)
-mesh = SubResource("BoxMesh_whi5h")
-
-[node name="MeshInstance3D3" type="CSGMesh3D" parent="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.25)
-mesh = SubResource("BoxMesh_whi5h")

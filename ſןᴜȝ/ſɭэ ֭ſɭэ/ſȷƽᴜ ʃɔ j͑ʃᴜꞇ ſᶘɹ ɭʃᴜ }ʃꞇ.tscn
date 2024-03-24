@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bjt1uw3m5f3jr"]
+[gd_scene load_steps=10 format=3 uid="uid://bjt1uw3m5f3jr"]
 
 [ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://textures/ɭʃэ ſ͔ɭэ.tres" id="1_0nlam"]
 [ext_resource type="Material" uid="uid://dq3juhalicjmq" path="res://textures/ɭʃэ ֭ſɭc̗ᴜ.tres" id="2_eew2e"]
@@ -31,6 +31,9 @@ height = 0.25
 material = ExtResource("2_eew2e")
 size = Vector3(0.5, 0.25, 0.5)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_58ahr"]
+points = PackedVector3Array(-0.25, -0.125, -0.25, -0.25, 0.125, -0.25, 0.25, -0.125, -0.25, -0.25, -0.125, 0.25, -0.25, 0.125, 0.25, 0.25, 0.125, -0.25, 0.25, -0.125, 0.25, 0.25, 0.125, 0.25)
+
 [node name="ſȷƽᴜ ʃɔ j͑ʃᴜꞇ ſᶘɹ ɭʃᴜ }ʃꞇ" type="Node3D"]
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="."]
@@ -58,6 +61,13 @@ mesh = SubResource("CylinderMesh_riii7")
 operation = 2
 mesh = SubResource("CylinderMesh_hl0mg")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, -1.25)
 mesh = SubResource("BoxMesh_do8u0")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, -1.25)
+shape = SubResource("ConvexPolygonShape3D_58ahr")

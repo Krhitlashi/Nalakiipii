@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2xluur0jujrn"]
+[gd_scene load_steps=7 format=3 uid="uid://b2xluur0jujrn"]
 
 [ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://textures/ɭʃэ ſ͔ɭэ.tres" id="1_0jxck"]
 [ext_resource type="Material" uid="uid://dq3juhalicjmq" path="res://textures/ɭʃэ ֭ſɭc̗ᴜ.tres" id="2_fnbds"]
@@ -7,16 +7,30 @@
 material = ExtResource("1_0jxck")
 size = Vector3(2, 0.25, 2)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6dom4"]
+points = PackedVector3Array(-1, -0.125, -1, -1, 0.125, -1, 1, -0.125, -1, -1, -0.125, 1, -1, 0.125, 1, 1, 0.125, -1, 1, -0.125, 1, 1, 0.125, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_bqxvq"]
 material = ExtResource("2_fnbds")
 size = Vector3(2, 0.25, 0.5)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_eelt1"]
+points = PackedVector3Array(-1, -0.125, -0.25, -1, 0.125, -0.25, 1, -0.125, -0.25, -1, -0.125, 0.25, -1, 0.125, 0.25, 1, 0.125, -0.25, 1, -0.125, 0.25, 1, 0.125, 0.25)
+
 [node name="j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ" type="Node3D"]
 
-[node name="MeshInstance3D" type="CSGMesh3D" parent="."]
-use_collision = true
+[node name="ſɭэ ֭ſɭэ" type="StaticBody3D" parent="."]
+
+[node name="ɭʃэ ſ͔ɭэ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 mesh = SubResource("BoxMesh_8t8wy")
 
-[node name="MeshInstance3D2" type="CSGMesh3D" parent="MeshInstance3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
+shape = SubResource("ConvexPolygonShape3D_6dom4")
+
+[node name="ɭʃэ ֭ſɭc̗ᴜ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.25)
 mesh = SubResource("BoxMesh_bqxvq")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.25)
+shape = SubResource("ConvexPolygonShape3D_eelt1")

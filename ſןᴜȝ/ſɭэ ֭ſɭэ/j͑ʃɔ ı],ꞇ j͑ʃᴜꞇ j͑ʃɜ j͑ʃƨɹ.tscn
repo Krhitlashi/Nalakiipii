@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=3 uid="uid://c32kbrryav7qm"]
+
+[ext_resource type="Material" uid="uid://dq3juhalicjmq" path="res://textures/ɭʃэ ֭ſɭc̗ᴜ.tres" id="1_lrul0"]
+[ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://textures/ɭʃэ ſ͔ɭэ.tres" id="2_4ke7j"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_e1pi3"]
+material = ExtResource("1_lrul0")
+top_radius = 6.0
+bottom_radius = 6.0
+height = 0.25
+radial_segments = 4
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_scbk6"]
+material = ExtResource("2_4ke7j")
+top_radius = 3.5
+bottom_radius = 3.5
+height = 0.25
+radial_segments = 4
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ysy3k"]
+material = ExtResource("1_lrul0")
+top_radius = 4.0
+bottom_radius = 4.0
+height = 0.5
+
+[node name="j͑ʃɔ ı],ꞇ j͑ʃᴜꞇ j͑ʃɜ j͑ʃƨɹ" type="Node3D"]
+
+[node name="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ" type="CSGMesh3D" parent="."]
+mesh = SubResource("CylinderMesh_e1pi3")
+
+[node name="MeshInstance3D" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
+mesh = SubResource("CylinderMesh_scbk6")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4)
+operation = 2
+mesh = SubResource("CylinderMesh_ysy3k")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+operation = 2
+mesh = SubResource("CylinderMesh_ysy3k")
+
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4)
+operation = 2
+mesh = SubResource("CylinderMesh_ysy3k")
+
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4)
+operation = 2
+mesh = SubResource("CylinderMesh_ysy3k")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 4.5)
+operation = 2
+mesh = SubResource("CylinderMesh_ysy3k")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 4.5)
+operation = 2
+mesh = SubResource("CylinderMesh_ysy3k")
+
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, -4.5)
+operation = 2
+mesh = SubResource("CylinderMesh_ysy3k")
+
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, -4.5)
+operation = 2
+mesh = SubResource("CylinderMesh_ysy3k")

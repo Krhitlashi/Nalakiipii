@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://d0rgxksn5gkxu"]
+[gd_scene load_steps=30 format=3 uid="uid://d0rgxksn5gkxu"]
 
 [ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://textures/j͐ʃᴜ ŋᷠɹⰱ.tres" id="1_e60rj"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="3_kun1m"]
@@ -10,28 +10,73 @@
 material = ExtResource("1_e60rj")
 size = Vector3(8, 4, 8)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_h8kwy"]
+points = PackedVector3Array(-4, -2, -4, -4, 2, -4, 4, -2, -4, -4, -2, 4, -4, 2, 4, 4, 2, -4, 4, -2, 4, 4, 2, 4)
+
 [sub_resource type="PrismMesh" id="PrismMesh_4qtlj"]
 material = ExtResource("5_1u5mb")
 left_to_right = 0.0
 size = Vector3(1, 1, 7)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p7121"]
+points = PackedVector3Array(0.5, -0.5, 3.5, -0.5, 0.5, 3.5, -0.5, -0.5, 3.5, 0.5, -0.5, -3.5, -0.5, 0.5, -3.5, -0.5, -0.5, -3.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xpwas"]
+points = PackedVector3Array(0.5, -0.5, 3.5, -0.5, 0.5, 3.5, -0.5, -0.5, 3.5, 0.5, -0.5, -3.5, -0.5, 0.5, -3.5, -0.5, -0.5, -3.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pkjuf"]
+points = PackedVector3Array(0.5, -0.5, 3.5, -0.5, 0.5, 3.5, -0.5, -0.5, 3.5, 0.5, -0.5, -3.5, -0.5, 0.5, -3.5, -0.5, -0.5, -3.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4wy7v"]
+points = PackedVector3Array(0.5, -0.5, 3.5, -0.5, 0.5, 3.5, -0.5, -0.5, 3.5, 0.5, -0.5, -3.5, -0.5, 0.5, -3.5, -0.5, -0.5, -3.5)
+
 [sub_resource type="BoxMesh" id="BoxMesh_he2fx"]
 material = ExtResource("1_e60rj")
 size = Vector3(6, 4, 6)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_houxu"]
+points = PackedVector3Array(-3, -2, -3, -3, 2, -3, 3, -2, -3, -3, -2, 3, -3, 2, 3, 3, 2, -3, 3, -2, 3, 3, 2, 3)
 
 [sub_resource type="PrismMesh" id="PrismMesh_yydm5"]
 material = ExtResource("5_1u5mb")
 left_to_right = 0.0
 size = Vector3(1, 1, 5)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ofim7"]
+points = PackedVector3Array(0.5, -0.5, 2.5, -0.5, 0.5, 2.5, -0.5, -0.5, 2.5, 0.5, -0.5, -2.5, -0.5, 0.5, -2.5, -0.5, -0.5, -2.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_bfssi"]
+points = PackedVector3Array(0.5, -0.5, 2.5, -0.5, 0.5, 2.5, -0.5, -0.5, 2.5, 0.5, -0.5, -2.5, -0.5, 0.5, -2.5, -0.5, -0.5, -2.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vijvy"]
+points = PackedVector3Array(0.5, -0.5, 2.5, -0.5, 0.5, 2.5, -0.5, -0.5, 2.5, 0.5, -0.5, -2.5, -0.5, 0.5, -2.5, -0.5, -0.5, -2.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dgf6c"]
+points = PackedVector3Array(0.5, -0.5, 2.5, -0.5, 0.5, 2.5, -0.5, -0.5, 2.5, 0.5, -0.5, -2.5, -0.5, 0.5, -2.5, -0.5, -0.5, -2.5)
+
 [sub_resource type="BoxMesh" id="BoxMesh_kthr8"]
 material = ExtResource("1_e60rj")
 size = Vector3(4, 4, 4)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e8gi4"]
+points = PackedVector3Array(2, 2, 2, 2, 2, -2, -2, 2, 2, 2, -2, 2, 2, -2, -2, -2, 2, -2, -2, -2, 2, -2, -2, -2)
 
 [sub_resource type="PrismMesh" id="PrismMesh_mfcr4"]
 material = ExtResource("5_1u5mb")
 left_to_right = 0.0
 size = Vector3(1, 1, 3)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_udco2"]
+points = PackedVector3Array(0.5, -0.5, 1.5, -0.5, 0.5, 1.5, -0.5, -0.5, 1.5, 0.5, -0.5, -1.5, -0.5, 0.5, -1.5, -0.5, -0.5, -1.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_orb24"]
+points = PackedVector3Array(0.5, -0.5, 1.5, -0.5, 0.5, 1.5, -0.5, -0.5, 1.5, 0.5, -0.5, -1.5, -0.5, 0.5, -1.5, -0.5, -0.5, -1.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0khbj"]
+points = PackedVector3Array(0.5, -0.5, 1.5, -0.5, 0.5, 1.5, -0.5, -0.5, 1.5, 0.5, -0.5, -1.5, -0.5, 0.5, -1.5, -0.5, -0.5, -1.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gxhoy"]
+points = PackedVector3Array(0.5, -0.5, 1.5, -0.5, 0.5, 1.5, -0.5, -0.5, 1.5, 0.5, -0.5, -1.5, -0.5, 0.5, -1.5, -0.5, -0.5, -1.5)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_55huu"]
 points = PackedVector3Array(-1, -1.25, -0.5, -1, -1.25, 0.5, -1, 1.25, -0.5, 1, -1.25, -0.5, 1, -1.25, 0.5, -1, 1.25, 0.5, 1, 1.25, -0.5, 1, 1.25, 0.5)
@@ -47,118 +92,192 @@ size = Vector3(0.5, 2.5, 0.25)
 
 [node name="ſɭᴜ ſ͔ɭɔȝ" type="Node3D"]
 
-[node name="MeshInstance3D" type="CSGMesh3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1)
 mesh = SubResource("BoxMesh_v882m")
 
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="MeshInstance3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, -1)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1)
+shape = SubResource("ConvexPolygonShape3D_h8kwy")
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D/CSGCombiner3D"]
+[node name="CSGCombiner3D" type="StaticBody3D" parent="StaticBody3D"]
+
+[node name="CSGMesh3D" type="MeshInstance3D" parent="StaticBody3D/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 4.5, 4.5)
 mesh = SubResource("PrismMesh_4qtlj")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D/CSGCombiner3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 4.5, 4.5)
+shape = SubResource("ConvexPolygonShape3D_p7121")
+
+[node name="CSGMesh3D2" type="MeshInstance3D" parent="StaticBody3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 4.5, 1)
 mesh = SubResource("PrismMesh_4qtlj")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="MeshInstance3D/CSGCombiner3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 4.5, 1)
+shape = SubResource("ConvexPolygonShape3D_xpwas")
+
+[node name="CSGMesh3D3" type="MeshInstance3D" parent="StaticBody3D/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 4.5, -2.5)
 mesh = SubResource("PrismMesh_4qtlj")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="MeshInstance3D/CSGCombiner3D"]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 4.5, -2.5)
+shape = SubResource("ConvexPolygonShape3D_pkjuf")
+
+[node name="CSGMesh3D4" type="MeshInstance3D" parent="StaticBody3D/CSGCombiner3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.5, 4.5, 1)
 mesh = SubResource("PrismMesh_4qtlj")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="MeshInstance3D" instance=ExtResource("4_eqgsg")]
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D/CSGCombiner3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.5, 4.5, 1)
+shape = SubResource("ConvexPolygonShape3D_4wy7v")
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="StaticBody3D"]
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="StaticBody3D/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -5, 2, 6)
 material = ExtResource("5_1u5mb")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="MeshInstance3D" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 5, 0, 5)
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="StaticBody3D/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 5, 2, 6)
 material = ExtResource("5_1u5mb")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="MeshInstance3D" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 5, 0, -5)
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="StaticBody3D/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 5, 2, -4)
 material = ExtResource("5_1u5mb")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="MeshInstance3D" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -5, 0, -5)
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="StaticBody3D/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -5, 2, -4)
 material = ExtResource("5_1u5mb")
 
-[node name="MeshInstance3D2" type="CSGMesh3D" parent="."]
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 1)
 mesh = SubResource("BoxMesh_he2fx")
 
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="MeshInstance3D2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 1)
+shape = SubResource("ConvexPolygonShape3D_houxu")
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D2/CSGCombiner3D"]
+[node name="CSGCombiner3D" type="StaticBody3D" parent="StaticBody3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 1)
+
+[node name="CSGMesh3D" type="MeshInstance3D" parent="StaticBody3D2/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2.5, 2.5)
 mesh = SubResource("PrismMesh_yydm5")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D2/CSGCombiner3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2.5, 2.5)
+shape = SubResource("ConvexPolygonShape3D_ofim7")
+
+[node name="CSGMesh3D2" type="MeshInstance3D" parent="StaticBody3D2/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.5, 0)
 mesh = SubResource("PrismMesh_yydm5")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="MeshInstance3D2/CSGCombiner3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D2/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 2.5, 0)
+shape = SubResource("ConvexPolygonShape3D_bfssi")
+
+[node name="CSGMesh3D3" type="MeshInstance3D" parent="StaticBody3D2/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.5, -2.5)
 mesh = SubResource("PrismMesh_yydm5")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="MeshInstance3D2/CSGCombiner3D"]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D2/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.5, -2.5)
+shape = SubResource("ConvexPolygonShape3D_vijvy")
+
+[node name="CSGMesh3D4" type="MeshInstance3D" parent="StaticBody3D2/CSGCombiner3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.5, 2.5, 0)
 mesh = SubResource("PrismMesh_yydm5")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="MeshInstance3D2" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -4, 0, 4)
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D2/CSGCombiner3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.5, 2.5, 0)
+shape = SubResource("ConvexPolygonShape3D_dgf6c")
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="StaticBody3D2"]
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="StaticBody3D2/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -4, 6, 5)
 material = ExtResource("5_1u5mb")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="MeshInstance3D2" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 4, 0, 4)
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="StaticBody3D2/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 4, 6, 5)
 material = ExtResource("5_1u5mb")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="MeshInstance3D2" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 4, 0, -4)
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="StaticBody3D2/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 4, 6, -3)
 material = ExtResource("5_1u5mb")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="MeshInstance3D2" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -4, 0, -4)
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="StaticBody3D2/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -4, 6, -3)
 material = ExtResource("5_1u5mb")
 
-[node name="MeshInstance3D3" type="CSGMesh3D" parent="."]
+[node name="StaticBody3D3" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="StaticBody3D3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 1)
 mesh = SubResource("BoxMesh_kthr8")
 
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="MeshInstance3D3"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 1)
+shape = SubResource("ConvexPolygonShape3D_e8gi4")
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D3/CSGCombiner3D"]
+[node name="CSGCombiner3D" type="StaticBody3D" parent="StaticBody3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 1)
+
+[node name="CSGMesh3D" type="MeshInstance3D" parent="StaticBody3D3/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2.5, 1.5)
 mesh = SubResource("PrismMesh_mfcr4")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="MeshInstance3D3/CSGCombiner3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 2.5, 1.5)
+shape = SubResource("ConvexPolygonShape3D_udco2")
+
+[node name="CSGMesh3D2" type="MeshInstance3D" parent="StaticBody3D3/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.5, 0)
 mesh = SubResource("PrismMesh_mfcr4")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="MeshInstance3D3/CSGCombiner3D"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D3/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.5, 0)
+shape = SubResource("ConvexPolygonShape3D_orb24")
+
+[node name="CSGMesh3D3" type="MeshInstance3D" parent="StaticBody3D3/CSGCombiner3D"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.5, -1.5)
 mesh = SubResource("PrismMesh_mfcr4")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="MeshInstance3D3/CSGCombiner3D"]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D3/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2.5, -1.5)
+shape = SubResource("ConvexPolygonShape3D_0khbj")
+
+[node name="CSGMesh3D4" type="MeshInstance3D" parent="StaticBody3D3/CSGCombiner3D"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.5, 2.5, 0)
 mesh = SubResource("PrismMesh_mfcr4")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="MeshInstance3D3" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -3, 0, 3)
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D3/CSGCombiner3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.5, 2.5, 0)
+shape = SubResource("ConvexPolygonShape3D_gxhoy")
+
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="StaticBody3D3"]
+
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="StaticBody3D3/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -3, 10, 4)
 material = ExtResource("5_1u5mb")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="MeshInstance3D3" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 3, 0, 3)
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="StaticBody3D3/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 3, 10, 4)
 material = ExtResource("5_1u5mb")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="MeshInstance3D3" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 3, 0, -3)
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="StaticBody3D3/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 3, 10, -2)
 material = ExtResource("5_1u5mb")
 
-[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="MeshInstance3D3" instance=ExtResource("4_eqgsg")]
-transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -3, 0, -3)
+[node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="StaticBody3D3/CSGCombiner3D2" instance=ExtResource("4_eqgsg")]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -3, 10, -2)
 material = ExtResource("5_1u5mb")
 
 [node name="ſɭɔⰱ" type="Area3D" parent="." groups=["ꞁȷ̀ɜ ſɭɔ˞ꞇ ɽ͑ʃɹ"]]
