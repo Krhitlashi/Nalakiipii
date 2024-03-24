@@ -1,15 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://d2jkdljh7s7ty"]
+[gd_scene load_steps=7 format=3 uid="uid://d2jkdljh7s7ty"]
 
-[ext_resource type="Material" uid="uid://dq3juhalicjmq" path="res://textures/ɭʃэ ֭ſɭc̗ᴜ.tres" id="1_ekd85"]
+[ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://textures/j͐ʃᴜ ŋᷠɹⰱ.tres" id="1_7kude"]
 [ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://textures/ɭʃэ ſ͔ɭэ.tres" id="2_32pbe"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_gepwk"]
-material = ExtResource("1_ekd85")
+material = ExtResource("1_7kude")
 size = Vector3(2, 8, 0.25)
 
 [sub_resource type="BoxMesh" id="BoxMesh_aff57"]
 material = ExtResource("2_32pbe")
+size = Vector3(1.25, 0.25, 0.125)
+
+[sub_resource type="BoxMesh" id="BoxMesh_821mu"]
+material = ExtResource("2_32pbe")
 size = Vector3(1.5, 0.25, 0.125)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_o7tcy"]
+top_radius = 0.125
+bottom_radius = 0.125
+height = 0.125
 
 [node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="Node3D"]
 
@@ -19,42 +28,214 @@ collision_layer = 3
 collision_mask = 0
 mesh = SubResource("BoxMesh_gepwk")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0.25)
 mesh = SubResource("BoxMesh_aff57")
 
-[node name="CSGMesh3D5" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D3"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D3/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D3/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D5" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.75, 0.25)
 mesh = SubResource("BoxMesh_aff57")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D5"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D5/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D5/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0.25)
 mesh = SubResource("BoxMesh_aff57")
 
-[node name="CSGMesh3D6" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D4"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D4/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D4/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D6" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0.25)
 mesh = SubResource("BoxMesh_aff57")
 
-[node name="CSGMesh3D7" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D6"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D6/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D6/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D7" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.25)
 mesh = SubResource("BoxMesh_aff57")
 
-[node name="CSGMesh3D8" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D7"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D7/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D7/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D8" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0.25)
 mesh = SubResource("BoxMesh_aff57")
 
-[node name="CSGMesh3D9" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D8"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D8/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D8/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D9" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0.25)
 mesh = SubResource("BoxMesh_aff57")
 
-[node name="CSGMesh3D10" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D9"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D9/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D9/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D10" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.75, 0.25)
 mesh = SubResource("BoxMesh_aff57")
 
-[node name="CSGMesh3D12" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D10"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D10/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D10/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D12" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0.25)
 mesh = SubResource("BoxMesh_aff57")
 
-[node name="CSGMesh3D11" type="CSGMesh3D" parent="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D12"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D12/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D12/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D11" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.25, 0.25)
 mesh = SubResource("BoxMesh_aff57")
+
+[node name="CSGMesh3D13" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D11"]
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D11/CSGMesh3D13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")
+
+[node name="CSGMesh3D14" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, 0)
+mesh = SubResource("BoxMesh_821mu")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D11/CSGMesh3D14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625, 0, 0)
+operation = 1
+mesh = SubResource("CylinderMesh_o7tcy")

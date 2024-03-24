@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcgjsj183m5rv"
-path.s3tc="res://.godot/imported/Metal032_4K-PNG_Color.png-b85bafebe6fa2a157073cc0a8d054846.s3tc.ctex"
-path.etc2="res://.godot/imported/Metal032_4K-PNG_Color.png-b85bafebe6fa2a157073cc0a8d054846.etc2.ctex"
+uid="uid://dd5khck5myasl"
+path.s3tc="res://.godot/imported/Glass_Frosted_001_basecolor.jpg-adcd536f85565491ee844cdff9be8f55.s3tc.ctex"
+path.etc2="res://.godot/imported/Glass_Frosted_001_basecolor.jpg-adcd536f85565491ee844cdff9be8f55.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://textures/ſןᴜȝ/Metal032_4K-PNG_Color.png"
-dest_files=["res://.godot/imported/Metal032_4K-PNG_Color.png-b85bafebe6fa2a157073cc0a8d054846.s3tc.ctex", "res://.godot/imported/Metal032_4K-PNG_Color.png-b85bafebe6fa2a157073cc0a8d054846.etc2.ctex"]
+source_file="res://textures/ſןᴜȝ/Glass_Frosted_001_basecolor.jpg"
+dest_files=["res://.godot/imported/Glass_Frosted_001_basecolor.jpg-adcd536f85565491ee844cdff9be8f55.s3tc.ctex", "res://.godot/imported/Glass_Frosted_001_basecolor.jpg-adcd536f85565491ee844cdff9be8f55.etc2.ctex"]
 
 [params]
 

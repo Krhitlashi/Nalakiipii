@@ -68,8 +68,8 @@ offset_right = 20.0
 offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "
-
+text = "ŋᷠɹ
+ɭʃɔ
 ʃэ"
 label_settings = SubResource("LabelSettings_vlrl7")
 horizontal_alignment = 1
@@ -92,6 +92,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ɭʃᴜ ſᶘɜ ſɭɜ"]
+active = false
 libraries = {
 "": SubResource("AnimationLibrary_qendt")
 }

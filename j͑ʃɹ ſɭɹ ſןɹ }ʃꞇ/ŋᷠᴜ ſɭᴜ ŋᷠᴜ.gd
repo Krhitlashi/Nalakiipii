@@ -3,8 +3,7 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 5.0
 
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+var ក្នាហេំតារ = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var លារ = $"j͐ʃᴜƴ"
 @onready var ងេនា = $"j͐ʃᴜƴ/Camera3D"
 
@@ -24,9 +23,9 @@ func _unhandled_input(event):
 func _physics_process(delta):
 	# ſɭc̗ᴜ ֭ſɭɔⅎ ɭʃᴜƴ
 	if !is_on_floor() and Kiitse.ហ្តេយាង្យុ == false:
-		velocity.y -= gravity * delta
+		velocity.y -= ក្នាហេំតារ * delta
 		if Kiitse.ហ្តេយាង្យុ == true or get_tree().current_scene.name == "res://j͑ʃɔ ı],ᴜƴ.tscn":
-			velocity.y -= 0 * delta
+			velocity.y = 0
 	
 	# ſןw
 	if Input.is_action_just_pressed("ſןw") and (is_on_floor() or Kiitse.ហ្តេយាង្យុ == true):
@@ -34,12 +33,12 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("֭ſɭɔⅎ ɭʃᴜƴ") and (!is_on_floor() or Kiitse.ហ្តេយាង្យុ == true):
 		velocity.y = -JUMP_VELOCITY
 
-	# Get the input direction and handle the movement/deceleration.
-	var input_dir = Input.get_vector("ſɟƨᴜ ŋᷠᴜ j͑ʃᴜꞇ", "ſןƨᴜ ŋᷠᴜ j͑ʃᴜꞇ", "ɭʃɔƴ ꞁȷ̀ᴜꞇ", "ſɭɹ ſᶘɜ ſɭɜ j͑ʃᴜꞇ")
-	var direction = (លារ.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+	# ı],ᴜ }ʃꞇ
+	var ចិវិងកាមា = Input.get_vector("ſɟƨᴜ ŋᷠᴜ j͑ʃᴜꞇ", "ſןƨᴜ ŋᷠᴜ j͑ʃᴜꞇ", "ɭʃɔƴ ꞁȷ̀ᴜꞇ", "ſɭɹ ſᶘɜ ſɭɜ j͑ʃᴜꞇ")
+	var ចិវិង = (លារ.transform.basis * Vector3(ចិវិងកាមា.x, 0, ចិវិងកាមា.y)).normalized()
+	if ចិវិង:
+		velocity.x = ចិវិង.x * SPEED
+		velocity.z = ចិវិង.z * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
