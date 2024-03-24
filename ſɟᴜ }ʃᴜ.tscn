@@ -1,0 +1,61 @@
+[gd_scene load_steps=11 format=3 uid="uid://cp2glkxgu771u"]
+
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɟᴜ }ʃᴜ.gd" id="1_0g52i"]
+
+[sub_resource type="Gradient" id="Gradient_6r8x4"]
+offsets = PackedFloat32Array(0, 0.5, 1)
+colors = PackedColorArray(0.996078, 0.901961, 0.764706, 1, 1, 1, 1, 1, 0.996078, 0.901961, 0.764706, 1)
+
+[sub_resource type="Curve" id="Curve_xi0rj"]
+_data = [Vector2(0.20297, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(0.80198, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_g1tnh"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(0.501407, 0.501406, 0.501406, 1)
+
+[sub_resource type="Curve" id="Curve_pixm1"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.247368, 0), 0.0, 0.0, 0, 0, Vector2(0.747368, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="Gradient_x6s6r"]
+offsets = PackedFloat32Array(0, 0.375, 0.625, 1)
+colors = PackedColorArray(0.227451, 0.403922, 0.760784, 1, 0.501961, 0.576471, 0.694118, 1, 0.501961, 0.576471, 0.694118, 1, 0.227451, 0.403922, 0.760784, 1)
+
+[sub_resource type="Gradient" id="Gradient_mfom6"]
+offsets = PackedFloat32Array(0, 0.25, 0.5, 0.75, 1)
+colors = PackedColorArray(0.227451, 0.403922, 0.760784, 1, 0.760784, 0.505882, 0.372549, 1, 0.752941, 0.768627, 0.8, 1, 0.760784, 0.505882, 0.372549, 1, 0.227451, 0.403922, 0.760784, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_q08rj"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_qmnl2"]
+sky_material = SubResource("ProceduralSkyMaterial_q08rj")
+
+[sub_resource type="Environment" id="Environment_yimji"]
+background_mode = 2
+sky = SubResource("Sky_qmnl2")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="ſɟᴜ }ʃᴜ" type="Node3D"]
+script = ExtResource("1_0g52i")
+"វេហិសុត្សិ" = SubResource("Gradient_6r8x4")
+"ត្លុហេនីសុត្សិ" = SubResource("Curve_xi0rj")
+"វេហិពាលិ" = SubResource("Gradient_g1tnh")
+"ត្លុហេនីពាលិ" = SubResource("Curve_pixm1")
+"វេហិពឺចានា" = SubResource("Gradient_x6s6r")
+"វេហិចានា" = SubResource("Gradient_mfom6")
+
+[node name="ſןw ſɟᴜ }ʃᴜ" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_yimji")
+
+[node name="j͑ʃɜ ſᶘɹ" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 5, 0)
+shadow_enabled = true
+
+[node name="ſןᴜ j͐ʃɹ" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+shadow_enabled = true
+sky_mode = 1

@@ -3,7 +3,7 @@
 [ext_resource type="Material" uid="uid://r5ltwadino00" path="res://textures/ſןᴜȝ.tres" id="1_fjeyu"]
 [ext_resource type="PackedScene" uid="uid://nfto11oefe6o" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="2_smv7v"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="3_i0216"]
-[ext_resource type="PackedScene" uid="uid://mtmehldeug66" path="res://ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="4_pp451"]
+[ext_resource type="PackedScene" uid="uid://mtmehldeug66" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="4_pp451"]
 [ext_resource type="PackedScene" uid="uid://6qa6i8b4g334" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭɔⰱ.tscn" id="4_r3lb8"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_17838"]

@@ -1,6 +1,6 @@
-[gd_scene load_steps=60 format=3 uid="uid://brc8du16j5pyu"]
+[gd_scene load_steps=51 format=3 uid="uid://brc8du16j5pyu"]
 
-[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɟᴜ }ʃᴜ.gd" id="1_v0y80"]
+[ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_5akwa"]
 [ext_resource type="Terrain3DStorage" uid="uid://jm6plie14b6t" path="res://ꞁȷ̀ɜƴ.res" id="1_xlteh"]
 [ext_resource type="Texture2D" uid="uid://dvmtxexfhe8gh" path="res://textures/ꞁȷ̀ɜƴ/Rock030_2K-PNG_Color.png" id="2_dlbb8"]
 [ext_resource type="Texture2D" uid="uid://byypd80qjr7un" path="res://textures/ꞁȷ̀ɜƴ/Rock030_2K-PNG_NormalGL.png" id="3_y3b11"]
@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://textures/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="9_ecjmj"]
 [ext_resource type="PackedScene" uid="uid://dwntpur850x6h" path="res://ſɭˬᴜȝ/ſɭˬᴜ j͑ʃɔ ı],ᴜƴ.tscn" id="13_cg7d8"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="14_wl0vq"]
-[ext_resource type="PackedScene" uid="uid://0uc3drt81x6r" path="res://j͑ʃɔ ı],ᴜƴ.tscn" id="15_7xwe7"]
+[ext_resource type="PackedScene" uid="uid://0uc3drt81x6r" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃɔ ı],ᴜƴ.tscn" id="15_7xwe7"]
 [ext_resource type="PackedScene" uid="uid://ig2si02tkchh" path="res://ſןᴜȝ/j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="16_2uivu"]
 [ext_resource type="PackedScene" uid="uid://yfj0rq2t3lom" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſɭэ ֭ſɭэ j͑ʃп́ɔ ſןᴜȝ.tscn" id="17_6xc0a"]
 [ext_resource type="PackedScene" uid="uid://d0rgxksn5gkxu" path="res://ſןᴜȝ/ſɭᴜ ſ͔ɭɔȝ.tscn" id="18_ewhrr"]
@@ -29,43 +29,6 @@
 [ext_resource type="PackedScene" uid="uid://bms47dji6d3yl" path="res://ſןᴜȝ/֭ſɭwʞ ᶅſw ſɭɹ.tscn" id="25_qbneg"]
 [ext_resource type="PackedScene" uid="uid://cuid5gg52xxid" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſɟᴜ j͑ʃ'ɔ ſןᴜ ɭʃэ.tscn" id="25_rn0l3"]
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="26_h16ld"]
-
-[sub_resource type="Gradient" id="Gradient_xi0so"]
-offsets = PackedFloat32Array(0, 0.5, 1)
-colors = PackedColorArray(0.996078, 0.901961, 0.764706, 1, 1, 1, 1, 1, 0.996078, 0.901961, 0.764706, 1)
-
-[sub_resource type="Curve" id="Curve_tfbk1"]
-_data = [Vector2(0.20297, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(0.80198, 0), 0.0, 0.0, 0, 0]
-point_count = 3
-
-[sub_resource type="Gradient" id="Gradient_gp3xy"]
-offsets = PackedFloat32Array(1)
-colors = PackedColorArray(0.501407, 0.501406, 0.501406, 1)
-
-[sub_resource type="Curve" id="Curve_68s0g"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.247368, 0), 0.0, 0.0, 0, 0, Vector2(0.747368, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
-point_count = 4
-
-[sub_resource type="Gradient" id="Gradient_y0ts7"]
-offsets = PackedFloat32Array(0, 0.375, 0.625, 1)
-colors = PackedColorArray(0.227451, 0.403922, 0.760784, 1, 0.501961, 0.576471, 0.694118, 1, 0.501961, 0.576471, 0.694118, 1, 0.227451, 0.403922, 0.760784, 1)
-
-[sub_resource type="Gradient" id="Gradient_ycfho"]
-offsets = PackedFloat32Array(0, 0.25, 0.5, 0.75, 1)
-colors = PackedColorArray(0.227451, 0.403922, 0.760784, 1, 0.760784, 0.505882, 0.372549, 1, 0.752941, 0.768627, 0.8, 1, 0.760784, 0.505882, 0.372549, 1, 0.227451, 0.403922, 0.760784, 1)
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6cecn"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-
-[sub_resource type="Sky" id="Sky_26rpf"]
-sky_material = SubResource("ProceduralSkyMaterial_6cecn")
-
-[sub_resource type="Environment" id="Environment_w7q46"]
-background_mode = 2
-sky = SubResource("Sky_26rpf")
-tonemap_mode = 2
-glow_enabled = true
 
 [sub_resource type="Gradient" id="Gradient_bhfuv"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -199,26 +162,7 @@ size = Vector3(0.5, 0.25, 6)
 
 [node name="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ꞁȷ̀ɔ ꞁȷ̀ᴜꞇ j͑ʃꞇᴜ ſɭˬꞇ" type="Node3D"]
 
-[node name="ſɟᴜ }ʃᴜ" type="Node3D" parent="."]
-script = ExtResource("1_v0y80")
-"វេហិសុត្សិ" = SubResource("Gradient_xi0so")
-"ត្លុហេនីសុត្សិ" = SubResource("Curve_tfbk1")
-"វេហិពាលិ" = SubResource("Gradient_gp3xy")
-"ត្លុហេនីពាលិ" = SubResource("Curve_68s0g")
-"វេហិពឺចានា" = SubResource("Gradient_y0ts7")
-"វេហិចានា" = SubResource("Gradient_ycfho")
-
-[node name="ſןw ſɟᴜ }ʃᴜ" type="WorldEnvironment" parent="ſɟᴜ }ʃᴜ"]
-environment = SubResource("Environment_w7q46")
-
-[node name="j͑ʃɜ ſᶘɹ" type="DirectionalLight3D" parent="ſɟᴜ }ʃᴜ"]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 5, 0)
-shadow_enabled = true
-
-[node name="ſןᴜ j͐ʃɹ" type="DirectionalLight3D" parent="ſɟᴜ }ʃᴜ"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
-shadow_enabled = true
-sky_mode = 1
+[node name="ſɟᴜ }ʃᴜ" parent="." instance=ExtResource("1_5akwa")]
 
 [node name="ꞁȷ̀ɜƴ" type="Terrain3D" parent="."]
 storage = ExtResource("1_xlteh")

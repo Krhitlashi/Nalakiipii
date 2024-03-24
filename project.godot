@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ"
-run/main_scene="res://j͐ʃɜȝ.tscn"
+run/main_scene="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ.png"
 

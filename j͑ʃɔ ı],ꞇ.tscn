@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://c88mwaj53pmnl"]
+[gd_scene load_steps=6 format=3 uid="uid://c88mwaj53pmnl"]
 
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="1_oa3xm"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͑ʃɔ ı],ꞇ.gd" id="2_cwpsn"]
@@ -9,6 +9,10 @@ font = ExtResource("1_oa3xm")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vhyn4"]
 size = Vector2(32, 32)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5ehte"]
+line_spacing = 2.0
+font = ExtResource("1_oa3xm")
 
 [node name="j͑ʃɔ ı],ꞇ" type="Control"]
 layout_mode = 3
@@ -42,6 +46,21 @@ grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
 
+[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ſ͔ɭɹƴ ſ͔ɭɹ"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.729412, 0.839216, 0.752941, 1)
+
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ſ͔ɭɹƴ ſ͔ɭɹ"]
 layout_mode = 0
 offset_right = 32.0
@@ -70,5 +89,50 @@ position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
+[node name="j͑ʃꞇȝ ſ͔ɭɹ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 36.0
+offset_right = 12.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.785398
+
+[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/j͑ʃꞇȝ ſ͔ɭɹ"]
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 72.0
+text = "
+
+ſ͔ɭɹ
+j͑ʃꞇȝ"
+label_settings = SubResource("LabelSettings_5ehte")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="Button" parent="j͑ʃɔ ı],ᴜƴ/j͑ʃꞇȝ ſ͔ɭɹ"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+icon_alignment = 1
+script = ExtResource("2_cwpsn")
+
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_vhyn4")
+shape_visible = false
+
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
