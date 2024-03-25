@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://brc8du16j5pyu"]
+[gd_scene load_steps=56 format=3 uid="uid://brc8du16j5pyu"]
 
 [ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_5akwa"]
 [ext_resource type="Terrain3DStorage" uid="uid://jm6plie14b6t" path="res://ꞁȷ̀ɜƴ.res" id="1_xlteh"]
@@ -163,6 +163,13 @@ size = Vector3(2, 0.25, 6)
 material = ExtResource("8_erbdw")
 size = Vector3(0.5, 0.25, 6)
 
+[sub_resource type="BoxMesh" id="BoxMesh_hofrj"]
+material = ExtResource("7_5l6pv")
+size = Vector3(2, 0.25, 2)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hqd65"]
+points = PackedVector3Array(-1, -0.125, -1, -1, 0.125, -1, 1, -0.125, -1, -1, -0.125, 1, -1, 0.125, 1, 1, 0.125, -1, 1, -0.125, 1, 1, 0.125, 1)
+
 [node name="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ꞁȷ̀ɔ ꞁȷ̀ᴜꞇ j͑ʃꞇᴜ ſɭˬꞇ" type="Node3D"]
 
 [node name="ſɟᴜ }ʃᴜ" parent="." instance=ExtResource("1_5akwa")]
@@ -312,7 +319,7 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -131)
 
 [node name="ſɭэ ֭ſɭэ" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗" instance=ExtResource("17_6xc0a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.6, 30, 0, 19)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.6, 30, 0.001, 18.6)
 
 [node name="ſןw ſȷɹ j͑ʃᴜ ɭʃᴜͷ̗" parent="j͑ʃᴜ ɭʃɔ˞ͷ̗" instance=ExtResource("20_agil3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 30)
@@ -416,9 +423,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95, 0, -78)
 [node name="j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("22_bvjuo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -112, 0, 4.88758e-06)
 
-[node name="j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ2" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("22_bvjuo")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -168, 0, -56)
-
 [node name="j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ɿ" instance=ExtResource("23_lknlk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 0, -78)
 
@@ -436,16 +440,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -112, 0, -78)
 [node name="ſɟɹ }ʃᴜ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ц" instance=ExtResource("20_av4va")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -151, 0, -78)
 
-[node name="э" type="Node3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
+[node name="j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ц" instance=ExtResource("22_bvjuo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -168, 0, -56)
 
-[node name="j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/э" instance=ExtResource("23_lknlk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168, 0, -78)
+[node name="ꞁȷ̀ɔ ɽ͑ʃɹ ֭ſɭᴜ j͐ʃ j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ц" instance=ExtResource("21_e2q5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168, 0, -100)
+
+[node name="ſןw ſɭᴜƴ ꞁȷ̀ᴜꞇ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ц" instance=ExtResource("24_lutsa")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -168, 0, -178)
+
+[node name="э" type="Node3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
 
 [node name="ſɟɹ }ʃᴜ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/э" instance=ExtResource("20_av4va")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -207, 0, -78)
 
 [node name="ſןw ſɭᴜƴ ꞁȷ̀ᴜꞇ ſɭэ ֭ſɭэ" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/э" instance=ExtResource("24_lutsa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -224, 0, -78)
+
+[node name="j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ" type="StaticBody3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/э"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168, 0, -78)
+
+[node name="ɭʃэ ſ͔ɭэ" type="MeshInstance3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/э/j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ"]
+mesh = SubResource("BoxMesh_hofrj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/э/j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ"]
+shape = SubResource("ConvexPolygonShape3D_hqd65")
 
 [node name="֭ſɭwʞ ᶅſw ſɭɹ" type="Node3D" parent="."]
 
