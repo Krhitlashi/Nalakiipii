@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://1rf78skb04u4"]
+
+[ext_resource type="Texture2D" uid="uid://bjrxgaaxsyx2b" path="res://֭ſɭᴜ ʃᴜ/ſןᴜȝ/herringbone_parquet_diff_4k.png" id="1_l515b"]
+[ext_resource type="Texture2D" uid="uid://b6vx0o1idsrtg" path="res://֭ſɭᴜ ʃᴜ/ſןᴜȝ/herringbone_parquet_nor_gl_4k.png" id="2_h1mfh"]
+[ext_resource type="Texture2D" uid="uid://bx7uq5ac72c20" path="res://֭ſɭᴜ ʃᴜ/ſןᴜȝ/herringbone_parquet_rough_4k.png" id="3_o3irm"]
+
+[resource]
+albedo_texture = ExtResource("1_l515b")
+roughness_texture = ExtResource("3_o3irm")
+normal_enabled = true
+normal_texture = ExtResource("2_h1mfh")

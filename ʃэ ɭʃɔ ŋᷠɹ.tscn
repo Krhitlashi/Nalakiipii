@@ -47,6 +47,7 @@ grow_vertical = 2
 script = ExtResource("1_syidk")
 
 [node name="ɭʃᴜ ſᶘɜ ſɭɜ" type="ColorRect" parent="."]
+z_index = 8
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -68,7 +69,7 @@ offset_right = 20.0
 offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "ŋᷠɹ
+text = "
 ɭʃɔ
 ʃэ"
 label_settings = SubResource("LabelSettings_vlrl7")
@@ -91,8 +92,7 @@ label_settings = SubResource("LabelSettings_vlrl7")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ɭʃᴜ ſᶘɜ ſɭɜ"]
-active = false
+[node name="ɭʃᴜ ֭ſɭᴜ j͐ʃᴜ ſ͕ɭᴜƴ" type="AnimationPlayer" parent="ɭʃᴜ ſᶘɜ ſɭɜ"]
 libraries = {
 "": SubResource("AnimationLibrary_qendt")
 }

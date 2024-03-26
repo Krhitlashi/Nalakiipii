@@ -1,9 +1,9 @@
 [gd_scene load_steps=28 format=3 uid="uid://dyd7f6b5x38rv"]
 
-[ext_resource type="Material" uid="uid://1rf78skb04u4" path="res://textures/ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗ ſɭэƽ ꞁȷ̀ɜƴ.tres" id="1_nc4pn"]
-[ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://textures/j͐ʃᴜ ŋᷠɹⰱ.tres" id="2_xdx2w"]
+[ext_resource type="Material" uid="uid://1rf78skb04u4" path="res://֭ſɭᴜ ʃᴜ/ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗ ſɭэƽ ꞁȷ̀ɜƴ.tres" id="1_nc4pn"]
+[ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://֭ſɭᴜ ʃᴜ/j͐ʃᴜ ŋᷠɹⰱ.tres" id="2_xdx2w"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="3_h04ve"]
-[ext_resource type="Material" uid="uid://uin6ou7p74p2" path="res://textures/ſɟɹ j͐ʃᴜɔ˞.tres" id="4_it231"]
+[ext_resource type="Material" uid="uid://uin6ou7p74p2" path="res://֭ſɭᴜ ʃᴜ/ſɟɹ j͐ʃᴜɔ˞.tres" id="4_it231"]
 [ext_resource type="PackedScene" uid="uid://dmq4v37j8oa0p" path="res://ꞁȷ̀ɹ ɭʃᴜ/ſɭɜ ſȷᴜ.tscn" id="5_2j837"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_1llvn"]

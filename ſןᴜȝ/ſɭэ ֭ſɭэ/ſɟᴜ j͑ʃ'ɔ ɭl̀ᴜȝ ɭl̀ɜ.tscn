@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://d2jkdljh7s7ty"]
 
-[ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://textures/j͐ʃᴜ ŋᷠɹⰱ.tres" id="1_7kude"]
-[ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://textures/ɭʃэ ſ͔ɭэ.tres" id="2_32pbe"]
+[ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://֭ſɭᴜ ʃᴜ/j͐ʃᴜ ŋᷠɹⰱ.tres" id="1_7kude"]
+[ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://֭ſɭᴜ ʃᴜ/ɭʃэ ſ͔ɭэ.tres" id="2_32pbe"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_aff57"]
 material = ExtResource("2_32pbe")
@@ -23,7 +23,7 @@ size = Vector3(2, 8, 0.25)
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_g2lds"]
 points = PackedVector3Array(-1, -4, -0.125, -1, -4, 0.125, -1, 4, -0.125, 1, -4, -0.125, 1, -4, 0.125, -1, 4, 0.125, 1, 4, -0.125, 1, 4, 0.125)
 
-[node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="Node3D"]
+[node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="Node3D" groups=["ꞁȷ̀ɜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]]
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
 
@@ -239,7 +239,7 @@ mesh = SubResource("CylinderMesh_o7tcy")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
-[node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="MeshInstance3D" parent="StaticBody3D" groups=["ꞁȷ̀ɜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]]
+[node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="MeshInstance3D" parent="StaticBody3D"]
 mesh = SubResource("BoxMesh_gepwk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]

@@ -1,8 +1,8 @@
 [gd_scene load_steps=25 format=3 uid="uid://dwntpur850x6h"]
 
-[ext_resource type="Material" uid="uid://r5ltwadino00" path="res://textures/ſןᴜȝ.tres" id="1_a3cfq"]
-[ext_resource type="Material" uid="uid://ry6d8y443e3w" path="res://textures/ſɭᴜc̗ ɭʃɜ }ʃꞇ ſןᴜȝ.tres" id="2_ckyje"]
-[ext_resource type="Material" uid="uid://1rf78skb04u4" path="res://textures/ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗ ſɭэƽ ꞁȷ̀ɜƴ.tres" id="3_jhh05"]
+[ext_resource type="Material" uid="uid://r5ltwadino00" path="res://֭ſɭᴜ ʃᴜ/ſןᴜȝ.tres" id="1_a3cfq"]
+[ext_resource type="Material" uid="uid://ry6d8y443e3w" path="res://֭ſɭᴜ ʃᴜ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ſןᴜȝ.tres" id="2_ckyje"]
+[ext_resource type="Material" uid="uid://1rf78skb04u4" path="res://֭ſɭᴜ ʃᴜ/ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗ ſɭэƽ ꞁȷ̀ɜƴ.tres" id="3_jhh05"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="4_kciik"]
 [ext_resource type="PackedScene" uid="uid://c88mwaj53pmnl" path="res://j͑ʃɔ ı],ꞇ.tscn" id="5_8e4d6"]
 

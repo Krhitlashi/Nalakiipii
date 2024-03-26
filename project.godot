@@ -17,9 +17,8 @@ config/icon="res://}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ.png"
 
 [autoload]
 
-Kootlai="*res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd"
-Xaatemii="*res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ʃэ ɭʃɔ ŋᷠɹ.gd"
 Kiitse="*res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭɹ ſᶘɔ.gd"
+Kootlai="*res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd"
 
 [display]
 

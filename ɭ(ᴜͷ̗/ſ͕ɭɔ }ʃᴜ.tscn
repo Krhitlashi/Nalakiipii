@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://ctsr30lx7d80f"]
+[gd_scene load_steps=14 format=3 uid="uid://ctsr30lx7d80f"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/ſɟᴜ ſɭᴜ ŋᷠᴜ/ſɟᴜ ſɭᴜ ŋᷠᴜ.tscn" id="2_jbel5"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭɔ˞ꞇ ɽ͑ʃɹ.gd" id="2_upj7l"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="3_5tvy8"]
-[ext_resource type="Texture2D" uid="uid://cd5j66cj27tkg" path="res://textures/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ.png" id="5_p4mj6"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/}ʃᴜ ŋᷠᴜ ꞁȷ̀ɜ ſᶘɹ }ʃᴜ.gd" id="5_ny4rk"]
+[ext_resource type="Texture2D" uid="uid://cd5j66cj27tkg" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ.png" id="6_mc6ha"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f3x5i"]
 radius = 0.3
@@ -120,9 +121,7 @@ offset_bottom = 40.0
 [node name="ſɟƨᴜ ŋᷠᴜ" parent="Control/UI" instance=ExtResource("2_jbel5")]
 offset_top = -400.0
 offset_right = 400.0
-deadzone_size = 8.0
-clampzone_size = 80.0
-visibility_mode = 2
+"អុរអិហ្វានី" = 2
 
 [node name="ſןw" type="Control" parent="Control/UI"]
 custom_minimum_size = Vector2(100, 100)
@@ -138,11 +137,12 @@ offset_right = -96.0
 offset_bottom = -100.0
 grow_horizontal = 0
 grow_vertical = 0
+script = ExtResource("5_ny4rk")
 
 [node name="ſןw" type="TouchScreenButton" parent="Control/UI/ſןw"]
 position = Vector2(-2, -2)
 scale = Vector2(0.094, 0.094)
-texture_normal = ExtResource("5_p4mj6")
+texture_normal = ExtResource("6_mc6ha")
 shape_visible = false
 action = "ſןw"
 visibility_mode = 1
@@ -178,11 +178,12 @@ offset_right = -96.0
 offset_bottom = -220.0
 grow_horizontal = 0
 grow_vertical = 0
+script = ExtResource("5_ny4rk")
 
 [node name="֭ſɭɔⅎ ɭʃᴜƴ" type="TouchScreenButton" parent="Control/UI/֭ſɭɔⅎ ɭʃᴜƴ"]
 position = Vector2(-2, -2)
 scale = Vector2(0.094, 0.094)
-texture_normal = ExtResource("5_p4mj6")
+texture_normal = ExtResource("6_mc6ha")
 shape_visible = false
 action = "֭ſɭɔⅎ ɭʃᴜƴ"
 visibility_mode = 1

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://c32kbrryav7qm"]
 
-[ext_resource type="Material" uid="uid://dq3juhalicjmq" path="res://textures/ɭʃэ ֭ſɭc̗ᴜ.tres" id="1_lrul0"]
-[ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://textures/ɭʃэ ſ͔ɭэ.tres" id="2_4ke7j"]
+[ext_resource type="Material" uid="uid://dq3juhalicjmq" path="res://֭ſɭᴜ ʃᴜ/ɭʃэ ֭ſɭc̗ᴜ.tres" id="1_lrul0"]
+[ext_resource type="Material" uid="uid://c5hddls4osx6d" path="res://֭ſɭᴜ ʃᴜ/ɭʃэ ſ͔ɭэ.tres" id="2_4ke7j"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_e1pi3"]
 material = ExtResource("1_lrul0")

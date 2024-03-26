@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://cayse1fq0lvgw"]
 
-[ext_resource type="Material" uid="uid://d1rxdhrj1lo0m" path="res://textures/ı],ͷ̗ɔ ſɟɔ.tres" id="1_p1slo"]
+[ext_resource type="Material" uid="uid://d1rxdhrj1lo0m" path="res://֭ſɭᴜ ʃᴜ/ı],ͷ̗ɔ ſɟɔ.tres" id="1_p1slo"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_i4kuk"]
 material = ExtResource("1_p1slo")

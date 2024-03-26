@@ -1,104 +1,101 @@
-class_name VirtualJoystick
+class_name ចាកាមា
 
 extends Control
 
-## A simple virtual joystick for touchscreens, with useful options.
-## Github: https://github.com/MarcoFazioRandom/Virtual-Joystick-Godot
-
-# EXPORTED VARIABLE
+# }ʃɔ ſ͕ɭɹȝ
 
 ## The color of the button when the joystick is pressed.
-@export var pressed_color := Color.GRAY
+@export var វេហិត្សិនា := Color.GRAY
 
 ## If the input is inside this range, the output is zero.
-@export_range(0, 200, 1) var deadzone_size : float = 10
+@export_range(0, 200, 1) var កុតាជា : float = 10
 
 ## The max distance the tip can reach.
-@export_range(0, 500, 1) var clampzone_size : float = 75
+@export_range(0, 500, 1) var ក្មាភអ៏ហ៏ក : float = 75
 
-enum Joystick_mode {
-	FIXED, ## The joystick doesn't move.
-	DYNAMIC, ## Every time the joystick area is pressed, the joystick position is set on the touched position.
-	FOLLOWING ## When the finger moves outside the joystick area, the joystick will follow it.
+enum ត្សហាជេកាមា {
+	កុជា, ## The joystick doesn't move.
+	អុជា, ## Every time the joystick area is pressed, the joystick position is set on the touched position.
+	ពានា ## When the finger moves outside the joystick area, the joystick will follow it.
 }
 
 ## If the joystick stays in the same position or appears on the touched position when touch is started
-@export var joystick_mode := Joystick_mode.FIXED
+@export var ហាជេកាមា := ត្សហាជេកាមា.កុជា
 
-enum Visibility_mode {
-	ALWAYS, ## Always visible
-	TOUCHSCREEN_ONLY, ## Visible on touch screens only
-	WHEN_TOUCHED ## Visible only when touched
+enum ត្សអុរអិហ្វានី {
+	ការា, ## Always visible
+	នាមាតីក, ## Visible on touch screens only
+	អាត្សាត្សិនា ## Visible only when touched
 }
 
 ## If the joystick is always visible, or is shown only if there is a touchscreen
-@export var visibility_mode := Visibility_mode.ALWAYS
+@export var អុរអិហ្វានី := ត្សអុរអិហ្វានី.ការា
 
 ## If true, the joystick uses Input Actions (Project -> Project Settings -> Input Map)
-@export var use_input_actions := true
+@export var សាជា := true
 
-@export var action_left := "ſɟƨᴜ ŋᷠᴜ j͑ʃᴜꞇ"
-@export var action_right := "ſןƨᴜ ŋᷠᴜ j͑ʃᴜꞇ"
-@export var action_up := "ɭʃɔƴ ꞁȷ̀ᴜꞇ"
-@export var action_down := "ſɭɹ ſᶘɜ ſɭɜ j͑ʃᴜꞇ"
+@export var ច្តាមាសៃ := "ſɟƨᴜ ŋᷠᴜ j͑ʃᴜꞇ"
+@export var ព្តាមាសៃ := "ſןƨᴜ ŋᷠᴜ j͑ʃᴜꞇ"
+@export var តេរៃសៃ := "ɭʃɔƴ ꞁȷ̀ᴜꞇ"
+@export var កិត្សុកុសៃ := "ſɭɹ ſᶘɜ ſɭɜ j͑ʃᴜꞇ"
 
-# PUBLIC VARIABLES
+# ſɭп́ꞇ ſɭꞇ
 
 ## If the joystick is receiving inputs.
-var is_pressed := false
+var ក្យេត្សិនា := false
 
 # The joystick output.
-var output := Vector2.ZERO
+var ត្សេំនី := Vector2.ZERO
 
-# PRIVATE VARIABLES
+# ֭ſɭwƴ
 
-var _touch_index : int = -1
+var អារាត្សិនា : int = -1
 
-@onready var _base := $Base
-@onready var _tip := $Base/Tip
+@onready var ព៏ក្សិចា := $"ſןэ ſɭɔ˞ɹ ſɟᴜ"
+@onready var ចិហិ := $"ſןэ ſɭɔ˞ɹ ſɟᴜ/ſɭᴜ ŋᷠᴜ ſɟɹ ֭ſɭɹ"
 
-@onready var _base_default_position : Vector2 = _base.position
-@onready var _tip_default_position : Vector2 = _tip.position
+@onready var ត្សីងព៏ក្សិចា : Vector2 = ព៏ក្សិចា.position
+@onready var ត្សីងចិហិ : Vector2 = ចិហិ.position
 
-@onready var _default_color : Color = _tip.modulate
+@onready var ត្សីងវេហិ : Color = ចិហិ.modulate
 
 # FUNCTIONS
 
 func _ready() -> void:
-	if not DisplayServer.is_touchscreen_available() and visibility_mode == Visibility_mode.TOUCHSCREEN_ONLY :
+	if not DisplayServer.is_touchscreen_available() and អុរអិហ្វានី == ត្សអុរអិហ្វានី.នាមាតីក :
 		hide()
 	
-	if visibility_mode == Visibility_mode.WHEN_TOUCHED:
+	if អុរអិហ្វានី == ត្សអុរអិហ្វានី.អាត្សាត្សិនា:
 		hide()
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
 		if event.pressed:
-			if _is_point_inside_joystick_area(event.position) and _touch_index == -1:
-				if joystick_mode == Joystick_mode.DYNAMIC or joystick_mode == Joystick_mode.FOLLOWING or (joystick_mode == Joystick_mode.FIXED and _is_point_inside_base(event.position)):
-					if joystick_mode == Joystick_mode.DYNAMIC or joystick_mode == Joystick_mode.FOLLOWING:
+			if _is_point_inside_joystick_area(event.position) and អារាត្សិនា == -1:
+				if ហាជេកាមា == ត្សហាជេកាមា.អុជា or ហាជេកាមា == ត្សហាជេកាមា.ពានា or (ហាជេកាមា == ត្សហាជេកាមា.កុជា and _is_point_inside_base(event.position)):
+					if ហាជេកាមា == ត្សហាជេកាមា.អុជា or ហាជេកាមា == ត្សហាជេកាមា.ពានា:
 						_move_base(event.position)
-					if visibility_mode == Visibility_mode.WHEN_TOUCHED:
+					if អុរអិហ្វានី == ត្សអុរអិហ្វានី.អាត្សាត្សិនា:
 						show()
-					_touch_index = event.index
-					_tip.modulate = pressed_color
+					អារាត្សិនា = event.index
+					ចិហិ.modulate = វេហិត្សិនា
 					_update_joystick(event.position)
 					get_viewport().set_input_as_handled()
-		elif event.index == _touch_index:
+		elif event.index == អារាត្សិនា:
 			_reset()
-			if visibility_mode == Visibility_mode.WHEN_TOUCHED:
+			if អុរអិហ្វានី == ត្សអុរអិហ្វានី.អាត្សាត្សិនា:
 				hide()
 			get_viewport().set_input_as_handled()
 	elif event is InputEventScreenDrag:
-		if event.index == _touch_index:
+		if event.index == អារាត្សិនា:
 			_update_joystick(event.position)
 			get_viewport().set_input_as_handled()
 
 func _move_base(new_position: Vector2) -> void:
-	_base.global_position = new_position - _base.pivot_offset * get_global_transform_with_canvas().get_scale()
+	ព៏ក្សិចា.global_position = new_position - ព៏ក្សិចា.pivot_offset * get_global_transform_with_canvas().get_scale()
 
 func _move_tip(new_position: Vector2) -> void:
-	_tip.global_position = new_position - _tip.pivot_offset * _base.get_global_transform_with_canvas().get_scale()
+	ចិហិ.global_position = new_position - ចិហិ.pivot_offset * ព៏ក្សិចា.get_global_transform_with_canvas().get_scale()
 
 func _is_point_inside_joystick_area(point: Vector2) -> bool:
 	var x: bool = point.x >= global_position.x and point.x <= global_position.x + (size.x * get_global_transform_with_canvas().get_scale().x)
@@ -106,11 +103,11 @@ func _is_point_inside_joystick_area(point: Vector2) -> bool:
 	return x and y
 
 func _get_base_radius() -> Vector2:
-	return _base.size * _base.get_global_transform_with_canvas().get_scale() / 2
+	return ព៏ក្សិចា.size * ព៏ក្សិចា.get_global_transform_with_canvas().get_scale() / 2
 
 func _is_point_inside_base(point: Vector2) -> bool:
 	var _base_radius = _get_base_radius()
-	var center : Vector2 = _base.global_position + _base_radius
+	var center : Vector2 = ព៏ក្សិចា.global_position + _base_radius
 	var vector : Vector2 = point - center
 	if vector.length_squared() <= _base_radius.x * _base_radius.x:
 		return true
@@ -119,44 +116,44 @@ func _is_point_inside_base(point: Vector2) -> bool:
 
 func _update_joystick(touch_position: Vector2) -> void:
 	var _base_radius = _get_base_radius()
-	var center : Vector2 = _base.global_position + _base_radius
+	var center : Vector2 = ព៏ក្សិចា.global_position + _base_radius
 	var vector : Vector2 = touch_position - center
-	vector = vector.limit_length(clampzone_size)
+	vector = vector.limit_length(ក្មាភអ៏ហ៏ក)
 	
-	if joystick_mode == Joystick_mode.FOLLOWING and touch_position.distance_to(center) > clampzone_size:
+	if ហាជេកាមា == ត្សហាជេកាមា.ពានា and touch_position.distance_to(center) > ក្មាភអ៏ហ៏ក:
 		_move_base(touch_position - vector)
 	
 	_move_tip(center + vector)
 	
-	if vector.length_squared() > deadzone_size * deadzone_size:
-		is_pressed = true
-		output = (vector - (vector.normalized() * deadzone_size)) / (clampzone_size - deadzone_size)
+	if vector.length_squared() > កុតាជា * កុតាជា :
+		ក្យេត្សិនា = true
+		ត្សេំនី = (vector - (vector.normalized() * កុតាជា)) / (ក្មាភអ៏ហ៏ក - កុតាជា)
 	else:
-		is_pressed = false
-		output = Vector2.ZERO
+		ក្យេត្សិនា = false
+		ត្សេំនី = Vector2.ZERO
 	
-	if use_input_actions:
-		if output.x > 0:
-			Input.action_release(action_left)
-			Input.action_press(action_right, output.x)
+	if សាជា:
+		if ត្សេំនី.x > 0:
+			Input.action_release(ច្តាមាសៃ)
+			Input.action_press(ព្តាមាសៃ, ត្សេំនី.x)
 		else:
-			Input.action_release(action_right)
-			Input.action_press(action_left, -output.x)
+			Input.action_release(ព្តាមាសៃ)
+			Input.action_press(ច្តាមាសៃ, -ត្សេំនី.x)
 
-		if output.y > 0:
-			Input.action_release(action_up)
-			Input.action_press(action_down, output.y)
+		if ត្សេំនី.y > 0:
+			Input.action_release(តេរៃសៃ)
+			Input.action_press(កិត្សុកុសៃ, ត្សេំនី.y)
 		else:
-			Input.action_release(action_down)
-			Input.action_press(action_up, -output.y)
+			Input.action_release(កិត្សុកុសៃ)
+			Input.action_press(តេរៃសៃ, -ត្សេំនី.y)
 
 func _reset():
-	is_pressed = false
-	output = Vector2.ZERO
-	_touch_index = -1
-	_tip.modulate = _default_color
-	_base.position = _base_default_position
-	_tip.position = _tip_default_position
-	if use_input_actions:
-		for action in [action_left, action_right, action_down, action_up]:
+	ក្យេត្សិនា = false
+	ត្សេំនី = Vector2.ZERO
+	អារាត្សិនា = -1
+	ចិហិ.modulate = ត្សីងវេហិ
+	ព៏ក្សិចា.position = ត្សីងព៏ក្សិចា
+	ចិហិ.position = ត្សីងចិហិ
+	if សាជា:
+		for action in [ច្តាមាសៃ, ព្តាមាសៃ, កិត្សុកុសៃ, តេរៃសៃ]:
 			Input.action_release(action)

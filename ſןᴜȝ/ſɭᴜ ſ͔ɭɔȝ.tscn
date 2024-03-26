@@ -1,9 +1,9 @@
 [gd_scene load_steps=30 format=3 uid="uid://d0rgxksn5gkxu"]
 
-[ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://textures/j͐ʃᴜ ŋᷠɹⰱ.tres" id="1_e60rj"]
+[ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://֭ſɭᴜ ʃᴜ/j͐ʃᴜ ŋᷠɹⰱ.tres" id="1_e60rj"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="3_kun1m"]
 [ext_resource type="PackedScene" uid="uid://nfto11oefe6o" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗.tscn" id="4_eqgsg"]
-[ext_resource type="Material" uid="uid://uin6ou7p74p2" path="res://textures/ſɟɹ j͐ʃᴜɔ˞.tres" id="5_1u5mb"]
+[ext_resource type="Material" uid="uid://uin6ou7p74p2" path="res://֭ſɭᴜ ʃᴜ/ſɟɹ j͐ʃᴜɔ˞.tres" id="5_1u5mb"]
 [ext_resource type="PackedScene" uid="uid://dyd7f6b5x38rv" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ɭl̀э ſɭᴜ ſ͔ɭɔȝ.tscn" id="5_l1le3"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_v882m"]

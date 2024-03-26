@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dmq4v37j8oa0p"]
 
-[ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://textures/j͐ʃᴜ ŋᷠɹⰱ.tres" id="1_itgp7"]
+[ext_resource type="Material" uid="uid://b33baoqcplvjs" path="res://֭ſɭᴜ ʃᴜ/j͐ʃᴜ ŋᷠɹⰱ.tres" id="1_itgp7"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_gk1j5"]
 material = ExtResource("1_itgp7")

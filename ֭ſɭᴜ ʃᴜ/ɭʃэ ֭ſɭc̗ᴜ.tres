@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dq3juhalicjmq"]
+
+[ext_resource type="Texture2D" uid="uid://dv2id4wsg3vvr" path="res://֭ſɭᴜ ʃᴜ/ſɭэ ֭ſɭэ/Plastic011_2K-PNG_Roughness.png" id="1_30l2b"]
+[ext_resource type="Texture2D" uid="uid://cg3vy7slag0e3" path="res://֭ſɭᴜ ʃᴜ/ſɭэ ֭ſɭэ/Plastic011_2K-PNG_NormalGL.png" id="2_rkkrn"]
+
+[resource]
+albedo_texture = ExtResource("1_30l2b")
+roughness_texture = ExtResource("1_30l2b")
+normal_enabled = true
+normal_texture = ExtResource("2_rkkrn")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true

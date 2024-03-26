@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://nfto11oefe6o"]
 
-[ext_resource type="Material" uid="uid://ry6d8y443e3w" path="res://textures/ſɭᴜc̗ ɭʃɜ }ʃꞇ ſןᴜȝ.tres" id="2_e3w5c"]
+[ext_resource type="Material" uid="uid://ry6d8y443e3w" path="res://֭ſɭᴜ ʃᴜ/ſɭᴜc̗ ɭʃɜ }ʃꞇ ſןᴜȝ.tres" id="2_e3w5c"]
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ j͑ʃп́ɔ j͑ʃᴜ ɭʃᴜͷ̗" type="CSGPolygon3D"]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -5, 0, 5)

@@ -1,13 +1,12 @@
 extends Area3D
 
-var ហ្វ៏តេមិ
-@export var អារាង : PackedScene = load("res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ.tscn")
+@export var អារាង : PackedScene = load("res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ.tscn"):
+	set = កិរអារាង
+	
+func កិរអារាង(កឺត្លអារាង):
+	អារាង = កឺត្លអារាង
 
 func ក្សីរិ(កឺត្លអារាង):
-	ហ្វ៏តេមិ = preload("res://ʃэ ɭʃɔ ŋᷠɹ.tscn").instantiate()
-	add_child(ហ្វ៏តេមិ)
-	if កឺត្លអារាង == null:
-		Xaatemii.ងឹមាអារាង("res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ.tscn", ហ្វ៏តេមិ)
-	else:
-		Xaatemii.ងឹមាអារាង(កឺត្លអារាង.resource_path, ហ្វ៏តេមិ)
-	
+	កិរអារាង(កឺត្លអារាង)
+	var ហ្វ៏តេមិ = load("res://ʃэ ɭʃɔ ŋᷠɹ.tscn")
+	get_tree().change_scene_to_packed(ហ្វ៏តេមិ)	
