@@ -59,7 +59,7 @@ var អារាត្សិនា : int = -1
 
 @onready var ត្សីងវេហិ : Color = ចិហិ.modulate
 
-# FUNCTIONS
+# ſɭᴜc̭ ɭʃᴜ ſɭɔ j͑ʃ'ɔ j͑ʃᴜꞇ
 
 func _ready() -> void:
 	if not DisplayServer.is_touchscreen_available() and អុរអិហ្វានី == ត្សអុរអិហ្វានី.នាមាតីក :

@@ -60,6 +60,7 @@ shape = SubResource("ConvexPolygonShape3D_qxx1w")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 
 [node name="Camera3D" type="Camera3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/j͐ʃᴜƴ"]
+cull_mask = 3
 
 [node name="ɭʃᴜ ŋᷠᴜ" type="Node3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
 

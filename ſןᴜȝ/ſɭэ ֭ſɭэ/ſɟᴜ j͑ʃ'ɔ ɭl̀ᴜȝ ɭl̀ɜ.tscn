@@ -26,6 +26,7 @@ points = PackedVector3Array(-1, -4, -0.125, -1, -4, 0.125, -1, 4, -0.125, 1, -4,
 [node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="Node3D" groups=["ꞁȷ̀ɜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]]
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+layers = 3
 
 [node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0.25)
@@ -237,9 +238,12 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.625
 operation = 1
 mesh = SubResource("CylinderMesh_o7tcy")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["ꞁȷ̀ɜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ"]]
+collision_layer = 3
+collision_mask = 0
 
 [node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="MeshInstance3D" parent="StaticBody3D"]
+layers = 3
 mesh = SubResource("BoxMesh_gepwk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]

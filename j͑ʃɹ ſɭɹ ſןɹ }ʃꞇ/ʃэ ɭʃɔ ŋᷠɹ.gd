@@ -10,7 +10,7 @@ var អារាង : PackedScene = load("res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹ�
 
 func ងឹមាអារាង(កិរេអារាង):
 	អារាង = Kootlai.អារាង
-
+ 
 func _ready():
 	ងឹមាអារាង(អារាង)
 	if អារាង.resource_path != null:

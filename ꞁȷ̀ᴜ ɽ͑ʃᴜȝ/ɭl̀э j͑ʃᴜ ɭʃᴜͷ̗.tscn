@@ -160,7 +160,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 2)
 
 [node name="ц" type="CSGCombiner3D" parent="ſ͔ɭɔƽ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.5, 0)
-use_collision = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ſ͔ɭɔƽ/ц"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
@@ -207,7 +206,6 @@ shape = SubResource("ConvexPolygonShape3D_m20bh")
 
 [node name="ɿ" type="CSGCombiner3D" parent="ſ͔ɭɔƽ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.25, 0)
-use_collision = true
 
 [node name="MeshInstance3D" type="CSGMesh3D" parent="ſ͔ɭɔƽ/ɿ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)

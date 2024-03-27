@@ -22,11 +22,11 @@ func _unhandled_input(event):
 			
 func _physics_process(delta):
 	# ſɭc̗ᴜ ֭ſɭɔⅎ ɭʃᴜƴ
-	if !is_on_floor() and Kiitse.ហ្តេយាង្យុ == false:
+	if !is_on_floor() and Kiitse.ហ្តេយាង្យុ == false and !get_tree().current_scene.scene_file_path == "res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃɔ ı],ᴜƴ.tscn":
 		velocity.y -= ក្នាហេំតារ * delta
 		if Kiitse.ហ្តេយាង្យុ == true:
 			velocity.y = 0
-	
+
 	# ſןw
 	if Input.is_action_just_pressed("ſןw") and (is_on_floor() or Kiitse.ហ្តេយាង្យុ == true):
 		velocity.y = ពឺ
