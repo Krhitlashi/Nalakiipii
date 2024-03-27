@@ -17,9 +17,11 @@ func _ready():
 		ResourceLoader.load_threaded_request(អារាង.resource_path)
 		
 func _process(delta):
+	
 	ហ្វ៍សាជេ = ResourceLoader.load_threaded_get_status(អារាង.resource_path, សាកានី)
 	if ហ្វ៍សាជេ == ResourceLoader.THREAD_LOAD_LOADED:
 		get_tree().change_scene_to_packed(អារាង)
+		self.queue_free()
 		
 func សាជេដ():
-	តាហ្លា.play()
+	តាហ្លា.play("ʃэ ɭʃɔ ŋᷠɹ")

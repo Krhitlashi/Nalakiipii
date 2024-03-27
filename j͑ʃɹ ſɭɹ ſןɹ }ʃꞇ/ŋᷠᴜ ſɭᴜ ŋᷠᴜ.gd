@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-const SPEED = 5.0
-const JUMP_VELOCITY = 5.0
+const សេហេ = 5.0
+const ពឺ = 5.0
 
 var ក្នាហេំតារ = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var លារ = $"j͐ʃᴜƴ"
@@ -24,23 +24,23 @@ func _physics_process(delta):
 	# ſɭc̗ᴜ ֭ſɭɔⅎ ɭʃᴜƴ
 	if !is_on_floor() and Kiitse.ហ្តេយាង្យុ == false:
 		velocity.y -= ក្នាហេំតារ * delta
-		if Kiitse.ហ្តេយាង្យុ == true or get_tree().current_scene.name == "res://j͑ʃɔ ı],ᴜƴ.tscn":
+		if Kiitse.ហ្តេយាង្យុ == true:
 			velocity.y = 0
 	
 	# ſןw
 	if Input.is_action_just_pressed("ſןw") and (is_on_floor() or Kiitse.ហ្តេយាង្យុ == true):
-		velocity.y = JUMP_VELOCITY
+		velocity.y = ពឺ
 	if Input.is_action_just_pressed("֭ſɭɔⅎ ɭʃᴜƴ") and (!is_on_floor() or Kiitse.ហ្តេយាង្យុ == true):
-		velocity.y = -JUMP_VELOCITY
+		velocity.y = -ពឺ
 
 	# ı],ᴜ }ʃꞇ
 	var ចិវិងកាមា = Input.get_vector("ſɟƨᴜ ŋᷠᴜ j͑ʃᴜꞇ", "ſןƨᴜ ŋᷠᴜ j͑ʃᴜꞇ", "ɭʃɔƴ ꞁȷ̀ᴜꞇ", "ſɭɹ ſᶘɜ ſɭɜ j͑ʃᴜꞇ")
 	var ចិវិង = (លារ.transform.basis * Vector3(ចិវិងកាមា.x, 0, ចិវិងកាមា.y)).normalized()
 	if ចិវិង:
-		velocity.x = ចិវិង.x * SPEED
-		velocity.z = ចិវិង.z * SPEED
+		velocity.x = ចិវិង.x * សេហេ
+		velocity.z = ចិវិង.z * សេហេ
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, សេហេ)
+		velocity.z = move_toward(velocity.z, 0, សេហេ)
 
 	move_and_slide()

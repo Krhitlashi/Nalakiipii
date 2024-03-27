@@ -8,5 +8,5 @@ func កិរអារាង(កឺត្លអារាង):
 
 func ក្សីរិ(កឺត្លអារាង):
 	កិរអារាង(កឺត្លអារាង)
-	var ហ្វ៏តេមិ = load("res://ʃэ ɭʃɔ ŋᷠɹ.tscn")
-	get_tree().change_scene_to_packed(ហ្វ៏តេមិ)	
+	var ហ្វ៏តេមិ = load("res://ʃэ ɭʃɔ ŋᷠɹ.tscn").instantiate()
+	get_tree().root.add_child(ហ្វ៏តេមិ)	

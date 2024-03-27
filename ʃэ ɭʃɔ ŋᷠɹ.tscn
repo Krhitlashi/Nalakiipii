@@ -69,7 +69,7 @@ offset_right = 20.0
 offset_bottom = 44.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "
+text = "ŋᷠɹ
 ɭʃɔ
 ʃэ"
 label_settings = SubResource("LabelSettings_vlrl7")
@@ -96,3 +96,4 @@ vertical_alignment = 1
 libraries = {
 "": SubResource("AnimationLibrary_qendt")
 }
+autoplay = "ʃэ ɭʃɔ ŋᷠɹ"
