@@ -64,15 +64,15 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:
 		if event.pressed:
-			if _is_point_inside_joystick_area(event.position) and អារាត្សិនា == -1:
-				if ហាជេកាមា == ត្សហាជេកាមា.អុជា or ហាជេកាមា == ត្សហាជេកាមា.ពានា or (ហាជេកាមា == ត្សហាជេកាមា.កុជា and _is_point_inside_base(event.position)):
+			if អាត្សាចិហិ(event.position) and អារាត្សិនា == -1:
+				if ហាជេកាមា == ត្សហាជេកាមា.អុជា or ហាជេកាមា == ត្សហាជេកាមា.ពានា or (ហាជេកាមា == ត្សហាជេកាមា.កុជា and អាត្សាចិហិសុស្តិ(event.position)):
 					if ហាជេកាមា == ត្សហាជេកាមា.អុជា or ហាជេកាមា == ត្សហាជេកាមា.ពានា:
-						ថាជាសុស្តិ(event.position)
+						ថាជាព៏ក្សិចា(event.position)
 					if អុរអិផានី == ត្សអុរអិផានី.អាត្សាត្សិនា:
 						show()
 					អារាត្សិនា = event.index
 					ចិហិ.modulate = វេហិត្សិនា
-					_update_joystick(event.position)
+					ត្លាកៃអារាង(event.position)
 					get_viewport().set_input_as_handled()
 		elif event.index == អារាត្សិនា:
 			_reset()
@@ -81,16 +81,16 @@ func _input(event: InputEvent) -> void:
 			get_viewport().set_input_as_handled()
 	elif event is InputEventScreenDrag:
 		if event.index == អារាត្សិនា:
-			_update_joystick(event.position)
+			ត្លាកៃអារាង(event.position)
 			get_viewport().set_input_as_handled()
 
-func ថាជាសុស្តិ(new_position: Vector2) -> void:
+func ថាជាព៏ក្សិចា(new_position: Vector2) -> void:
 	ព៏ក្សិចា.global_position = new_position - ព៏ក្សិចា.pivot_offset * get_global_transform_with_canvas().get_scale()
 
-func _move_tip(new_position: Vector2) -> void:
+func ថាជាសុស្តិ(new_position: Vector2) -> void:
 	ចិហិ.global_position = new_position - ចិហិ.pivot_offset * ព៏ក្សិចា.get_global_transform_with_canvas().get_scale()
 
-func _is_point_inside_joystick_area(point: Vector2) -> bool:
+func អាត្សាចិហិ(point: Vector2) -> bool:
 	var x: bool = point.x >= global_position.x and point.x <= global_position.x + (size.x * get_global_transform_with_canvas().get_scale().x)
 	var y: bool = point.y >= global_position.y and point.y <= global_position.y + (size.y * get_global_transform_with_canvas().get_scale().y)
 	return x and y
@@ -98,27 +98,27 @@ func _is_point_inside_joystick_area(point: Vector2) -> bool:
 func កាក្រីក() -> Vector2:
 	return ព៏ក្សិចា.size * ព៏ក្សិចា.get_global_transform_with_canvas().get_scale() / 2
 
-var សុស្តិ : Vector2 = ព៏ក្សិចា.global_position + កាក្រីក()
-
-func _is_point_inside_base(point: Vector2) -> bool:
-	var vector : Vector2 = point - សុស្តិ
-	if vector.length_squared() <= កាក្រីក().x * កាក្រីក().x:
+func អាត្សាចិហិសុស្តិ(point: Vector2) -> bool:
+	var សុស្តិ : Vector2 = ព៏ក្សិចា.global_position + កាក្រីក()
+	var តាហាង : Vector2 = point - សុស្តិ
+	if តាហាង.length_squared() <= កាក្រីក().x * កាក្រីក().x:
 		return true
 	else:
 		return false
 
-func _update_joystick(touch_position: Vector2) -> void:
-	var vector : Vector2 = touch_position - សុស្តិ
-	vector = vector.limit_length(ក្មាភអ៏ហ៏ក)
+func ត្លាកៃអារាង(touch_position: Vector2) -> void:
+	var សុស្តិ : Vector2 = ព៏ក្សិចា.global_position + កាក្រីក()
+	var តាហាង : Vector2 = touch_position - សុស្តិ
+	តាហាង = តាហាង.limit_length(ក្មាភអ៏ហ៏ក)
 	
 	if ហាជេកាមា == ត្សហាជេកាមា.ពានា and touch_position.distance_to(សុស្តិ) > ក្មាភអ៏ហ៏ក:
-		ថាជាសុស្តិ(touch_position - vector)
+		ថាជាព៏ក្សិចា(touch_position - តាហាង)
 	
-	_move_tip(សុស្តិ + vector)
+	ថាជាសុស្តិ(សុស្តិ + តាហាង)
 	
-	if vector.length_squared() > កុតាជា * កុតាជា :
+	if តាហាង.length_squared() > កុតាជា * កុតាជា :
 		ក្យេត្សិនា = true
-		ត្សេំនី = (vector - (vector.normalized() * កុតាជា)) / (ក្មាភអ៏ហ៏ក - កុតាជា)
+		ត្សេំនី = (តាហាង - (តាហាង.normalized() * កុតាជា)) / (ក្មាភអ៏ហ៏ក - កុតាជា)
 	else:
 		ក្យេត្សិនា = false
 		ត្សេំនី = Vector2.ZERO
