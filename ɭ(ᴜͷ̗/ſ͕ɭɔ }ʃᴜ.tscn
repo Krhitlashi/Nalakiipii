@@ -122,6 +122,7 @@ offset_bottom = 40.0
 [node name="ſɟƨᴜ ŋᷠᴜ" parent="Control/UI" instance=ExtResource("2_jbel5")]
 offset_top = -400.0
 offset_right = 400.0
+"អុរអិផានី" = 2
 
 [node name="ſןw" type="Control" parent="Control/UI"]
 custom_minimum_size = Vector2(100, 100)

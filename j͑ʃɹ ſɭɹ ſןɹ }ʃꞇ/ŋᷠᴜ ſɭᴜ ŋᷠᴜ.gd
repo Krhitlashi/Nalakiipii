@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-const ពសេហេ = 5.0
-const ពពឺ = 5.0
+const ពសេហេ = 5.6
+const ពពឺ = 4.8
 
 var ក្នាហេំតារ = ProjectSettings.get_setting("physics/3d/default_gravity")
 @onready var លារ = $"j͐ʃᴜƴ"
@@ -28,7 +28,7 @@ func ជា():
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	elif event.is_action_released("ui_cancel"):
+	elif event.is_action_released("ui_cancel") || get_tree().current_scene.scene_file_path == "res://j͑ʃɔ ı],ꞇ.tscn":
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
