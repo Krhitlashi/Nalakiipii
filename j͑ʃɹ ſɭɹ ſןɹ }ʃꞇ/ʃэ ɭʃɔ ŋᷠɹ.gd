@@ -12,7 +12,6 @@ func ងឹមាអារាង(_កិរេអារាង):
 	អារាង = Kootlai.អារាង
  
 func _ready():
-	Kiitse.ផ៏តេមិ = true
 	ងឹមាអារាង(អារាង)
 	if អារាង.resource_path != null:
 		ResourceLoader.load_threaded_request(អារាង.resource_path)
@@ -20,7 +19,6 @@ func _ready():
 func _process(_delta):
 	ផ៏សាជេ = ResourceLoader.load_threaded_get_status(អារាង.resource_path, សាកានី)
 	if ផ៏សាជេ == ResourceLoader.THREAD_LOAD_LOADED:
-		Kiitse.ផ៏តេមិ = false
 		get_tree().change_scene_to_packed(អារាង)
 		self.queue_free()
 		

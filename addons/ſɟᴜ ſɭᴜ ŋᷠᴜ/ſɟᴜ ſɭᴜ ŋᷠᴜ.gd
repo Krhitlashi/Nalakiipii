@@ -17,7 +17,6 @@ enum ត្សហាជេកាមា {
 	ពានា
 }
 
-## If the joystick stays in the same position or appears on the touched position when touch is started
 @export var ហាជេកាមា := ត្សហាជេកាមា.កុជា
 
 enum ត្សអុរអិផានី {

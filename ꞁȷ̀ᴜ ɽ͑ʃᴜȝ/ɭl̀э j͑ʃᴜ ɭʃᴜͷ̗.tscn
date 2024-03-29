@@ -470,6 +470,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.967
 shape = SubResource("ConvexPolygonShape3D_52kv7")
 
 [node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" type="Node3D" parent="ſ͔ɭɔƽ"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.125)
 
 [node name="ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" parent="ſ͔ɭɔƽ/ſɟᴜ j͑ʃ\'ɔ ɭl̀ᴜȝ ɭl̀ɜ" instance=ExtResource("6_467pr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.75, -3.875, -4)
