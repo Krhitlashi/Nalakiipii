@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-const ពសេហេ = 5.6
+const ពសេហេ = 4.8
 const ពពឺ = 4.8
 
 var ក្នាហេំតារ = ProjectSettings.get_setting("physics/3d/default_gravity")

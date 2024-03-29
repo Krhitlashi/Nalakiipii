@@ -18,6 +18,7 @@ func _ready():
 		
 func _process(_delta):
 	ផ៏សាជេ = ResourceLoader.load_threaded_get_status(អារាង.resource_path, សាកានី)
+	$"ɭʃᴜ ſᶘɜ ſɭɜ/ſɭɹ ſȷɔ".text = str(floor(សាកានី[0]*100))
 	if ផ៏សាជេ == ResourceLoader.THREAD_LOAD_LOADED:
 		get_tree().change_scene_to_packed(អារាង)
 		self.queue_free()
