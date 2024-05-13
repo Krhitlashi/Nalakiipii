@@ -6,7 +6,7 @@ Simulation of the one of my fictional worlds, the Shumekayne. Currently mostly f
 
 There are only a few locations as of now.
 
-- Aisiakrhi / ꞁȷ̀ᴜꞇ j͑ʃꞇᴜ ſɭˬꞇ
+- Aisiakrhi / ꞁȷ̀ᴜꞇ j͑ʃꞇᴜ ſɭˬꞇ - Language info at [krhitlahi.github.io](https://krhitlashi.github.io/%C5%BF%CD%94%C9%AD%E1%B4%9C%20%E1%B6%85%C5%BF%C9%94.html).
   - Buildings / ſןᴜȝ
     - Houses (Kapii (IPA /kapɪ̈/)) / ſɭᴜ ſןɹ - Enterable. Somewhat pyramidal buildings usually colored green and yellow. Mostly used as housing, although can also be used for other purposes too except it would be colored differently.
     - Kacheq (IPA /kaçɛŋ/) / ſɭᴜ ſ͔ɭɔȝ - Enterable. Similar structure to a *kapii*, although uses more wood like colors. Used as a eating place.
@@ -19,6 +19,11 @@ There are only a few locations as of now.
   - Spaceship - Enterable. Iikrhian design.
 
 ## Current Plans / ſɭᴎɔ j͑ʃᴜꞇ ʃэ ſ̀ȷᴜ ſɭᴜꞇ }ʃꞇ
+
+- Create .exe for Windows.
+- Create version for other OSes (**Currently unable to**)
+
+### Aisiakrhi
 
 - Expand Aisiakrhi.
 - Work on and fix Space.
