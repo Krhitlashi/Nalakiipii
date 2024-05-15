@@ -20,7 +20,6 @@ There are only a few locations as of now.
 
 ## Current Plans / ſɭᴎɔ j͑ʃᴜꞇ ʃэ ſ̀ȷᴜ ſɭᴜꞇ }ʃꞇ
 
-- Create .exe for Windows.
 - Create version for other OSes (**Currently unable to**)
 
 ### Aisiakrhi
