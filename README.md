@@ -2,11 +2,13 @@
 
 Simulation of the one of my fictional worlds, the Shumekayne (IPA (Iikrhia) /çɪ̈mɛka.inɛ/). Currently mostly for showing off the designs in 3d. 
 
+Visit the [Shumekayne Webpage](https://krhitlashi.github.io/%C4%B1],%C9%B9%20%C5%8B%E1%B7%A0%C9%94%20%C5%BF%C9%AD%E1%B4%9C%EA%9E%87%20%7D%CA%83%C9%94/shumekayne.html) for images and more information.
+
 ## Current Progress / ſɭᴎɔ j͑ʃᴜꞇ ſ͕ɭwȝ ꞁȷ̀ᴜ }ʃꞇ
 
 There are only a few locations as of now.
 
-- Aisiakrhi / ꞁȷ̀ᴜꞇ j͑ʃꞇᴜ ſɭˬꞇ - Language info at [krhitlahi.github.io](https://krhitlashi.github.io/%C5%BF%CD%94%C9%AD%E1%B4%9C%20%E1%B6%85%C5%BF%C9%94.html).
+- Aisiakrhi / ꞁȷ̀ᴜꞇ j͑ʃꞇᴜ ſɭˬꞇ - Language info at [krhitlashi.github.io](https://krhitlashi.github.io/%C5%BF%CD%94%C9%AD%E1%B4%9C%20%E1%B6%85%C5%BF%C9%94.html).
   - Buildings / ſןᴜȝ
     - Houses (Kapii (IPA /kapɪ̈/)) / ſɭᴜ ſןɹ - Enterable. Somewhat pyramidal buildings usually colored green and yellow. Mostly used as housing, although can also be used for other purposes too except it would be colored differently.
     - Kacheq (IPA /kaç̠ɛŋ/) / ſɭᴜ ſ͔ɭɔȝ - Enterable. Similar structure to a *kapii*, although uses more wood like colors. Used as a eating place.
