@@ -11,7 +11,12 @@ func _process(_delta):
 				if Input.is_action_just_pressed("ſɭɔ˞ꞇ ɽ͑ʃɹ"):
 					Kootlai.ក្សីរិ(អេស្កេក.អារាង)
 		if អេស្កេក.is_in_group("ꞁȷ̀ɜ j͑ʃ'ɔ ɭl̀ᴜȝ ɭl̀ɜ"):
-			Kiitse.ហ្តេយាង្យុ = true	
+			Kiitse.ហ្តេយាង្យុ = true
+		if self.is_in_group("ſᶘɔ j͑ʃɜ ſɭ,ᴜ"):
+			Kiitse.ងៃពឹ = true
 	else:
-		$"ſɭɔ˞ꞇ ɽ͑ʃɹ".hide()
+		if !self.is_in_group("ſᶘɔ j͑ʃɜ ſɭ,ᴜ"):
+			$"ſɭɔ˞ꞇ ɽ͑ʃɹ".hide()
 		Kiitse.ហ្តេយាង្យុ = false
+		if self.is_in_group("ſᶘɔ j͑ʃɜ ſɭ,ᴜ"):
+			Kiitse.ងៃពឹ = false

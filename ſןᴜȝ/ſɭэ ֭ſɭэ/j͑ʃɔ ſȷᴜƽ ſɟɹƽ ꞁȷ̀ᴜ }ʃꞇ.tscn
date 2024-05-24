@@ -20,8 +20,10 @@ points = PackedVector3Array(-1, -0.125, -0.25, -1, 0.125, -0.25, 1, -0.125, -0.2
 [node name="j͑ʃɔ ſȷᴜƽ ſɟɹƽ ꞁȷ̀ᴜ }ʃꞇ" type="Node3D"]
 
 [node name="ſɭэ ֭ſɭэ" type="StaticBody3D" parent="."]
+collision_layer = 5
 
 [node name="ɭʃэ ſ͔ɭэ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
+layers = 5
 mesh = SubResource("BoxMesh_8t8wy")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -29,6 +31,7 @@ shape = SubResource("ConvexPolygonShape3D_6dom4")
 
 [node name="ɭʃэ ֭ſɭc̗ᴜ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.25)
+layers = 5
 mesh = SubResource("BoxMesh_bqxvq")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]

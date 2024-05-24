@@ -9,9 +9,11 @@ var ក្នាហេំតារ = ProjectSettings.get_setting("physics/3d/def
 
 # ſןw
 func ពឺ():
-	if Input.is_action_just_pressed("ſןw") and (is_on_floor() or Kiitse.ហ្តេយាង្យុ == true):
+	if Input.is_action_just_pressed("ſןw") && (is_on_floor() || Kiitse.ហ្តេយាង្យុ == true):
 		velocity.y = ពពឺ
-	if Input.is_action_just_pressed("֭ſɭɔⅎ ɭʃᴜƴ") and (!is_on_floor() or Kiitse.ហ្តេយាង្យុ == true):
+	if Kiitse.ងៃពឹ == true && is_on_floor():
+		velocity.y = 2
+	if Input.is_action_just_pressed("֭ſɭɔⅎ ɭʃᴜƴ") && (!is_on_floor() || Kiitse.ហ្តេយាង្យុ == true):
 		velocity.y = -ពពឺ
 		
 # ı],ᴜ }ʃꞇ
@@ -40,11 +42,10 @@ func _unhandled_input(event):
 			
 func _physics_process(delta):
 	# ſɭc̗ᴜ ֭ſɭɔⅎ ɭʃᴜƴ
-	if !is_on_floor() and Kiitse.ហ្តេយាង្យុ == false and !get_tree().current_scene.scene_file_path == "res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃɔ ı],ᴜƴ.tscn":
+	if !is_on_floor() && Kiitse.ហ្តេយាង្យុ == false && !get_tree().current_scene.scene_file_path == "res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃɔ ı],ᴜƴ.tscn":
 		velocity.y -= ក្នាហេំតារ * delta
 		if Kiitse.ហ្តេយាង្យុ == true:
 			velocity.y = 0
-
 	ពឺ()
 	ជា()
 	move_and_slide()

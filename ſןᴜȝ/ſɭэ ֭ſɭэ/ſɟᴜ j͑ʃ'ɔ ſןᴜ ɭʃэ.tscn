@@ -87,9 +87,11 @@ points = PackedVector3Array(-1, -0.25, -0.5, -1, 0.25, -0.5, 1, -0.25, -0.5, -1,
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
+collision_layer = 5
 
 [node name="ſɭэ ֭ſɭэ" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, 0, 0.875, -0.5)
+layers = 5
 mesh = SubResource("BoxMesh_ag15n")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D/ſɭэ ֭ſɭэ"]
@@ -116,6 +118,7 @@ shape = SubResource("ConvexPolygonShape3D_d4q0x")
 
 [node name="ſɭэ ֭ſɭэ ɿ" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, 0, 0.375, 0.5)
+layers = 5
 mesh = SubResource("BoxMesh_ag15n")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D/ſɭэ ֭ſɭэ ɿ"]
@@ -142,6 +145,7 @@ shape = SubResource("ConvexPolygonShape3D_ady2k")
 
 [node name="ſɭэ ֭ſɭэ ц" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, 0, -0.125, 1.5)
+layers = 5
 mesh = SubResource("BoxMesh_ag15n")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D/ſɭэ ֭ſɭэ ц"]
@@ -168,6 +172,7 @@ shape = SubResource("ConvexPolygonShape3D_naklm")
 
 [node name="ſɭэ ֭ſɭэ э" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, 0, -0.625, 2.5)
+layers = 5
 mesh = SubResource("BoxMesh_ag15n")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D/ſɭэ ֭ſɭэ э"]
@@ -194,6 +199,7 @@ shape = SubResource("ConvexPolygonShape3D_bfrdv")
 
 [node name="ſɭэ ֭ſɭэ ꞟ" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, 0, -1.125, 3.5)
+layers = 5
 mesh = SubResource("BoxMesh_ag15n")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D/ſɭэ ֭ſɭэ ꞟ"]
@@ -220,6 +226,7 @@ shape = SubResource("ConvexPolygonShape3D_snu1h")
 
 [node name="ſɭэ ֭ſɭэ ɩ" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, 0, -1.625, 4.5)
+layers = 5
 mesh = SubResource("BoxMesh_ag15n")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D/ſɭэ ֭ſɭэ ɩ"]
@@ -246,6 +253,7 @@ shape = SubResource("ConvexPolygonShape3D_xvtsj")
 
 [node name="ſɭэ ֭ſɭэ ƨ" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, 0, -2.125, 5.5)
+layers = 5
 mesh = SubResource("BoxMesh_ag15n")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D/ſɭэ ֭ſɭэ ƨ"]
@@ -272,6 +280,7 @@ shape = SubResource("ConvexPolygonShape3D_uelcy")
 
 [node name="ſɭэ ֭ſɭэ ıɔ" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, 0, -2.625, 6.5)
+layers = 5
 mesh = SubResource("BoxMesh_ag15n")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="StaticBody3D/ſɭэ ֭ſɭэ ıɔ"]

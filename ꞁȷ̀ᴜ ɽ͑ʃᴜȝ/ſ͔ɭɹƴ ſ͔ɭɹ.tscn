@@ -354,6 +354,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.48166e-13, 0, -78)
 [node name="j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ ц" type="CSGMesh3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ı"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -56, 0, 68)
 use_collision = true
+collision_layer = 5
 mesh = SubResource("BoxMesh_4ttvo")
 
 [node name="MeshInstance3D2" type="CSGMesh3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ı/j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ ц"]
@@ -370,6 +371,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, -1, 116)
 [node name="ſɭэ ֭ſɭэ" type="CSGMesh3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ı"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, -56, -4, 128.5)
 use_collision = true
+collision_layer = 5
 mesh = SubResource("BoxMesh_4u4y1")
 
 [node name="MeshInstance3D2" type="CSGMesh3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ı/ſɭэ ֭ſɭэ"]
@@ -386,6 +388,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, -5, 135)
 [node name="ſɭэ ֭ſɭэ ɿ" type="CSGMesh3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ı"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, -56, -8, 146.5)
 use_collision = true
+collision_layer = 5
 mesh = SubResource("BoxMesh_yiv1i")
 
 [node name="MeshInstance3D2" type="CSGMesh3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ı/ſɭэ ֭ſɭэ ɿ"]
@@ -402,6 +405,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, -9, 152)
 [node name="ſɭэ ֭ſɭэ ц" type="CSGMesh3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ı"]
 transform = Transform3D(-1, 7.34255e-15, -8.74227e-08, 1.06581e-14, 1, 2.08616e-07, 8.74228e-08, 2.08616e-07, -1, -56, -12, 162)
 use_collision = true
+collision_layer = 5
 mesh = SubResource("BoxMesh_6xb8o")
 
 [node name="MeshInstance3D2" type="CSGMesh3D" parent="ſ͔ɭɔ j͐ʃɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/ı/ſɭэ ֭ſɭэ ц"]

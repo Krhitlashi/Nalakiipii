@@ -39,9 +39,11 @@ points = PackedVector3Array(0.25, 0.125, 8.5, 0.25, -0.125, 8.5, 0.25, 0.125, -8
 [node name="j͑ʃᴜ ֭ſɭᴜƽ ſɭэ ֭ſɭэ" type="Node3D"]
 
 [node name="ſɭэ ֭ſɭэ" type="StaticBody3D" parent="."]
+collision_layer = 5
 
 [node name="ɭʃэ ſ͔ɭэ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.17939e-07, 0, -28)
+layers = 5
 mesh = SubResource("BoxMesh_k3joj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -50,6 +52,7 @@ shape = SubResource("ConvexPolygonShape3D_dujbi")
 
 [node name="ɭʃэ ֭ſɭc̗ᴜ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, -28)
+layers = 5
 mesh = SubResource("BoxMesh_hmhr1")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -58,6 +61,7 @@ shape = SubResource("ConvexPolygonShape3D_6k025")
 
 [node name="ɭʃэ ֭ſɭc̗ᴜ ɿ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, -28)
+layers = 5
 mesh = SubResource("BoxMesh_25pg8")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -66,6 +70,7 @@ shape = SubResource("ConvexPolygonShape3D_26m3j")
 
 [node name="ɭʃэ ֭ſɭc̗ᴜ ц" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, -8)
+layers = 5
 mesh = SubResource("BoxMesh_25pg8")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -74,6 +79,7 @@ shape = SubResource("ConvexPolygonShape3D_v4uux")
 
 [node name="ɭʃэ ֭ſɭc̗ᴜ э" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 12)
+layers = 5
 mesh = SubResource("BoxMesh_25pg8")
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -82,6 +88,7 @@ shape = SubResource("ConvexPolygonShape3D_768ck")
 
 [node name="ɭʃэ ֭ſɭc̗ᴜ ꞟ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, -68)
+layers = 5
 mesh = SubResource("BoxMesh_25pg8")
 
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -90,6 +97,7 @@ shape = SubResource("ConvexPolygonShape3D_bphyk")
 
 [node name="ɭʃэ ֭ſɭc̗ᴜ ɩ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, -48)
+layers = 5
 mesh = SubResource("BoxMesh_25pg8")
 
 [node name="CollisionShape3D7" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]

@@ -37,23 +37,29 @@ points = PackedVector3Array(-0.25, -0.125, -0.25, -0.25, 0.125, -0.25, 0.25, -0.
 [node name="ſȷƽᴜ ʃɔ j͑ʃᴜꞇ ſᶘɹ ɭʃᴜ }ʃꞇ" type="Node3D"]
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+layers = 5
 operation = 1
 use_collision = true
+collision_layer = 5
 mesh = SubResource("BoxMesh_ppgsm")
 
 [node name="CSGMesh3D2" type="CSGMesh3D" parent="CSGMesh3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1)
+layers = 5
 operation = 1
 mesh = SubResource("CylinderMesh_0qkuj")
 
 [node name="CSGMesh3D2" type="CSGMesh3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, 0, -0.25)
+layers = 5
 operation = 1
 use_collision = true
+collision_layer = 5
 mesh = SubResource("BoxMesh_1qqhn")
 
 [node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGMesh3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, 1.25)
+layers = 5
 operation = 1
 mesh = SubResource("CylinderMesh_riii7")
 
@@ -62,9 +68,11 @@ operation = 2
 mesh = SubResource("CylinderMesh_hl0mg")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
+collision_layer = 5
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, -1.25)
+layers = 5
 mesh = SubResource("BoxMesh_do8u0")
 skeleton = NodePath("../..")
 

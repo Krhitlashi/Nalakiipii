@@ -48,9 +48,17 @@ mesh = SubResource("CapsuleMesh_f3x5i")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 shape = SubResource("ConvexPolygonShape3D_6kraa")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
+[node name="ſɭ,ɹ ſ̀ȷw" type="MeshInstance3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 mesh = SubResource("CapsuleMesh_l61f2")
+
+[node name="RayCast3D" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ſɭ,ɹ ſ̀ȷw" groups=["ſ͕ɭɔ }ʃᴜ", "ſᶘɔ j͑ʃɜ ſɭ,ᴜ"]]
+transform = Transform3D(-1, -1.97414e-15, 2.56055e-08, -5.32907e-15, 0.292893, -7.45058e-09, -8.74228e-08, -7.45058e-09, -0.292893, 0, -0.625, -0.25)
+target_position = Vector3(0, 0, 2)
+collision_mask = 4
+hit_from_inside = true
+collide_with_areas = true
+script = ExtResource("2_upj7l")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)

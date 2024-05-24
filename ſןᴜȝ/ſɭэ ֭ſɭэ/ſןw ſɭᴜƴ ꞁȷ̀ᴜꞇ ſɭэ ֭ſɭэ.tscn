@@ -46,6 +46,7 @@ size = Vector3(1, 0.25, 2)
 
 [node name="ɭʃэ ſ͔ɭэ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+layers = 5
 mesh = SubResource("BoxMesh_657kw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -54,6 +55,7 @@ shape = SubResource("ConvexPolygonShape3D_io5n6")
 
 [node name="ɭʃэ ֭ſɭc̗ᴜ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -1.25)
+layers = 5
 mesh = SubResource("BoxMesh_whi5h")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -62,6 +64,7 @@ shape = SubResource("ConvexPolygonShape3D_j1g6w")
 
 [node name="ɭʃэ ֭ſɭc̗ᴜ ɿ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 1.25)
+layers = 5
 mesh = SubResource("BoxMesh_whi5h")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -69,19 +72,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 1.25)
 shape = SubResource("ConvexPolygonShape3D_kg8wh")
 
 [node name="CSGMesh3D2" type="CSGMesh3D" parent="."]
+layers = 5
 mesh = SubResource("CylinderMesh_kup8q")
 
 [node name="MeshInstance3D" type="CSGMesh3D" parent="CSGMesh3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75, 0, 0)
+layers = 5
 operation = 1
 use_collision = true
 mesh = SubResource("BoxMesh_5t01q")
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="CSGMesh3D2"]
+layers = 5
 mesh = SubResource("CylinderMesh_vsbgh")
 
 [node name="MeshInstance3D" type="CSGMesh3D" parent="CSGMesh3D2/CSGMesh3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+layers = 5
 operation = 1
 use_collision = true
 mesh = SubResource("BoxMesh_upu0j")

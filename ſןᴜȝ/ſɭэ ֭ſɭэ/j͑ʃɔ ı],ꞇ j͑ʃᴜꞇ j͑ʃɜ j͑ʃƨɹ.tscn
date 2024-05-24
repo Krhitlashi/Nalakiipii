@@ -26,9 +26,13 @@ height = 0.5
 [node name="j͑ʃɔ ı],ꞇ j͑ʃᴜꞇ j͑ʃɜ j͑ʃƨɹ" type="Node3D"]
 
 [node name="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ" type="CSGMesh3D" parent="."]
+layers = 5
+use_collision = true
+collision_layer = 5
 mesh = SubResource("CylinderMesh_e1pi3")
 
 [node name="MeshInstance3D" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
+layers = 5
 mesh = SubResource("CylinderMesh_scbk6")
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ/MeshInstance3D"]
@@ -53,20 +57,24 @@ mesh = SubResource("CylinderMesh_ysy3k")
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 4.5)
+layers = 5
 operation = 2
 mesh = SubResource("CylinderMesh_ysy3k")
 
 [node name="CSGMesh3D2" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 4.5)
+layers = 5
 operation = 2
 mesh = SubResource("CylinderMesh_ysy3k")
 
 [node name="CSGMesh3D3" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, -4.5)
+layers = 5
 operation = 2
 mesh = SubResource("CylinderMesh_ysy3k")
 
 [node name="CSGMesh3D4" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, -4.5)
+layers = 5
 operation = 2
 mesh = SubResource("CylinderMesh_ysy3k")
