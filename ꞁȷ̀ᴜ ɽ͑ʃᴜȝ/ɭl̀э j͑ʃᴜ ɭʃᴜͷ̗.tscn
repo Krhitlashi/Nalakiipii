@@ -1,10 +1,11 @@
-[gd_scene load_steps=50 format=3 uid="uid://mtmehldeug66"]
+[gd_scene load_steps=51 format=3 uid="uid://mtmehldeug66"]
 
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="2_lxwr3"]
 [ext_resource type="Material" uid="uid://1rf78skb04u4" path="res://֭ſɭᴜ ʃᴜ/ɭl̀э j͑ʃᴜ ɭʃᴜͷ̗ ſɭэƽ ꞁȷ̀ɜƴ.tres" id="3_ax7ab"]
 [ext_resource type="Texture2D" uid="uid://c4l24dngqw4r8" path="res://֭ſɭᴜ ʃᴜ/ſןᴜȝ/Metal032_4K-PNG_Metalness.png" id="3_tgh64"]
 [ext_resource type="Texture2D" uid="uid://blrllwmfolq7k" path="res://֭ſɭᴜ ʃᴜ/ſןᴜȝ/Metal032_4K-PNG_Roughness.png" id="5_4eehe"]
 [ext_resource type="Texture2D" uid="uid://b6vx0o1idsrtg" path="res://֭ſɭᴜ ʃᴜ/ſןᴜȝ/herringbone_parquet_nor_gl_4k.png" id="5_px3ut"]
+[ext_resource type="Material" uid="uid://r5ltwadino00" path="res://֭ſɭᴜ ʃᴜ/ſןᴜȝ.tres" id="6_8yo64"]
 [ext_resource type="PackedScene" uid="uid://d2jkdljh7s7ty" path="res://ſןᴜȝ/ſɭэ ֭ſɭэ/ſɟᴜ j͑ʃ'ɔ ɭl̀ᴜȝ ɭl̀ɜ.tscn" id="6_467pr"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſ̀ȷᴜꞇ.gd" id="7_8dwdt"]
 [ext_resource type="PackedScene" uid="uid://6qa6i8b4g334" path="res://ſןᴜȝ/ſɭɔƽ j͑ʃɔ ſןᴜȝ/ſɭɔⰱ.tscn" id="8_1iix6"]
@@ -90,18 +91,8 @@ points = PackedVector3Array(-0.5, -2, -4, 0.5, -2, -4, -0.5, -2, 4, -0.5, 2, -4,
 material = ExtResource("3_ax7ab")
 size = Vector3(12, 0.25, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qnvnd"]
-albedo_color = Color(0.4, 0.819608, 0.686275, 1)
-metallic = 1.0
-metallic_texture = ExtResource("3_tgh64")
-roughness_texture = ExtResource("5_4eehe")
-normal_enabled = true
-normal_texture = ExtResource("5_px3ut")
-uv1_scale = Vector3(0.25, 0.25, 0.25)
-uv1_triplanar = true
-
 [sub_resource type="BoxMesh" id="BoxMesh_wuqy5"]
-material = SubResource("StandardMaterial3D_qnvnd")
+material = ExtResource("6_8yo64")
 size = Vector3(1, 8, 12)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jabfa"]
@@ -119,6 +110,16 @@ points = PackedVector3Array(-0.5, -4, -6, 0.5, -4, -6, -0.5, -4, 6, -0.5, 4, -6,
 [sub_resource type="BoxMesh" id="BoxMesh_tevst"]
 material = ExtResource("3_ax7ab")
 size = Vector3(16, 0.25, 16)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qnvnd"]
+albedo_color = Color(0.4, 0.819608, 0.686275, 1)
+metallic = 1.0
+metallic_texture = ExtResource("3_tgh64")
+roughness_texture = ExtResource("5_4eehe")
+normal_enabled = true
+normal_texture = ExtResource("5_px3ut")
+uv1_scale = Vector3(0.25, 0.25, 0.25)
+uv1_triplanar = true
 
 [sub_resource type="BoxMesh" id="BoxMesh_jbcdr"]
 material = SubResource("StandardMaterial3D_qnvnd")
