@@ -1,17 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://c88mwaj53pmnl"]
+[gd_scene load_steps=6 format=3 uid="uid://c88mwaj53pmnl"]
 
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="1_oa3xm"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͑ʃɔ ı],ꞇ.gd" id="2_cwpsn"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_fts1a"]
-line_spacing = -6.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vhyn4"]
-size = Vector2(32, 32)
-
 [sub_resource type="LabelSettings" id="LabelSettings_yjc5w"]
 line_spacing = 2.0
 font = ExtResource("1_oa3xm")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vhyn4"]
+size = Vector2(32, 32)
 
 [sub_resource type="LabelSettings" id="LabelSettings_5ehte"]
 line_spacing = 2.0
@@ -50,15 +47,15 @@ grow_vertical = 2
 rotation = 0.785398
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ"]
-layout_mode = 0
-offset_right = 32.0
-offset_bottom = 72.0
+offset_right = 33.0
+offset_bottom = 123.0
 text = "
 
-類
-空
-遠"
-label_settings = SubResource("LabelSettings_fts1a")
+őɽ̉ʃᴜ
+ɭʃᴜ 
+őɭl̀ɜ̥
+ő}ʃᴜ"
+label_settings = SubResource("LabelSettings_yjc5w")
 horizontal_alignment = 1
 vertical_alignment = 1
 
