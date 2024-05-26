@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dp2x2xeoclsre"]
+[gd_scene load_steps=8 format=3 uid="uid://dp2x2xeoclsre"]
 
 [ext_resource type="Terrain3DStorage" uid="uid://cpycume1fdq3d" path="res://ꞁȷ̀ɜ ŋᷠɜ.res" id="1_yw5wp"]
+[ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="2_nrtwv"]
 
 [sub_resource type="Gradient" id="Gradient_ubje3"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -47,3 +48,6 @@ show_checkered = true
 storage = ExtResource("1_yw5wp")
 material = SubResource("Terrain3DMaterial_t88td")
 texture_list = SubResource("Terrain3DTextureList_kmumf")
+
+[node name="ſ͕ɭɔ }ʃᴜ" parent="." instance=ExtResource("2_nrtwv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
