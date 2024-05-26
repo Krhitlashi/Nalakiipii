@@ -1,8 +1,8 @@
 [gd_scene load_steps=15 format=3 uid="uid://dp2x2xeoclsre"]
 
 [ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_qp603"]
-[ext_resource type="Terrain3DStorage" uid="uid://dlp6mb80sneji" path="res://ꞁȷ̀ɜƴ ꞁȷ̀ɜ ŋᷠɜ.res" id="1_tpm7c"]
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="2_nrtwv"]
+[ext_resource type="Terrain3DStorage" uid="uid://dlp6mb80sneji" path="res://ꞁȷ̀ɜƴ/ꞁȷ̀ɜƴ ꞁȷ̀ɜ ŋᷠɜ.res" id="2_oyobr"]
 [ext_resource type="Texture2D" uid="uid://dvmtxexfhe8gh" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_Color.png" id="2_qura3"]
 [ext_resource type="Texture2D" uid="uid://byypd80qjr7un" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_NormalGL.png" id="3_msa5g"]
 [ext_resource type="Texture2D" uid="uid://cq4l148jf3mvx" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_Color.png" id="4_egsnc"]
@@ -67,7 +67,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -119, 0)
 [node name="ſɟᴜ }ʃᴜ" parent="." instance=ExtResource("1_qp603")]
 
 [node name="ꞁȷ̀ɜƴ" type="Terrain3D" parent="."]
-storage = ExtResource("1_tpm7c")
+storage = ExtResource("2_oyobr")
 material = SubResource("Terrain3DMaterial_t88td")
 texture_list = SubResource("Terrain3DTextureList_kmumf")
 

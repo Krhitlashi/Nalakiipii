@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://c0ciekpyan7aj"]
 
 [ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_ofear"]
-[ext_resource type="Terrain3DStorage" uid="uid://mosxkv2hx5rl" path="res://ꞁȷ̀ɜƴ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƨ.res" id="2_8ct3o"]
+[ext_resource type="Terrain3DStorage" uid="uid://mosxkv2hx5rl" path="res://ꞁȷ̀ɜƴ/ꞁȷ̀ɜƴ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƨ.res" id="2_ivcvy"]
 [ext_resource type="Texture2D" uid="uid://cq4l148jf3mvx" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_Color.png" id="3_fnmya"]
 [ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="4_tnxks"]
 [ext_resource type="Texture2D" uid="uid://dvmtxexfhe8gh" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_Color.png" id="5_u87fl"]
@@ -62,7 +62,7 @@ textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_rkou3"), SubRe
 [node name="ſɟᴜ }ʃᴜ" parent="." instance=ExtResource("1_ofear")]
 
 [node name="ꞁȷ̀ɜƴ" type="Terrain3D" parent="."]
-storage = ExtResource("2_8ct3o")
+storage = ExtResource("2_ivcvy")
 material = SubResource("Terrain3DMaterial_r73t7")
 texture_list = SubResource("Terrain3DTextureList_u5qpq")
 
