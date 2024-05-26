@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dp2x2xeoclsre"]
+[gd_scene load_steps=16 format=3 uid="uid://dp2x2xeoclsre"]
 
 [ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_qp603"]
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="2_nrtwv"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://byypd80qjr7un" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_NormalGL.png" id="3_msa5g"]
 [ext_resource type="Texture2D" uid="uid://cq4l148jf3mvx" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_Color.png" id="4_egsnc"]
 [ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="5_msqli"]
+[ext_resource type="PackedScene" uid="uid://dwntpur850x6h" path="res://ſɭˬᴜȝ/ſɭˬᴜ j͑ʃɔ ı],ᴜƴ.tscn" id="8_rjfhu"]
 
 [sub_resource type="Gradient" id="Gradient_ubje3"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -73,3 +74,6 @@ texture_list = SubResource("Terrain3DTextureList_kmumf")
 
 [node name="ſ͕ɭɔ }ʃᴜ" parent="." instance=ExtResource("2_nrtwv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="ſɭˬᴜ j͑ʃɔ ı],ᴜƴ" parent="." instance=ExtResource("8_rjfhu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 15.575, 0)
