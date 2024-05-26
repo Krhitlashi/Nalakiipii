@@ -1,7 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://dp2x2xeoclsre"]
+[gd_scene load_steps=15 format=3 uid="uid://dp2x2xeoclsre"]
 
-[ext_resource type="Terrain3DStorage" uid="uid://cpycume1fdq3d" path="res://ꞁȷ̀ɜ ŋᷠɜ.res" id="1_yw5wp"]
+[ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_qp603"]
+[ext_resource type="Terrain3DStorage" uid="uid://dlp6mb80sneji" path="res://ꞁȷ̀ɜƴ ꞁȷ̀ɜ ŋᷠɜ.res" id="1_tpm7c"]
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="2_nrtwv"]
+[ext_resource type="Texture2D" uid="uid://dvmtxexfhe8gh" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_Color.png" id="2_qura3"]
+[ext_resource type="Texture2D" uid="uid://byypd80qjr7un" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_NormalGL.png" id="3_msa5g"]
+[ext_resource type="Texture2D" uid="uid://cq4l148jf3mvx" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_Color.png" id="4_egsnc"]
+[ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="5_msqli"]
 
 [sub_resource type="Gradient" id="Gradient_ubje3"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -27,6 +32,10 @@ noise = SubResource("FastNoiseLite_e12im")
 [sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_t88td"]
 _shader_parameters = {
 "_mouse_layer": 2147483648,
+"auto_base_texture": null,
+"auto_height_reduction": null,
+"auto_overlay_texture": null,
+"auto_slope": null,
 "blend_sharpness": null,
 "height_blending": null,
 "macro_variation1": null,
@@ -38,14 +47,27 @@ _shader_parameters = {
 "noise3_scale": null,
 "noise_texture": SubResource("NoiseTexture2D_maiqu")
 }
-show_checkered = true
+auto_shader = true
+
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_bsg2w"]
+albedo_texture = ExtResource("2_qura3")
+normal_texture = ExtResource("3_msa5g")
+
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_3ikt4"]
+texture_id = 1
+albedo_texture = ExtResource("4_egsnc")
+normal_texture = ExtResource("5_msqli")
 
 [sub_resource type="Terrain3DTextureList" id="Terrain3DTextureList_kmumf"]
+textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_bsg2w"), SubResource("Terrain3DTexture_3ikt4")])
 
 [node name="ꞁȷ̀ɜ ŋᷠɜ" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -119, 0)
+
+[node name="ſɟᴜ }ʃᴜ" parent="." instance=ExtResource("1_qp603")]
 
 [node name="ꞁȷ̀ɜƴ" type="Terrain3D" parent="."]
-storage = ExtResource("1_yw5wp")
+storage = ExtResource("1_tpm7c")
 material = SubResource("Terrain3DMaterial_t88td")
 texture_list = SubResource("Terrain3DTextureList_kmumf")
 
