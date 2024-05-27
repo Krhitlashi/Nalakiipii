@@ -129,6 +129,34 @@ shape_visible = false
 action = "ſɭɔ˞ꞇ ɽ͑ʃɹ"
 visibility_mode = 1
 
+[node name="ſɟᴜ̩ɹ" type="TextureRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
+show_behind_parent = true
+clip_children = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -160.0
+offset_right = 120.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_mc6ha")
+expand_mode = 4
+
+[node name="ſɟᴜ̩ɹ" type="ColorRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ/ſɟᴜ̩ɹ"]
+material = SubResource("ShaderMaterial_1iccw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
 [node name="ſɭᴜ ŋᷠᴜ" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
