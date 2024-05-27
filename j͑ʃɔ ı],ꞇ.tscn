@@ -134,10 +134,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 336.0
-offset_top = 384.0
-offset_right = 360.0
-offset_bottom = 408.0
+offset_left = 340.0
+offset_top = 392.0
+offset_right = 364.0
+offset_bottom = 416.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
@@ -186,7 +186,7 @@ icon_alignment = 1
 script = ExtResource("2_cwpsn")
 
 [node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ"]
-position = Vector2(16, 16)
+position = Vector2(12, 12)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
