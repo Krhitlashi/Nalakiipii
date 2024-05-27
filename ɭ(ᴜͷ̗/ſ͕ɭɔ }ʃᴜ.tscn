@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://ctsr30lx7d80f"]
+[gd_scene load_steps=18 format=3 uid="uid://ctsr30lx7d80f"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/ſɟᴜ ſɭᴜ ŋᷠᴜ/ſɟᴜ ſɭᴜ ŋᷠᴜ.tscn" id="2_jbel5"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/}ʃᴜ ŋᷠᴜ ꞁȷ̀ɜ ſᶘɹ }ʃᴜ.gd" id="5_ny4rk"]
 [ext_resource type="Texture2D" uid="uid://cd5j66cj27tkg" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ.png" id="6_mc6ha"]
 [ext_resource type="Texture2D" uid="uid://x64o7p570071" path="res://}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ.png" id="7_mjs81"]
+[ext_resource type="Shader" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ̩ɹ.gdshader" id="7_wg7dk"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ʃᴜ j͐ʃɹ ı],ᴜ.gd" id="8_nx0ht"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f3x5i"]
@@ -30,10 +31,17 @@ font_size = 64
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3v8dj"]
 size = Vector2(200, 200)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1iccw"]
+shader = ExtResource("7_wg7dk")
+shader_parameter/blur_type = 0
+shader_parameter/blur_amount = 32
+shader_parameter/blur_radius = 1.0
+shader_parameter/blur_direction = Vector2(1, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_i2p8m"]
 line_spacing = 0.0
 font = ExtResource("3_5tvy8")
-font_size = 320
+font_size = 280
 font_color = Color(0, 0, 0, 1)
 
 [node name="ſ͕ɭɔ }ʃᴜ" type="Node3D"]
@@ -135,6 +143,33 @@ offset_top = -400.0
 offset_right = 400.0
 "អុរអិផានី" = 2
 
+[node name="ſɟᴜ̩ɹ" type="TextureRect" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ſɟƨᴜ ŋᷠᴜ"]
+show_behind_parent = true
+clip_children = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = 100.0
+offset_right = -100.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_mc6ha")
+expand_mode = 2
+flip_h = true
+
+[node name="ſɟᴜ̩ɹ" type="ColorRect" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ſɟƨᴜ ŋᷠᴜ/ſɟᴜ̩ɹ"]
+material = SubResource("ShaderMaterial_1iccw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
 [node name="ſןw" type="Control" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 3
@@ -176,6 +211,32 @@ label_settings = SubResource("LabelSettings_i2p8m")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="ſɟᴜ̩ɹ" type="TextureRect" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ſןw"]
+show_behind_parent = true
+clip_children = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_mc6ha")
+expand_mode = 2
+
+[node name="ſɟᴜ̩ɹ" type="ColorRect" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ſןw/ſɟᴜ̩ɹ"]
+material = SubResource("ShaderMaterial_1iccw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
 [node name="֭ſɭɔⅎ ɭʃᴜƴ" type="Control" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 3
@@ -216,6 +277,32 @@ text = "֭ſɭɔⅎ"
 label_settings = SubResource("LabelSettings_i2p8m")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ſɟᴜ̩ɹ" type="TextureRect" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/֭ſɭɔⅎ ɭʃᴜƴ"]
+show_behind_parent = true
+clip_children = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_mc6ha")
+expand_mode = 2
+
+[node name="ſɟᴜ̩ɹ" type="ColorRect" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/֭ſɭɔⅎ ɭʃᴜƴ/ſɟᴜ̩ɹ"]
+material = SubResource("ShaderMaterial_1iccw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
 
 [node name="j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" type="Control" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
 modulate = Color(1, 1, 1, 0)
