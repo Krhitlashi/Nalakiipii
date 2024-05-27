@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://c88mwaj53pmnl"]
 
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ı],ᴜ j͑ʃɔ ı],ᴜƴ.gd" id="1_els6t"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="1_oa3xm"]
-[ext_resource type="Script" path="res://ı],ᴜ j͑ʃɔ ı],ᴜƴ.gd" id="1_six15"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͑ʃɔ ı],ꞇ.gd" id="2_cwpsn"]
 [ext_resource type="PackedScene" uid="uid://dp2x2xeoclsre" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ɜ ŋᷠɜ.tscn" id="3_q0x1b"]
 [ext_resource type="PackedScene" uid="uid://c0ciekpyan7aj" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ.tscn" id="4_naldk"]
@@ -37,7 +37,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="ꞁȷ̀ᴜ ɽ͑ʃᴜȝ" type="Control" parent="j͑ʃɔ ı],ᴜƴ"]
 anchors_preset = 0
-script = ExtResource("1_six15")
+script = ExtResource("1_els6t")
 
 [node name="ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
 layout_mode = 1
@@ -364,7 +364,7 @@ position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
-[node name="ſɭw ſᶘɜ" type="TextureRect" parent="."]
+[node name="ſɭw ſᶘɜ" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -376,8 +376,9 @@ offset_bottom = 64.0
 grow_horizontal = 0
 tooltip_text = "ſᶘɜ
 ſɭw"
-texture = ExtResource("5_sm8op")
-expand_mode = 4
+texture_normal = ExtResource("5_sm8op")
+ignore_texture_size = true
+stretch_mode = 5
 
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]

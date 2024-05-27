@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ctsr30lx7d80f"]
+[gd_scene load_steps=16 format=3 uid="uid://ctsr30lx7d80f"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/ſɟᴜ ſɭᴜ ŋᷠᴜ/ſɟᴜ ſɭᴜ ŋᷠᴜ.tscn" id="2_jbel5"]
@@ -6,6 +6,8 @@
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="3_5tvy8"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/}ʃᴜ ŋᷠᴜ ꞁȷ̀ɜ ſᶘɹ }ʃᴜ.gd" id="5_ny4rk"]
 [ext_resource type="Texture2D" uid="uid://cd5j66cj27tkg" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ.png" id="6_mc6ha"]
+[ext_resource type="Texture2D" uid="uid://x64o7p570071" path="res://}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ.png" id="7_mjs81"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ʃᴜ j͐ʃɹ ı],ᴜ.gd" id="8_nx0ht"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f3x5i"]
 radius = 0.3
@@ -255,4 +257,18 @@ label_settings = SubResource("LabelSettings_i2p8m")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ'ᴜ ſɭɜ ʃɜꞇ/j͑ʃ'ᴜ ſɭɜ ʃɜꞇ" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ'ᴜ ſɭɜ ʃɜꞇ" method="កុផុយ"]
+[node name="ʃᴜ j͐ʃɹ ı],ᴜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ"]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 64.0
+offset_bottom = 64.0
+tooltip_text = "ı],ᴜ
+j͐ʃɹ
+ʃᴜ"
+texture_normal = ExtResource("7_mjs81")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("8_nx0ht")
+
+[connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" method="កុផុយ"]
+[connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" to="ſɭᴜ ŋᷠᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" method="ក្សីរិ"]
