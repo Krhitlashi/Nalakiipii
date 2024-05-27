@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkr6525e5mym5"]
+
+[ext_resource type="PackedScene" uid="uid://bopls6sxcphl1" path="res://ſןᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ/ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ.tscn" id="1_bdqhu"]
+
+[node name="j͑ʃᴜ ֭ſɭᴜƽ ſןᴜȝ" type="Node3D"]
+
+[node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" parent="." instance=ExtResource("1_bdqhu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)
+
+[node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ɿ" parent="." instance=ExtResource("1_bdqhu")]
+
+[node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ц" parent="." instance=ExtResource("1_bdqhu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
