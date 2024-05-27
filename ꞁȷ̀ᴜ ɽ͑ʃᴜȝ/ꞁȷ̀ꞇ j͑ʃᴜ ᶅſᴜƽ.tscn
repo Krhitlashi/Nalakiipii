@@ -46,6 +46,7 @@ _shader_parameters = {
 "noise3_scale": null,
 "noise_texture": SubResource("NoiseTexture2D_tc2j0")
 }
+world_background = 0
 
 [sub_resource type="Terrain3DTexture" id="Terrain3DTexture_rkou3"]
 name = "ſȷɔ ſᶘᴜʞ"

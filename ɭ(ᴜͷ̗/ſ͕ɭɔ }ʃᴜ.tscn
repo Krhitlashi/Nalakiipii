@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://ctsr30lx7d80f"]
+[gd_scene load_steps=19 format=3 uid="uid://ctsr30lx7d80f"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/ſɟᴜ ſɭᴜ ŋᷠᴜ/ſɟᴜ ſɭᴜ ŋᷠᴜ.tscn" id="2_jbel5"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://x64o7p570071" path="res://}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ.png" id="7_mjs81"]
 [ext_resource type="Shader" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ̩ɹ.gdshader" id="7_wg7dk"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ʃᴜ j͐ʃɹ ı],ᴜ.gd" id="8_nx0ht"]
+[ext_resource type="Texture2D" uid="uid://cva22jl87jvel" path="res://ſɭw ſᶘɜ.png" id="10_6qujg"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f3x5i"]
 radius = 0.3
@@ -163,15 +164,13 @@ color = Color(1, 1, 1, 0)
 [node name="ſɭᴜ ŋᷠᴜ" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
 
 [node name="ſᶘɹ }ʃᴜ" type="CanvasLayer" parent="ſɭᴜ ŋᷠᴜ"]
 layer = -1
 
 [node name="ſɟƨᴜ ŋᷠᴜ" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ" instance=ExtResource("2_jbel5")]
-offset_top = -400.0
-offset_right = 400.0
+offset_top = -320.0
+offset_right = 320.0
 "អុរអិផានី" = 2
 
 [node name="ſɟᴜ̩ɹ" type="TextureRect" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ſɟƨᴜ ŋᷠᴜ"]
@@ -181,10 +180,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 100.0
-offset_top = 100.0
-offset_right = -100.0
-offset_bottom = -100.0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = -64.0
+offset_bottom = -64.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_mc6ha")
@@ -209,10 +208,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -196.0
-offset_top = -200.0
-offset_right = -96.0
-offset_bottom = -100.0
+offset_left = -164.0
+offset_top = -164.0
+offset_right = -64.0
+offset_bottom = -64.0
 grow_horizontal = 0
 grow_vertical = 0
 script = ExtResource("5_ny4rk")
@@ -276,10 +275,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -196.0
-offset_top = -320.0
-offset_right = -96.0
-offset_bottom = -220.0
+offset_left = -164.0
+offset_top = -292.0
+offset_right = -64.0
+offset_bottom = -192.0
 grow_horizontal = 0
 grow_vertical = 0
 script = ExtResource("5_ny4rk")
@@ -388,6 +387,22 @@ texture_normal = ExtResource("7_mjs81")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_nx0ht")
+
+[node name="ſɭw ſᶘɜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1088.0
+offset_top = 24.0
+offset_right = 1128.0
+offset_bottom = 64.0
+grow_horizontal = 0
+tooltip_text = "ſᶘɜ
+ſɭw"
+texture_normal = ExtResource("10_6qujg")
+ignore_texture_size = true
+stretch_mode = 5
 
 [connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" method="កុផុយ"]
 [connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" to="ſɭᴜ ŋᷠᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" method="ក្សីរិ"]

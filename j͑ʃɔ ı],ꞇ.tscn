@@ -1,11 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://c88mwaj53pmnl"]
+[gd_scene load_steps=12 format=3 uid="uid://c88mwaj53pmnl"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ı],ᴜ j͑ʃɔ ı],ᴜƴ.gd" id="1_els6t"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="1_oa3xm"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͑ʃɔ ı],ꞇ.gd" id="2_cwpsn"]
 [ext_resource type="PackedScene" uid="uid://dp2x2xeoclsre" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ɜ ŋᷠɜ.tscn" id="3_q0x1b"]
 [ext_resource type="PackedScene" uid="uid://c0ciekpyan7aj" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ.tscn" id="4_naldk"]
+[ext_resource type="Texture2D" uid="uid://dv2a718p06l7j" path="res://j͐ʃɔ ı],ꞇ.tres" id="4_wh3ub"]
 [ext_resource type="Texture2D" uid="uid://cva22jl87jvel" path="res://ſɭw ſᶘɜ.png" id="5_sm8op"]
+[ext_resource type="Texture2D" uid="uid://bwh4ijdcgi83w" path="res://j͐ʃɔ ı],ꞇ j͑ʃɹ ŋᷠɹ.tres" id="5_ykbh4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yjc5w"]
 line_spacing = 2.0
@@ -99,7 +101,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.952941, 0.737255, 0.807843, 1)
 
-[node name="ſ͔ɭɹƴ ſ͔ɭɹ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+[node name="ſ͔ɭɹƴ ſ͔ɭɹ" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -113,6 +115,9 @@ offset_bottom = 412.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
+texture_normal = ExtResource("4_wh3ub")
+texture_pressed = ExtResource("5_ykbh4")
+texture_hover = ExtResource("5_ykbh4")
 
 [node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ"]
 layout_mode = 1
@@ -217,7 +222,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.952941, 0.737255, 0.807843, 1)
 
-[node name="őɭʃꞇc̗" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+[node name="őɭʃꞇc̗" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -231,6 +236,9 @@ offset_bottom = 372.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
+texture_normal = ExtResource("4_wh3ub")
+texture_pressed = ExtResource("5_ykbh4")
+texture_hover = ExtResource("5_ykbh4")
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗"]
 layout_mode = 0
@@ -319,7 +327,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.952941, 0.737255, 0.807843, 1)
 
-[node name="ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+[node name="ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -333,6 +341,9 @@ offset_bottom = 132.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
+texture_normal = ExtResource("4_wh3ub")
+texture_pressed = ExtResource("5_ykbh4")
+texture_hover = ExtResource("5_ykbh4")
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ"]
 layout_mode = 0
