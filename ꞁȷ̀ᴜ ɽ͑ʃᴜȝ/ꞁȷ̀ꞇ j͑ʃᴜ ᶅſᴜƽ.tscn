@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c0ciekpyan7aj"]
+[gd_scene load_steps=19 format=3 uid="uid://c0ciekpyan7aj"]
 
 [ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_ofear"]
 [ext_resource type="Terrain3DStorage" uid="uid://mosxkv2hx5rl" path="res://ꞁȷ̀ɜƴ/ꞁȷ̀ɜƴ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƨ.res" id="2_ivcvy"]
@@ -7,7 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dvmtxexfhe8gh" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_Color.png" id="5_u87fl"]
 [ext_resource type="Texture2D" uid="uid://byypd80qjr7un" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_NormalGL.png" id="6_jf0na"]
 [ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="7_syeqf"]
+[ext_resource type="Texture2D" uid="uid://ckeemskcpttmg" path="res://֭ſɭᴜ ʃᴜ/seaworn_sandstone_brick_diff_2k.jpg" id="7_vstgy"]
 [ext_resource type="PackedScene" uid="uid://bopls6sxcphl1" path="res://ſןᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ/ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ.tscn" id="8_jliiw"]
+[ext_resource type="Texture2D" uid="uid://bt406vm2gpyqj" path="res://֭ſɭᴜ ʃᴜ/seaworn_sandstone_brick_nor_gl_2k.jpg" id="8_riama"]
 
 [sub_resource type="Gradient" id="Gradient_2rxlw"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -46,16 +48,25 @@ _shader_parameters = {
 }
 
 [sub_resource type="Terrain3DTexture" id="Terrain3DTexture_rkou3"]
+name = "ſȷɔ ſᶘᴜʞ"
 albedo_texture = ExtResource("3_fnmya")
 normal_texture = ExtResource("4_tnxks")
 
 [sub_resource type="Terrain3DTexture" id="Terrain3DTexture_tgofi"]
+name = "ɭʃэ ſɭɔȝ"
 texture_id = 1
 albedo_texture = ExtResource("5_u87fl")
 normal_texture = ExtResource("6_jf0na")
 
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_h5m56"]
+name = "ſȷᴜɔ˞ ꞁȷ̀ᴜꞇ"
+texture_id = 2
+albedo_texture = ExtResource("7_vstgy")
+normal_texture = ExtResource("8_riama")
+uv_scale = 1.0
+
 [sub_resource type="Terrain3DTextureList" id="Terrain3DTextureList_u5qpq"]
-textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_rkou3"), SubResource("Terrain3DTexture_tgofi")])
+textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_rkou3"), SubResource("Terrain3DTexture_tgofi"), SubResource("Terrain3DTexture_h5m56")])
 
 [node name="ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" type="Node3D"]
 
@@ -65,6 +76,7 @@ textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_rkou3"), SubRe
 storage = ExtResource("2_ivcvy")
 material = SubResource("Terrain3DMaterial_r73t7")
 texture_list = SubResource("Terrain3DTextureList_u5qpq")
+mesh_lods = 4
 
 [node name="ſ͕ɭɔ }ʃᴜ" parent="." instance=ExtResource("7_syeqf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
@@ -72,22 +84,44 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
 [node name="ı" type="Node3D" parent="."]
 
 [node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" parent="ı" instance=ExtResource("8_jliiw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 13, -11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 12, -11)
 
 [node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ɿ" parent="ı" instance=ExtResource("8_jliiw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13, -11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, -11)
 
 [node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ц" parent="ı" instance=ExtResource("8_jliiw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 13, -11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 12, -11)
+
+[node name="j͑ʃᴜ ֭ſɭᴜƽ ᶅſᴜȝ" type="Node3D" parent="ı"]
+
+[node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" parent="ı/j͑ʃᴜ ֭ſɭᴜƽ ᶅſᴜȝ" instance=ExtResource("8_jliiw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 12, -11)
+
+[node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ɿ" parent="ı/j͑ʃᴜ ֭ſɭᴜƽ ᶅſᴜȝ" instance=ExtResource("8_jliiw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 12, -11)
+
+[node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ц" parent="ı/j͑ʃᴜ ֭ſɭᴜƽ ᶅſᴜȝ" instance=ExtResource("8_jliiw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 12, -11)
 
 [node name="ɿ" type="Node3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 
 [node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" parent="ɿ" instance=ExtResource("8_jliiw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 13, -11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 12, -11)
 
 [node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ɿ" parent="ɿ" instance=ExtResource("8_jliiw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13, -11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, -11)
 
 [node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ц" parent="ɿ" instance=ExtResource("8_jliiw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 13, -11)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 12, -11)
+
+[node name="j͑ʃᴜ ֭ſɭᴜƽ ᶅſᴜȝ" type="Node3D" parent="ɿ"]
+
+[node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" parent="ɿ/j͑ʃᴜ ֭ſɭᴜƽ ᶅſᴜȝ" instance=ExtResource("8_jliiw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 12, -11)
+
+[node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ɿ" parent="ɿ/j͑ʃᴜ ֭ſɭᴜƽ ᶅſᴜȝ" instance=ExtResource("8_jliiw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 12, -11)
+
+[node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ ц" parent="ɿ/j͑ʃᴜ ֭ſɭᴜƽ ᶅſᴜȝ" instance=ExtResource("8_jliiw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 12, -11)

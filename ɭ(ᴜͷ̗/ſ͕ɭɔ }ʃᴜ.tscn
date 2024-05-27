@@ -26,7 +26,7 @@ points = PackedVector3Array(0.285973, 0.510012, 0.0641187, -0.289751, -0.508273,
 
 [sub_resource type="LabelSettings" id="LabelSettings_8qiqt"]
 font = ExtResource("3_5tvy8")
-font_size = 64
+font_size = 40
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3v8dj"]
 size = Vector2(200, 200)
@@ -121,6 +121,8 @@ grow_vertical = 2
 text = "ɽ͑ʃ'ɹ
 ſɭɔ˞ꞇ"
 label_settings = SubResource("LabelSettings_8qiqt")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ſɭɔ˞ꞇ ɽ͑ʃɹ" type="TouchScreenButton" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
 position = Vector2(100, 100)
@@ -138,14 +140,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -120.0
-offset_top = -160.0
-offset_right = 120.0
-offset_bottom = 160.0
+offset_left = -80.0
+offset_top = -100.0
+offset_right = 80.0
+offset_bottom = 100.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("6_mc6ha")
 expand_mode = 4
+flip_v = true
 
 [node name="ſɟᴜ̩ɹ" type="ColorRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ/ſɟᴜ̩ɹ"]
 material = SubResource("ShaderMaterial_1iccw")
@@ -373,6 +376,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ʃᴜ j͐ʃɹ ı],ᴜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ"]
+layout_mode = 0
 offset_left = 24.0
 offset_top = 24.0
 offset_right = 64.0
