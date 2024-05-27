@@ -71,6 +71,30 @@ hit_from_inside = true
 collide_with_areas = true
 script = ExtResource("2_upj7l")
 
+[node name="RayCast3D2" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ſɭ,ɹ ſ̀ȷw" groups=["ſ͕ɭɔ }ʃᴜ", "ſᶘɔ j͑ʃɜ ſɭ,ᴜ"]]
+transform = Transform3D(1.31134e-07, 7.45058e-09, 0.292893, -5.32907e-15, 0.292893, -7.45058e-09, -1, -1.64846e-15, 3.84083e-08, 0.25, -0.625, 0)
+target_position = Vector3(0, 0, 2)
+collision_mask = 4
+hit_from_inside = true
+collide_with_areas = true
+script = ExtResource("2_upj7l")
+
+[node name="RayCast3D3" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ſɭ,ɹ ſ̀ȷw" groups=["ſ͕ɭɔ }ʃᴜ", "ſᶘɔ j͑ʃɜ ſɭ,ᴜ"]]
+transform = Transform3D(1, 2.62549e-15, 1.77636e-14, -5.32907e-15, 0.292893, -7.45058e-09, 1.42109e-14, 7.45058e-09, 0.292893, 0, -0.625, 0.25)
+target_position = Vector3(0, 0, 2)
+collision_mask = 4
+hit_from_inside = true
+collide_with_areas = true
+script = ExtResource("2_upj7l")
+
+[node name="RayCast3D4" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ſɭ,ɹ ſ̀ȷw" groups=["ſ͕ɭɔ }ʃᴜ", "ſᶘɔ j͑ʃɜ ſɭ,ᴜ"]]
+transform = Transform3D(-4.37114e-08, -7.45058e-09, -0.292893, -5.32907e-15, 0.292893, -7.45058e-09, 1, 2.29982e-15, -1.28027e-08, -0.25, -0.625, 0)
+target_position = Vector3(0, 0, 2)
+collision_mask = 4
+hit_from_inside = true
+collide_with_areas = true
+script = ExtResource("2_upj7l")
+
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 shape = SubResource("ConvexPolygonShape3D_qxx1w")
@@ -374,12 +398,11 @@ label_settings = SubResource("LabelSettings_i2p8m")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ʃᴜ j͐ʃɹ ı],ᴜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ"]
-layout_mode = 0
-offset_left = 24.0
-offset_top = 24.0
-offset_right = 64.0
-offset_bottom = 64.0
+[node name="ʃᴜ j͐ʃɹ ı],ᴜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 80.0
+offset_bottom = 80.0
 tooltip_text = "ı],ᴜ
 j͐ʃɹ
 ʃᴜ"
@@ -388,15 +411,14 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_nx0ht")
 
-[node name="ſɭw ſᶘɜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ"]
-layout_mode = 1
+[node name="ſɭw ſᶘɜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = 1088.0
-offset_top = 24.0
-offset_right = 1128.0
-offset_bottom = 64.0
+offset_left = -80.0
+offset_top = 32.0
+offset_right = -32.0
+offset_bottom = 80.0
 grow_horizontal = 0
 tooltip_text = "ſᶘɜ
 ſɭw"
@@ -405,4 +427,4 @@ ignore_texture_size = true
 stretch_mode = 5
 
 [connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" method="កុផុយ"]
-[connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" to="ſɭᴜ ŋᷠᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" method="ក្សីរិ"]
+[connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" method="ក្សីរិ"]
