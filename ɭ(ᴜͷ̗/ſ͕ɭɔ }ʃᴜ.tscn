@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://ctsr30lx7d80f"]
+[gd_scene load_steps=20 format=3 uid="uid://ctsr30lx7d80f"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/ſɟᴜ ſɭᴜ ŋᷠᴜ/ſɟᴜ ſɭᴜ ŋᷠᴜ.tscn" id="2_jbel5"]
@@ -35,8 +35,8 @@ size = Vector2(200, 200)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1iccw"]
 shader = ExtResource("7_wg7dk")
 shader_parameter/blur_type = 0
-shader_parameter/blur_amount = 4
-shader_parameter/blur_radius = 32.0
+shader_parameter/blur_amount = 128
+shader_parameter/blur_radius = 8.0
 shader_parameter/blur_direction = Vector2(1, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_i2p8m"]
@@ -44,6 +44,9 @@ line_spacing = 0.0
 font = ExtResource("3_5tvy8")
 font_size = 280
 font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kcfsx"]
+radius = 24.0
 
 [node name="ſ͕ɭɔ }ʃᴜ" type="Node3D"]
 
@@ -63,33 +66,9 @@ shape = SubResource("ConvexPolygonShape3D_6kraa")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 mesh = SubResource("CapsuleMesh_l61f2")
 
-[node name="RayCast3D" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ſɭ,ɹ ſ̀ȷw" groups=["ſ͕ɭɔ }ʃᴜ", "ſᶘɔ j͑ʃɜ ſɭ,ᴜ"]]
-transform = Transform3D(-1, -1.97414e-15, 2.56055e-08, -5.32907e-15, 0.292893, -7.45058e-09, -8.74228e-08, -7.45058e-09, -0.292893, 0, -0.625, -0.25)
-target_position = Vector3(0, 0, 2)
-collision_mask = 4
-hit_from_inside = true
-collide_with_areas = true
-script = ExtResource("2_upj7l")
-
-[node name="RayCast3D2" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ſɭ,ɹ ſ̀ȷw" groups=["ſ͕ɭɔ }ʃᴜ", "ſᶘɔ j͑ʃɜ ſɭ,ᴜ"]]
-transform = Transform3D(1.31134e-07, 7.45058e-09, 0.292893, -5.32907e-15, 0.292893, -7.45058e-09, -1, -1.64846e-15, 3.84083e-08, 0.25, -0.625, 0)
-target_position = Vector3(0, 0, 2)
-collision_mask = 4
-hit_from_inside = true
-collide_with_areas = true
-script = ExtResource("2_upj7l")
-
-[node name="RayCast3D3" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ſɭ,ɹ ſ̀ȷw" groups=["ſ͕ɭɔ }ʃᴜ", "ſᶘɔ j͑ʃɜ ſɭ,ᴜ"]]
-transform = Transform3D(1, 2.62549e-15, 1.77636e-14, -5.32907e-15, 0.292893, -7.45058e-09, 1.42109e-14, 7.45058e-09, 0.292893, 0, -0.625, 0.25)
-target_position = Vector3(0, 0, 2)
-collision_mask = 4
-hit_from_inside = true
-collide_with_areas = true
-script = ExtResource("2_upj7l")
-
-[node name="RayCast3D4" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ſɭ,ɹ ſ̀ȷw" groups=["ſ͕ɭɔ }ʃᴜ", "ſᶘɔ j͑ʃɜ ſɭ,ᴜ"]]
-transform = Transform3D(-4.37114e-08, -7.45058e-09, -0.292893, -5.32907e-15, 0.292893, -7.45058e-09, 1, 2.29982e-15, -1.28027e-08, -0.25, -0.625, 0)
-target_position = Vector3(0, 0, 2)
+[node name="ſןᴜ ɭʃэ" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ſɭ,ɹ ſ̀ȷw" groups=["ſ͕ɭɔ }ʃᴜ", "ſᶘɔ j͑ʃɜ ſɭ,ᴜ"]]
+transform = Transform3D(-1, -1.97414e-15, 2.56055e-08, -5.32907e-15, 0.292893, -7.45058e-09, -8.74228e-08, -7.45058e-09, -0.292893, 0, -0.438, -0.25)
+target_position = Vector3(0, 0, 1)
 collision_mask = 4
 hit_from_inside = true
 collide_with_areas = true
@@ -102,12 +81,12 @@ shape = SubResource("ConvexPolygonShape3D_qxx1w")
 [node name="j͐ʃᴜƴ" type="Node3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 
-[node name="Camera3D" type="Camera3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/j͐ʃᴜƴ"]
+[node name="ꞁȷ̀ɹ ʃᴜ }ʃɹ" type="Camera3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/j͐ʃᴜƴ"]
 cull_mask = 3
 
-[node name="ɭʃᴜ ŋᷠᴜ" type="Node3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
+[node name="ɭʃᴜc̭ ſɟɔ" type="Node3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ"]
 
-[node name="RayCast3D" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ" groups=["ſ͕ɭɔ }ʃᴜ"]]
+[node name="ɭʃᴜ ŋᷠᴜ" type="RayCast3D" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ" groups=["ſ͕ɭɔ }ʃᴜ"]]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, -0.375)
 target_position = Vector3(0, 0, 1)
 collision_mask = 2
@@ -115,7 +94,7 @@ hit_from_inside = true
 collide_with_areas = true
 script = ExtResource("2_upj7l")
 
-[node name="ſɭɔ˞ꞇ ɽ͑ʃɹ" type="Control" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D"]
+[node name="ſɭɔ˞ꞇ ɽ͑ʃɹ" type="Control" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ"]
 custom_minimum_size = Vector2(200, 200)
 layout_mode = 3
 anchors_preset = 8
@@ -130,7 +109,7 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ſɭɔʞ" type="Label" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
+[node name="ſɭɔʞ" type="Label" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -149,14 +128,14 @@ label_settings = SubResource("LabelSettings_8qiqt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ſɭɔ˞ꞇ ɽ͑ʃɹ" type="TouchScreenButton" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
+[node name="ſɭɔ˞ꞇ ɽ͑ʃɹ" type="TouchScreenButton" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
 position = Vector2(100, 100)
 shape = SubResource("RectangleShape2D_3v8dj")
 shape_visible = false
 action = "ſɭɔ˞ꞇ ɽ͑ʃɹ"
 visibility_mode = 1
 
-[node name="ſɟᴜ̩ɹ" type="TextureRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
+[node name="ſɟᴜ̩ɹ" type="TextureRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
 show_behind_parent = true
 clip_children = 1
 layout_mode = 1
@@ -175,7 +154,7 @@ texture = ExtResource("6_mc6ha")
 expand_mode = 4
 flip_v = true
 
-[node name="ſɟᴜ̩ɹ" type="ColorRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜ ŋᷠᴜ/RayCast3D/ſɭɔ˞ꞇ ɽ͑ʃɹ/ſɟᴜ̩ɹ"]
+[node name="ſɟᴜ̩ɹ" type="ColorRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ/ſɭɔ˞ꞇ ɽ͑ʃɹ/ſɟᴜ̩ɹ"]
 material = SubResource("ShaderMaterial_1iccw")
 layout_mode = 1
 anchors_preset = 15
@@ -193,8 +172,8 @@ anchors_preset = 0
 layer = -1
 
 [node name="ſɟƨᴜ ŋᷠᴜ" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ" instance=ExtResource("2_jbel5")]
-offset_top = -320.0
-offset_right = 320.0
+offset_top = -360.0
+offset_right = 360.0
 "អុរអិផានី" = 2
 
 [node name="ſɟᴜ̩ɹ" type="TextureRect" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ſɟƨᴜ ŋᷠᴜ"]
@@ -411,6 +390,11 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("8_nx0ht")
 
+[node name="ſɟɹᶗ‹" type="TouchScreenButton" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ"]
+position = Vector2(24, 24)
+shape = SubResource("CircleShape2D_kcfsx")
+shape_visible = false
+
 [node name="ſɭw ſᶘɜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
 anchors_preset = 1
 anchor_left = 1.0
@@ -425,6 +409,11 @@ tooltip_text = "ſᶘɜ
 texture_normal = ExtResource("10_6qujg")
 ignore_texture_size = true
 stretch_mode = 5
+
+[node name="ſɟɹᶗ‹" type="TouchScreenButton" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ſɭw ſᶘɜ"]
+position = Vector2(24, 24)
+shape = SubResource("CircleShape2D_kcfsx")
+shape_visible = false
 
 [node name="ɭʃᴜ ŋᷠᴜ" type="Control" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
 visible = false
@@ -519,3 +508,4 @@ color = Color(1, 1, 1, 0)
 
 [connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" method="កុផុយ"]
 [connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" method="ក្សីរិ"]
+[connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ/ſɟɹᶗ‹" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" method="ក្សីរិ"]

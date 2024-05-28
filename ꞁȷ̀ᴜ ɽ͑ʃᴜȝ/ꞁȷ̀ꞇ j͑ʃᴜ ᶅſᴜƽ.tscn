@@ -38,6 +38,10 @@ noise = SubResource("FastNoiseLite_iq0de")
 [sub_resource type="Terrain3DMaterial" id="Terrain3DMaterial_r73t7"]
 _shader_parameters = {
 "_mouse_layer": 2147483648,
+"auto_base_texture": null,
+"auto_height_reduction": null,
+"auto_overlay_texture": null,
+"auto_slope": null,
 "blend_sharpness": null,
 "height_blending": null,
 "macro_variation1": null,
@@ -50,17 +54,18 @@ _shader_parameters = {
 "noise_texture": SubResource("NoiseTexture2D_tc2j0")
 }
 world_background = 0
-
-[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_rkou3"]
-name = "ſȷɔ ſᶘᴜʞ"
-albedo_texture = ExtResource("3_fnmya")
-normal_texture = ExtResource("4_tnxks")
+auto_shader = true
 
 [sub_resource type="Terrain3DTexture" id="Terrain3DTexture_tgofi"]
 name = "ɭʃэ ſɭɔȝ"
-texture_id = 1
 albedo_texture = ExtResource("5_u87fl")
 normal_texture = ExtResource("6_jf0na")
+
+[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_rkou3"]
+name = "ſȷɔ ſᶘᴜʞ"
+texture_id = 1
+albedo_texture = ExtResource("3_fnmya")
+normal_texture = ExtResource("4_tnxks")
 
 [sub_resource type="Terrain3DTexture" id="Terrain3DTexture_h5m56"]
 name = "ſȷᴜɔ˞ ꞁȷ̀ᴜꞇ"
@@ -70,7 +75,7 @@ normal_texture = ExtResource("8_riama")
 uv_scale = 1.0
 
 [sub_resource type="Terrain3DTextureList" id="Terrain3DTextureList_u5qpq"]
-textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_rkou3"), SubResource("Terrain3DTexture_tgofi"), SubResource("Terrain3DTexture_h5m56")])
+textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_tgofi"), SubResource("Terrain3DTexture_rkou3"), SubResource("Terrain3DTexture_h5m56")])
 
 [node name="ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" type="Node3D"]
 
