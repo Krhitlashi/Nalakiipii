@@ -1,8 +1,7 @@
-[gd_scene load_steps=22 format=3 uid="uid://c88mwaj53pmnl"]
+[gd_scene load_steps=21 format=3 uid="uid://c88mwaj53pmnl"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ı],ᴜ j͑ʃɔ ı],ᴜƴ.gd" id="1_els6t"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="1_oa3xm"]
-[ext_resource type="Theme" uid="uid://bxmugk6mcfbx5" path="res://֭ſɭᴜ ʃᴜ/֭ſɭᴜ ʃᴜ ı],ᴜ }ʃᴜ.tres" id="1_pj5lx"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͑ʃɔ ı],ꞇ.gd" id="2_cwpsn"]
 [ext_resource type="PackedScene" uid="uid://c0ciekpyan7aj" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ.tscn" id="4_naldk"]
 [ext_resource type="Texture2D" uid="uid://dv2a718p06l7j" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/j͐ʃɔ ı],ꞇ.tres" id="4_qh84k"]
@@ -80,7 +79,6 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_pj5lx")
 script = ExtResource("1_els6t")
 
 [node name="ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
@@ -250,7 +248,6 @@ borderless = false
 always_on_top = true
 transparent = true
 extend_to_title = true
-theme = ExtResource("1_pj5lx")
 
 [node name="ʃᴜ j͐ʃɹ ı],ᴜ" type="TextureRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ"]
 anchors_preset = 15
@@ -261,7 +258,7 @@ grow_vertical = 2
 texture = ExtResource("8_8nhnd")
 expand_mode = 5
 
-[node name="őɭʃꞇc̗" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ"]
+[node name="ꞁȷ̀ɜɜ őſןɔ ŋᷠ℩ƨő" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -280,7 +277,7 @@ texture_hover = ExtResource("9_wkqbm")
 script = ExtResource("2_cwpsn")
 "អារាង" = ExtResource("8_hvpc4")
 
-[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗"]
+[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ɜɜ őſןɔ ŋᷠ℩ƨő"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -297,11 +294,124 @@ label_settings = SubResource("LabelSettings_lcajm")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗"]
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ɜɜ őſןɔ ŋᷠ℩ƨő"]
 texture_normal = ExtResource("8_taxcg")
 texture_pressed = ExtResource("9_wkqbm")
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
+
+[node name="ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -216.0
+offset_top = -145.0
+offset_right = -192.0
+offset_bottom = -121.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.785398
+texture_normal = ExtResource("8_taxcg")
+texture_pressed = ExtResource("9_wkqbm")
+texture_hover = ExtResource("9_wkqbm")
+script = ExtResource("2_cwpsn")
+"អារាង" = ExtResource("8_hvpc4")
+
+[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.0
+offset_top = -96.0
+offset_right = 24.0
+offset_bottom = 2.0
+grow_horizontal = 2
+text = "
+őſןɜꞇᴜ̩
+őɭʃɜ
+ꞁȷ̀ꞇ"
+label_settings = SubResource("LabelSettings_lcajm")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩"]
+texture_normal = ExtResource("8_taxcg")
+texture_pressed = ExtResource("9_wkqbm")
+shape = SubResource("RectangleShape2D_vhyn4")
+shape_visible = false
+
+[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.952941, 0.737255, 0.807843, 1)
+
+[node name="ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -208.0
+offset_top = -81.0
+offset_right = -184.0
+offset_bottom = -57.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.785398
+texture_normal = ExtResource("8_taxcg")
+texture_pressed = ExtResource("9_wkqbm")
+texture_hover = ExtResource("9_wkqbm")
+script = ExtResource("2_cwpsn")
+"អារាង" = ExtResource("8_hvpc4")
+
+[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -18.0
+offset_right = 18.0
+offset_bottom = 98.0
+grow_horizontal = 2
+text = "ɭʃɜꞇᶗ‹ő
+ɭʃɔƽᴜ̩ "
+label_settings = SubResource("LabelSettings_lcajm")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő"]
+texture_normal = ExtResource("8_taxcg")
+texture_pressed = ExtResource("9_wkqbm")
+shape = SubResource("RectangleShape2D_vhyn4")
+shape_visible = false
+
+[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.952941, 0.737255, 0.807843, 1)
 
 [node name="őɭʄ őŋᷠwc̗ő" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
 layout_mode = 0
@@ -388,7 +498,11 @@ grow_vertical = 1
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗" method="អំផាលិជា"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗" method="អំផាលិជា"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ɜɜ őſןɔ ŋᷠ℩ƨő" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ɜɜ őſןɔ ŋᷠ℩ƨő" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ɜɜ őſןɔ ŋᷠ℩ƨő/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ɜɜ őſןɔ ŋᷠ℩ƨő" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" method="ខិរខិ"]

@@ -14,4 +14,6 @@ func កុផុយ(អាត្លេ):
 				$"../ſɟƨᴜ ŋᷠᴜ".hide()
 			if $"../ɭʃᴜ ŋᷠᴜ".visible:
 				$"../ɭʃᴜ ŋᷠᴜ".hide()
-			
+		
+func ហឹនា(អាត្លេ):
+	pass # Replace with function body.

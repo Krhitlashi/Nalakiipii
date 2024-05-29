@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cn0ep4lk2dusv"]
+[gd_scene load_steps=6 format=3 uid="uid://cn0ep4lk2dusv"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſᶘɜ.gd" id="1_bh818"]
 [ext_resource type="Texture2D" uid="uid://cva22jl87jvel" path="res://ſɭw ſᶘɜ.png" id="1_cramo"]
 [ext_resource type="Theme" uid="uid://bxmugk6mcfbx5" path="res://֭ſɭᴜ ʃᴜ/֭ſɭᴜ ʃᴜ ı],ᴜ }ʃᴜ.tres" id="1_keqx8"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͑ʃɔ ı],ꞇ.gd" id="2_o7cvi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fswyt"]
+radius = 24.0
 
 [node name="ſɭw ſᶘɜ" type="Control"]
 layout_mode = 3
@@ -31,6 +34,11 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("2_o7cvi")
 "ផាលិជា" = NodePath("ſɭw ſᶘɜ")
+
+[node name="ſɟɹᶗ‹" type="TouchScreenButton" parent="ſɭw ſᶘɜ"]
+position = Vector2(24, 24)
+shape = SubResource("CircleShape2D_fswyt")
+shape_visible = false
 
 [node name="ſɭw ſᶘɜ" type="Popup" parent="ſɭw ſᶘɜ"]
 initial_position = 2
@@ -89,4 +97,6 @@ popup/item_3/text = "English"
 popup/item_3/id = 3
 
 [connection signal="pressed" from="ſɭw ſᶘɜ" to="ſɭw ſᶘɜ" method="អំផាលិជា"]
+[connection signal="pressed" from="ſɭw ſᶘɜ/ſɟɹᶗ‹" to="ſɭw ſᶘɜ" method="ខិរខិ"]
 [connection signal="toggled" from="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/ſɭɜ ʃɜꞇ" to="." method="កុផុយ"]
+[connection signal="toggled" from="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/֭ſɭw }ʃᴜ" to="." method="ហឹនា"]
