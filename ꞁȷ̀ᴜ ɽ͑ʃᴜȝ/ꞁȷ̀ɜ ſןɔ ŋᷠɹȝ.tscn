@@ -1,12 +1,12 @@
 [gd_scene load_steps=15 format=3 uid="uid://dp2x2xeoclsre"]
 
-[ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_qp603"]
-[ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="2_nrtwv"]
-[ext_resource type="Terrain3DStorage" uid="uid://dlp6mb80sneji" path="res://ꞁȷ̀ɜƴ/ꞁȷ̀ɜƴ ꞁȷ̀ɜ ŋᷠɜ.res" id="2_oyobr"]
-[ext_resource type="Texture2D" uid="uid://dvmtxexfhe8gh" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_Color.png" id="2_qura3"]
-[ext_resource type="Texture2D" uid="uid://byypd80qjr7un" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_NormalGL.png" id="3_msa5g"]
-[ext_resource type="Texture2D" uid="uid://cq4l148jf3mvx" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_Color.png" id="4_egsnc"]
-[ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="5_msqli"]
+[ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_86q3y"]
+[ext_resource type="Terrain3DStorage" uid="uid://dlp6mb80sneji" path="res://ꞁȷ̀ɜƴ/ꞁȷ̀ɜƴ ꞁȷ̀ɜ ŋᷠɜ.res" id="2_8r86j"]
+[ext_resource type="Texture2D" uid="uid://dvmtxexfhe8gh" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_Color.png" id="3_qbdeg"]
+[ext_resource type="Texture2D" uid="uid://byypd80qjr7un" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_NormalGL.png" id="4_otj6a"]
+[ext_resource type="Texture2D" uid="uid://cq4l148jf3mvx" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_Color.png" id="5_xi0tq"]
+[ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="6_52vka"]
+[ext_resource type="PackedScene" uid="uid://ctsr30lx7d80f" path="res://ɭ(ᴜͷ̗/ſ͕ɭɔ }ʃᴜ.tscn" id="7_mrefy"]
 
 [sub_resource type="Gradient" id="Gradient_ubje3"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -51,13 +51,13 @@ world_background = 0
 auto_shader = true
 
 [sub_resource type="Terrain3DTexture" id="Terrain3DTexture_bsg2w"]
-albedo_texture = ExtResource("2_qura3")
-normal_texture = ExtResource("3_msa5g")
+albedo_texture = ExtResource("3_qbdeg")
+normal_texture = ExtResource("4_otj6a")
 
 [sub_resource type="Terrain3DTexture" id="Terrain3DTexture_3ikt4"]
 texture_id = 1
-albedo_texture = ExtResource("4_egsnc")
-normal_texture = ExtResource("5_msqli")
+albedo_texture = ExtResource("5_xi0tq")
+normal_texture = ExtResource("6_52vka")
 
 [sub_resource type="Terrain3DTextureList" id="Terrain3DTextureList_kmumf"]
 textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_bsg2w"), SubResource("Terrain3DTexture_3ikt4")])
@@ -65,13 +65,13 @@ textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_bsg2w"), SubRe
 [node name="ꞁȷ̀ɜ ŋᷠɜ" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -119, 0)
 
-[node name="ſɟᴜ }ʃᴜ" parent="." instance=ExtResource("1_qp603")]
+[node name="ſɟᴜ }ʃᴜ" parent="." instance=ExtResource("1_86q3y")]
 
 [node name="ꞁȷ̀ɜƴ" type="Terrain3D" parent="."]
-storage = ExtResource("2_oyobr")
+storage = ExtResource("2_8r86j")
 material = SubResource("Terrain3DMaterial_t88td")
 texture_list = SubResource("Terrain3DTextureList_kmumf")
 mesh_lods = 4
 
-[node name="ſ͕ɭɔ }ʃᴜ" parent="." instance=ExtResource("2_nrtwv")]
+[node name="ſ͕ɭɔ }ʃᴜ" parent="." instance=ExtResource("7_mrefy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

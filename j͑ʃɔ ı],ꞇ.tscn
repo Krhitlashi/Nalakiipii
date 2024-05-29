@@ -3,13 +3,13 @@
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ı],ᴜ j͑ʃɔ ı],ᴜƴ.gd" id="1_els6t"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="1_oa3xm"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͑ʃɔ ı],ꞇ.gd" id="2_cwpsn"]
-[ext_resource type="PackedScene" uid="uid://dp2x2xeoclsre" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ɜ ŋᷠɜ.tscn" id="3_q0x1b"]
 [ext_resource type="PackedScene" uid="uid://c0ciekpyan7aj" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ.tscn" id="4_naldk"]
 [ext_resource type="Texture2D" uid="uid://dv2a718p06l7j" path="res://j͐ʃɔ ı],ꞇ.tres" id="4_wh3ub"]
 [ext_resource type="Texture2D" uid="uid://cva22jl87jvel" path="res://ſɭw ſᶘɜ.png" id="5_sm8op"]
 [ext_resource type="Texture2D" uid="uid://bwh4ijdcgi83w" path="res://j͐ʃɔ ı],ꞇ j͑ʃɹ ŋᷠɹ.tres" id="5_ykbh4"]
 [ext_resource type="Theme" uid="uid://cnmrh8hd78q08" path="res://֭ſɭᴜ ʃᴜ.tres" id="7_qvokr"]
 [ext_resource type="Texture2D" uid="uid://cer7um3yain4b" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗.png" id="8_8nhnd"]
+[ext_resource type="PackedScene" uid="uid://dp2x2xeoclsre" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ɜ ſןɔ ŋᷠɹȝ.tscn" id="8_hvpc4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yjc5w"]
 line_spacing = 2.0
@@ -99,43 +99,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 160.0
+offset_left = 176.0
 offset_top = 120.0
-offset_right = 192.0
+offset_right = 208.0
 offset_bottom = 152.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
-
-[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ"]
-layout_mode = 0
-offset_right = 33.0
-offset_bottom = 123.0
-text = "
-
-őɽ̉ʃᴜ
-ɭʃᴜ 
-őɭl̀ɜ̥
-ő}ʃᴜ"
-label_settings = SubResource("LabelSettings_yjc5w")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="Button" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-flat = true
-icon_alignment = 1
-script = ExtResource("2_cwpsn")
-
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ"]
-position = Vector2(16, 16)
-shape = SubResource("RectangleShape2D_vhyn4")
-shape_visible = false
 
 [node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ"]
 layout_mode = 1
@@ -152,6 +122,25 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.952941, 0.737255, 0.807843, 1)
 
+[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ"]
+layout_mode = 0
+offset_right = 33.0
+offset_bottom = 123.0
+text = "
+
+őɽ̉ʃᴜ
+ɭʃᴜ 
+őɭl̀ɜ̥
+ő}ʃᴜ"
+label_settings = SubResource("LabelSettings_yjc5w")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_vhyn4")
+shape_visible = false
+
 [node name="ſ͔ɭɹƴ ſ͔ɭɹ" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
 layout_mode = 1
 anchors_preset = 8
@@ -159,9 +148,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 360.0
+offset_left = 376.0
 offset_top = 392.0
-offset_right = 384.0
+offset_right = 400.0
 offset_bottom = 416.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -169,6 +158,7 @@ rotation = 0.785398
 texture_normal = SubResource("GradientTexture2D_mjhsr")
 texture_pressed = SubResource("GradientTexture2D_ghr5u")
 texture_hover = SubResource("GradientTexture2D_bj0io")
+script = ExtResource("2_cwpsn")
 
 [node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ"]
 layout_mode = 1
@@ -199,18 +189,7 @@ label_settings = SubResource("LabelSettings_yjc5w")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="Button" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-flat = true
-icon_alignment = 1
-script = ExtResource("2_cwpsn")
-
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ"]
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ"]
 position = Vector2(12, 12)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
@@ -222,13 +201,28 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 360.0
+offset_left = 376.0
 offset_top = 428.0
-offset_right = 392.0
+offset_right = 408.0
 offset_bottom = 460.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
+
+[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.9999
+offset_top = -12.0
+offset_right = 12.0001
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.952941, 0.737255, 0.807843, 1)
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ"]
 layout_mode = 0
@@ -242,47 +236,21 @@ label_settings = SubResource("LabelSettings_5ehte")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="Button" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-flat = true
-icon_alignment = 1
-script = ExtResource("2_cwpsn")
-
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ"]
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ"]
 position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
-[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ"]
+[node name="őɭʃꞇc̗" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ" node_paths=PackedStringArray("ផាលិជា")]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -12.0
-offset_top = -12.0
-offset_right = 12.0
-offset_bottom = 12.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.952941, 0.737255, 0.807843, 1)
-
-[node name="őɭʃꞇc̗" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 960.0
+offset_left = 976.0
 offset_top = 340.0
-offset_right = 992.0
+offset_right = 1008.0
 offset_bottom = 372.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -290,6 +258,8 @@ rotation = 0.785398
 texture_normal = ExtResource("4_wh3ub")
 texture_pressed = ExtResource("5_ykbh4")
 texture_hover = ExtResource("5_ykbh4")
+script = ExtResource("2_cwpsn")
+"ផាលិជា" = NodePath("ʃᴜ j͐ʃɹ ı],ᴜ")
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗"]
 layout_mode = 0
@@ -302,24 +272,13 @@ label_settings = SubResource("LabelSettings_5ehte")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="Button" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-flat = true
-icon_alignment = 1
-script = ExtResource("2_cwpsn")
-"អារាង" = ExtResource("3_q0x1b")
-
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ"]
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗"]
 position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
-[node name="Popup" type="Popup" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗"]
+[node name="ʃᴜ j͐ʃɹ ı],ᴜ" type="Popup" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗"]
+transparent_bg = true
 initial_position = 2
 size = Vector2i(800, 450)
 borderless = false
@@ -327,14 +286,13 @@ always_on_top = true
 transparent = true
 theme = ExtResource("7_qvokr")
 
-[node name="TextureRect" type="TextureRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/Popup"]
+[node name="ʃᴜ j͐ʃɹ ı],ᴜ" type="TextureRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ"]
 offset_right = 800.0
-offset_bottom = 225.0
+offset_bottom = 450.0
 texture = ExtResource("8_8nhnd")
 expand_mode = 5
 
-[node name="őɭʃꞇc̗" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/Popup/TextureRect"]
-layout_mode = 1
+[node name="őɭʃꞇc̗" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ"]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -350,8 +308,10 @@ rotation = 0.785398
 texture_normal = SubResource("GradientTexture2D_pdwb7")
 texture_pressed = SubResource("GradientTexture2D_0byru")
 texture_hover = SubResource("GradientTexture2D_fnv0l")
+script = ExtResource("2_cwpsn")
+"អារាង" = ExtResource("8_hvpc4")
 
-[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/Popup/TextureRect/őɭʃꞇc̗"]
+[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -367,23 +327,8 @@ label_settings = SubResource("LabelSettings_lcajm")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="Button" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/Popup/TextureRect/őɭʃꞇc̗"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 34.0
-offset_top = 34.0
-offset_right = 34.0
-offset_bottom = 34.0
-grow_horizontal = 2
-grow_vertical = 2
-flat = true
-icon_alignment = 1
-script = ExtResource("2_cwpsn")
-"អារាង" = ExtResource("3_q0x1b")
-
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/Popup/TextureRect/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ"]
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗"]
+position = Vector2(34, 34)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
@@ -394,42 +339,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 1000.0
+offset_left = 1016.0
 offset_top = 260.0
-offset_right = 1032.0
+offset_right = 1048.0
 offset_bottom = 292.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
-
-[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
-layout_mode = 0
-offset_right = 32.0
-offset_bottom = 72.0
-text = "
-
-ŋᷠwc̗
-ɭʄ 
-"
-label_settings = SubResource("LabelSettings_5ehte")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="Button" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-flat = true
-icon_alignment = 1
-script = ExtResource("2_cwpsn")
-
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő/ſɟᴜ ſᶘɹ }ʃᴜ"]
-position = Vector2(16, 16)
-shape = SubResource("RectangleShape2D_vhyn4")
-shape_visible = false
 
 [node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
 layout_mode = 1
@@ -446,6 +362,24 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.952941, 0.737255, 0.807843, 1)
 
+[node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 72.0
+text = "
+
+ŋᷠwc̗
+ɭʄ 
+"
+label_settings = SubResource("LabelSettings_5ehte")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_vhyn4")
+shape_visible = false
+
 [node name="ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
 layout_mode = 1
 anchors_preset = 8
@@ -453,9 +387,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 760.0
+offset_left = 776.0
 offset_top = 100.0
-offset_right = 792.0
+offset_right = 808.0
 offset_bottom = 132.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -463,6 +397,8 @@ rotation = 0.785398
 texture_normal = ExtResource("4_wh3ub")
 texture_pressed = ExtResource("5_ykbh4")
 texture_hover = ExtResource("5_ykbh4")
+script = ExtResource("2_cwpsn")
+"អារាង" = ExtResource("4_naldk")
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ"]
 layout_mode = 0
@@ -477,19 +413,7 @@ label_settings = SubResource("LabelSettings_5ehte")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="Button" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-flat = true
-icon_alignment = 1
-script = ExtResource("2_cwpsn")
-"អារាង" = ExtResource("4_naldk")
-
-[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ/ſɟᴜ ſᶘɹ }ʃᴜ"]
+[node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ"]
 position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
@@ -510,17 +434,11 @@ texture_normal = ExtResource("5_sm8op")
 ignore_texture_size = true
 stretch_mode = 5
 
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/Popup/TextureRect/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/Popup/TextureRect/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/Popup/TextureRect/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/Popup/TextureRect/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
-[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ/ſɟᴜ ſᶘɹ }ʃᴜ" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗" method="អំផាលិជា"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗" method="អំផាលិជា"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" method="ខិរខិ"]
