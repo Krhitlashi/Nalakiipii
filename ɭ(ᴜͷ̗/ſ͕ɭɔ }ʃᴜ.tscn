@@ -1,15 +1,16 @@
-[gd_scene load_steps=20 format=3 uid="uid://ctsr30lx7d80f"]
+[gd_scene load_steps=21 format=3 uid="uid://ctsr30lx7d80f"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ŋᷠᴜ ſɭᴜ ŋᷠᴜ.gd" id="1_td461"]
 [ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/ſɟᴜ ſɭᴜ ŋᷠᴜ/ſɟᴜ ſɭᴜ ŋᷠᴜ.tscn" id="2_jbel5"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭɔ˞ꞇ ɽ͑ʃɹ.gd" id="2_upj7l"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="3_5tvy8"]
+[ext_resource type="Theme" uid="uid://bxmugk6mcfbx5" path="res://֭ſɭᴜ ʃᴜ/֭ſɭᴜ ʃᴜ ı],ᴜ }ʃᴜ.tres" id="3_vb7nv"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/}ʃᴜ ŋᷠᴜ ꞁȷ̀ɜ ſᶘɹ }ʃᴜ.gd" id="5_ny4rk"]
 [ext_resource type="Texture2D" uid="uid://cd5j66cj27tkg" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ.png" id="6_mc6ha"]
 [ext_resource type="Texture2D" uid="uid://x64o7p570071" path="res://}ʃᴜ j͐ʃᴜ ſɭɹ ſןɹ.png" id="7_mjs81"]
 [ext_resource type="Shader" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ̩ɹ.gdshader" id="7_wg7dk"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ʃᴜ j͐ʃɹ ı],ᴜ.gd" id="8_nx0ht"]
-[ext_resource type="Texture2D" uid="uid://cva22jl87jvel" path="res://ſɭw ſᶘɜ.png" id="10_6qujg"]
+[ext_resource type="PackedScene" uid="uid://cn0ep4lk2dusv" path="res://ſɭw ſᶘɜ.tscn" id="11_vemb4"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f3x5i"]
 radius = 0.3
@@ -25,19 +26,19 @@ height = 1.5
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qxx1w"]
 points = PackedVector3Array(0.285973, 0.510012, 0.0641187, -0.289751, -0.508273, -0.0465441, -0.26598, -0.527103, -0.112181, -0.246023, 0.575754, -0.113096, -0.0901399, 0.482689, 0.282961, 0.175116, -0.554551, 0.219505, 0.128954, -0.503414, -0.265106, 0.0418549, 0.509109, -0.290224, -0.221324, -0.503449, 0.194662, 0.282961, -0.482689, -0.0901399, 0.0432991, -0.731525, -0.0937992, -0.133756, -0.481621, -0.265187, -0.28676, 0.459275, 0.0850819, 0.043378, 0.732789, 0.0891953, 0.216729, 0.503833, -0.199575, 0.149104, 0.475981, 0.257347, -0.0687028, -0.508648, 0.285201, -0.175344, 0.475511, -0.240225, -0.0928164, -0.700993, 0.133301, 0.280243, -0.434652, 0.106286, 0.0879502, 0.700185, -0.137906, -0.183195, 0.677895, 0.0653882, 0.179259, -0.680995, 0.0656981, 0.0857793, -0.484897, 0.284266, -0.0706391, 0.705603, -0.138955, -0.286183, 0.436464, -0.0896661, -0.114948, -0.675374, -0.159997, -0.221324, 0.503449, 0.194662, 0.285201, 0.508648, -0.0687028, -0.0465451, -0.508284, -0.289757, 0.238621, 0.503781, 0.172878, 0.0641199, 0.51002, 0.285977)
 
-[sub_resource type="LabelSettings" id="LabelSettings_8qiqt"]
-font = ExtResource("3_5tvy8")
-font_size = 40
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3v8dj"]
-size = Vector2(200, 200)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1iccw"]
 shader = ExtResource("7_wg7dk")
 shader_parameter/blur_type = 0
 shader_parameter/blur_amount = 128
 shader_parameter/blur_radius = 8.0
 shader_parameter/blur_direction = Vector2(1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8qiqt"]
+font = ExtResource("3_5tvy8")
+font_size = 40
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3v8dj"]
+size = Vector2(200, 200)
 
 [sub_resource type="LabelSettings" id="LabelSettings_i2p8m"]
 line_spacing = 0.0
@@ -109,6 +110,33 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="ɭʃᴜ̩ᴜ j͐ʃᴜ" type="Panel" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
+clip_children = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -100.0
+offset_right = 80.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_vb7nv")
+
+[node name="ſɟᴜ̩ɹ" type="ColorRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ/ſɭɔ˞ꞇ ɽ͑ʃɹ/ɭʃᴜ̩ᴜ j͐ʃᴜ"]
+material = SubResource("ShaderMaterial_1iccw")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_vb7nv")
+color = Color(1, 1, 1, 0)
+
 [node name="ſɭɔʞ" type="Label" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
 layout_mode = 1
 anchors_preset = 8
@@ -134,35 +162,6 @@ shape = SubResource("RectangleShape2D_3v8dj")
 shape_visible = false
 action = "ſɭɔ˞ꞇ ɽ͑ʃɹ"
 visibility_mode = 1
-
-[node name="ſɟᴜ̩ɹ" type="TextureRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ/ſɭɔ˞ꞇ ɽ͑ʃɹ"]
-show_behind_parent = true
-clip_children = 1
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -80.0
-offset_top = -100.0
-offset_right = 80.0
-offset_bottom = 100.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("6_mc6ha")
-expand_mode = 4
-flip_v = true
-
-[node name="ſɟᴜ̩ɹ" type="ColorRect" parent="ŋᷠᴜ ſɭᴜ ŋᷠᴜ/ɭʃᴜc̭ ſɟɔ/ɭʃᴜ ŋᷠᴜ/ſɭɔ˞ꞇ ɽ͑ʃɹ/ſɟᴜ̩ɹ"]
-material = SubResource("ShaderMaterial_1iccw")
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(1, 1, 1, 0)
 
 [node name="ſɭᴜ ŋᷠᴜ" type="Control" parent="."]
 layout_mode = 3
@@ -337,46 +336,6 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0)
 
-[node name="j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" type="Control" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
-modulate = Color(1, 1, 1, 0)
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 3
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -112.0
-offset_top = 40.0
-offset_right = -12.0
-offset_bottom = 140.0
-grow_horizontal = 0
-scale = Vector2(0.75, 0.75)
-script = ExtResource("5_ny4rk")
-
-[node name="j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" type="TouchScreenButton" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ"]
-position = Vector2(-2, -2)
-scale = Vector2(0.094, 0.094)
-texture_normal = ExtResource("6_mc6ha")
-shape_visible = false
-visibility_mode = 1
-
-[node name="ſɭɔʞ" type="Label" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -220.0
-offset_top = -220.0
-offset_right = 220.0
-offset_bottom = 220.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "›
-"
-label_settings = SubResource("LabelSettings_i2p8m")
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="ʃᴜ j͐ʃɹ ı],ᴜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
 offset_left = 32.0
 offset_top = 32.0
@@ -395,25 +354,12 @@ position = Vector2(24, 24)
 shape = SubResource("CircleShape2D_kcfsx")
 shape_visible = false
 
-[node name="ſɭw ſᶘɜ" type="TextureButton" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
+[node name="ſɭw ſᶘɜ" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ" instance=ExtResource("11_vemb4")]
 anchors_preset = 1
 anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -80.0
-offset_top = 32.0
-offset_right = -32.0
-offset_bottom = 80.0
+anchor_bottom = 0.0
 grow_horizontal = 0
-tooltip_text = "ſᶘɜ
-ſɭw"
-texture_normal = ExtResource("10_6qujg")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="ſɟɹᶗ‹" type="TouchScreenButton" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ſɭw ſᶘɜ"]
-position = Vector2(24, 24)
-shape = SubResource("CircleShape2D_kcfsx")
-shape_visible = false
+grow_vertical = 1
 
 [node name="ɭʃᴜ ŋᷠᴜ" type="Control" parent="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ"]
 visible = false
@@ -506,6 +452,5 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 1, 0)
 
-[connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/j͑ʃ\'ᴜ ſɭɜ ʃɜꞇ" method="កុផុយ"]
 [connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" method="ក្សីរិ"]
 [connection signal="pressed" from="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ/ſɟɹᶗ‹" to="ſɭᴜ ŋᷠᴜ/ſᶘɹ }ʃᴜ/ʃᴜ j͐ʃɹ ı],ᴜ" method="ក្សីរិ"]

@@ -33,6 +33,10 @@ enabled=PackedStringArray("res://addons/terrain_3d/plugin.cfg")
 
 import/blender/enabled=false
 
+[gui]
+
+theme/custom="res://֭ſɭᴜ ʃᴜ/֭ſɭᴜ ʃᴜ ı],ᴜ }ʃᴜ.tres"
+
 [input]
 
 "ɭʃɔƴ ꞁȷ̀ᴜꞇ"={

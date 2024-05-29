@@ -1,22 +1,24 @@
-[gd_scene load_steps=23 format=3 uid="uid://c88mwaj53pmnl"]
+[gd_scene load_steps=22 format=3 uid="uid://c88mwaj53pmnl"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ı],ᴜ j͑ʃɔ ı],ᴜƴ.gd" id="1_els6t"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="1_oa3xm"]
+[ext_resource type="Theme" uid="uid://bxmugk6mcfbx5" path="res://֭ſɭᴜ ʃᴜ/֭ſɭᴜ ʃᴜ ı],ᴜ }ʃᴜ.tres" id="1_pj5lx"]
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͑ʃɔ ı],ꞇ.gd" id="2_cwpsn"]
 [ext_resource type="PackedScene" uid="uid://c0ciekpyan7aj" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ.tscn" id="4_naldk"]
-[ext_resource type="Texture2D" uid="uid://dv2a718p06l7j" path="res://j͐ʃɔ ı],ꞇ.tres" id="4_wh3ub"]
-[ext_resource type="Texture2D" uid="uid://cva22jl87jvel" path="res://ſɭw ſᶘɜ.png" id="5_sm8op"]
-[ext_resource type="Texture2D" uid="uid://bwh4ijdcgi83w" path="res://j͐ʃɔ ı],ꞇ j͑ʃɹ ŋᷠɹ.tres" id="5_ykbh4"]
-[ext_resource type="Theme" uid="uid://cnmrh8hd78q08" path="res://֭ſɭᴜ ʃᴜ.tres" id="7_qvokr"]
+[ext_resource type="Texture2D" uid="uid://dv2a718p06l7j" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/j͐ʃɔ ı],ꞇ.tres" id="4_qh84k"]
+[ext_resource type="Texture2D" uid="uid://bwh4ijdcgi83w" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/j͐ʃɔ ı],ꞇ j͑ʃɹ ŋᷠɹ.tres" id="7_x3ksd"]
 [ext_resource type="Texture2D" uid="uid://cer7um3yain4b" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗.png" id="8_8nhnd"]
 [ext_resource type="PackedScene" uid="uid://dp2x2xeoclsre" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ɜ ſןɔ ŋᷠɹȝ.tscn" id="8_hvpc4"]
+[ext_resource type="Texture2D" uid="uid://cy1r8k28ilnsb" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/j͑ʃɔ ı],ꞇ ŋᷠɹ.tres" id="8_taxcg"]
+[ext_resource type="Texture2D" uid="uid://c2ds55prvuaac" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/j͐ʃɔ ı],ꞇ ŋᷠɹ j͑ʃɹ ŋᷠɹ.tres" id="9_wkqbm"]
+[ext_resource type="PackedScene" uid="uid://cn0ep4lk2dusv" path="res://ſɭw ſᶘɜ.tscn" id="14_04bpr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yjc5w"]
 line_spacing = 2.0
 font = ExtResource("1_oa3xm")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vhyn4"]
-size = Vector2(32, 32)
+size = Vector2(24, 24)
 
 [sub_resource type="Gradient" id="Gradient_bmfw3"]
 offsets = PackedFloat32Array(1)
@@ -48,28 +50,9 @@ fill_from = Vector2(0, 1)
 line_spacing = 2.0
 font = ExtResource("1_oa3xm")
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_pdwb7"]
-gradient = SubResource("Gradient_bmfw3")
-width = 16
-height = 16
-fill_from = Vector2(0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_0byru"]
-gradient = SubResource("Gradient_3iw3r")
-width = 16
-height = 16
-fill_from = Vector2(0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_fnv0l"]
-gradient = SubResource("Gradient_3iw3r")
-width = 16
-height = 16
-fill_from = Vector2(0, 1)
-
 [sub_resource type="LabelSettings" id="LabelSettings_lcajm"]
 line_spacing = 2.0
 font = ExtResource("1_oa3xm")
-font_size = 12
 
 [node name="j͑ʃɔ ı],ꞇ" type="Control"]
 layout_mode = 3
@@ -89,38 +72,24 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="ꞁȷ̀ᴜ ɽ͑ʃᴜȝ" type="Control" parent="j͑ʃɔ ı],ᴜƴ"]
-anchors_preset = 0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_pj5lx")
 script = ExtResource("1_els6t")
 
 [node name="ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 176.0
-offset_top = 120.0
-offset_right = 208.0
-offset_bottom = 152.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 0
+offset_left = -400.0
+offset_top = -160.0
+offset_right = -368.0
+offset_bottom = -128.0
 rotation = 0.785398
-
-[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -12.0
-offset_top = -12.0
-offset_right = 12.0
-offset_bottom = 12.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.952941, 0.737255, 0.807843, 1)
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ"]
 layout_mode = 0
@@ -141,39 +110,32 @@ position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
-[node name="ſ͔ɭɹƴ ſ͔ɭɹ" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ő}ʃᴜ őɭl̀ɜ̥ ɭʃᴜ őɽ̉ʃᴜ"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 376.0
-offset_top = 392.0
-offset_right = 400.0
-offset_bottom = 416.0
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.952941, 0.737255, 0.807843, 1)
+
+[node name="ſ͔ɭɹƴ ſ͔ɭɹ" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 64.0
+offset_right = -176.0
+offset_bottom = 88.0
 rotation = 0.785398
 texture_normal = SubResource("GradientTexture2D_mjhsr")
 texture_pressed = SubResource("GradientTexture2D_ghr5u")
 texture_hover = SubResource("GradientTexture2D_bj0io")
 script = ExtResource("2_cwpsn")
-
-[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -8.0
-offset_top = -8.0
-offset_right = 8.0
-offset_bottom = 8.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.729412, 0.839216, 0.752941, 1)
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ"]
 layout_mode = 0
@@ -190,23 +152,32 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ"]
-position = Vector2(12, 12)
+texture_normal = ExtResource("8_taxcg")
+texture_pressed = ExtResource("9_wkqbm")
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
-[node name="j͑ʃꞇȝ ſ͔ɭɹ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 376.0
-offset_top = 428.0
-offset_right = 408.0
-offset_bottom = 460.0
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.729412, 0.839216, 0.752941, 1)
+
+[node name="j͑ʃꞇȝ ſ͔ɭɹ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 104.0
+offset_right = -168.0
+offset_bottom = 136.0
 rotation = 0.785398
 
 [node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͑ʃꞇȝ ſ͔ɭɹ"]
@@ -242,22 +213,15 @@ shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
 [node name="őɭʃꞇc̗" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ" node_paths=PackedStringArray("ផាលិជា")]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 976.0
-offset_top = 340.0
-offset_right = 1008.0
-offset_bottom = 372.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 0
+offset_left = 368.0
+offset_top = 16.0
+offset_right = 400.0
+offset_bottom = 48.0
 rotation = 0.785398
-texture_normal = ExtResource("4_wh3ub")
-texture_pressed = ExtResource("5_ykbh4")
-texture_hover = ExtResource("5_ykbh4")
+texture_normal = ExtResource("4_qh84k")
+texture_pressed = ExtResource("7_x3ksd")
+texture_hover = ExtResource("7_x3ksd")
 script = ExtResource("2_cwpsn")
 "ផាលិជា" = NodePath("ʃᴜ j͐ʃɹ ı],ᴜ")
 
@@ -273,7 +237,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗"]
-position = Vector2(16, 16)
+texture_normal = ExtResource("4_qh84k")
+texture_pressed = ExtResource("7_x3ksd")
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
@@ -284,11 +249,15 @@ size = Vector2i(800, 450)
 borderless = false
 always_on_top = true
 transparent = true
-theme = ExtResource("7_qvokr")
+extend_to_title = true
+theme = ExtResource("1_pj5lx")
 
 [node name="ʃᴜ j͐ʃɹ ı],ᴜ" type="TextureRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ"]
-offset_right = 800.0
-offset_bottom = 450.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("8_8nhnd")
 expand_mode = 5
 
@@ -299,15 +268,15 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -256.0
-offset_top = -105.0
-offset_right = -240.0
+offset_top = -113.0
+offset_right = -232.0
 offset_bottom = -89.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.785398
-texture_normal = SubResource("GradientTexture2D_pdwb7")
-texture_pressed = SubResource("GradientTexture2D_0byru")
-texture_hover = SubResource("GradientTexture2D_fnv0l")
+texture_normal = ExtResource("8_taxcg")
+texture_pressed = ExtResource("9_wkqbm")
+texture_hover = ExtResource("9_wkqbm")
 script = ExtResource("2_cwpsn")
 "អារាង" = ExtResource("8_hvpc4")
 
@@ -320,7 +289,8 @@ offset_left = -18.0
 offset_right = 18.0
 offset_bottom = 98.0
 grow_horizontal = 2
-text = "ŋᷠ℩ƨő
+text = "
+ŋᷠ℩ƨő
 őſןɔ
 ꞁȷ̀ɜɜ"
 label_settings = SubResource("LabelSettings_lcajm")
@@ -328,39 +298,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/őɭʃꞇc̗"]
-position = Vector2(34, 34)
+texture_normal = ExtResource("8_taxcg")
+texture_pressed = ExtResource("9_wkqbm")
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
 [node name="őɭʄ őŋᷠwc̗ő" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 1016.0
-offset_top = 260.0
-offset_right = 1048.0
-offset_bottom = 292.0
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 0
+offset_left = 440.0
+offset_top = -56.0
+offset_right = 472.0
+offset_bottom = -24.0
 rotation = 0.785398
-
-[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -12.0
-offset_top = -12.0
-offset_right = 12.0
-offset_bottom = 12.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.952941, 0.737255, 0.807843, 1)
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
 layout_mode = 0
@@ -380,23 +329,31 @@ position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
-[node name="ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 776.0
-offset_top = 100.0
-offset_right = 808.0
-offset_bottom = 132.0
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.952941, 0.737255, 0.807843, 1)
+
+[node name="ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = -220.0
+offset_right = 232.0
+offset_bottom = -188.0
 rotation = 0.785398
-texture_normal = ExtResource("4_wh3ub")
-texture_pressed = ExtResource("5_ykbh4")
-texture_hover = ExtResource("5_ykbh4")
+texture_normal = ExtResource("4_qh84k")
+texture_pressed = ExtResource("7_x3ksd")
+texture_hover = ExtResource("7_x3ksd")
 script = ExtResource("2_cwpsn")
 "អារាង" = ExtResource("4_naldk")
 
@@ -414,25 +371,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ſɟᴜ ſᶘɹ }ʃᴜ" type="TouchScreenButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ"]
-position = Vector2(16, 16)
+texture_normal = ExtResource("4_qh84k")
+texture_pressed = ExtResource("7_x3ksd")
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
 
-[node name="ſɭw ſᶘɜ" type="TextureButton" parent="."]
+[node name="ſɭw ſᶘɜ" parent="." instance=ExtResource("14_04bpr")]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -80.0
-offset_top = 32.0
-offset_right = -32.0
-offset_bottom = 80.0
+anchor_bottom = 0.0
 grow_horizontal = 0
-tooltip_text = "ſᶘɜ
-ſɭw"
-texture_normal = ExtResource("5_sm8op")
-ignore_texture_size = true
-stretch_mode = 5
+grow_vertical = 1
 
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ſ͔ɭɹƴ ſ͔ɭɹ" method="ខិរខិ"]

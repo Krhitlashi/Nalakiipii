@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=3 uid="uid://cn0ep4lk2dusv"]
+
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ſɭw ſᶘɜ.gd" id="1_bh818"]
+[ext_resource type="Texture2D" uid="uid://cva22jl87jvel" path="res://ſɭw ſᶘɜ.png" id="1_cramo"]
+[ext_resource type="Theme" uid="uid://bxmugk6mcfbx5" path="res://֭ſɭᴜ ʃᴜ/֭ſɭᴜ ʃᴜ ı],ᴜ }ʃᴜ.tres" id="1_keqx8"]
+[ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/j͑ʃɔ ı],ꞇ.gd" id="2_o7cvi"]
+
+[node name="ſɭw ſᶘɜ" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bh818")
+
+[node name="ſɭw ſᶘɜ" type="TextureButton" parent="." node_paths=PackedStringArray("ផាលិជា")]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -80.0
+offset_top = 32.0
+offset_right = -32.0
+offset_bottom = 80.0
+grow_horizontal = 0
+tooltip_text = "ſᶘɜ
+ſɭw"
+texture_normal = ExtResource("1_cramo")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("2_o7cvi")
+"ផាលិជា" = NodePath("ſɭw ſᶘɜ")
+
+[node name="ſɭw ſᶘɜ" type="Popup" parent="ſɭw ſᶘɜ"]
+initial_position = 2
+size = Vector2i(400, 200)
+borderless = false
+transparent = true
+min_size = Vector2i(400, 200)
+theme = ExtResource("1_keqx8")
+
+[node name="PanelContainer" type="PanelContainer" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_keqx8")
+text = "ʃᴜ
+ſᶘɔ
+ꞁȷ̀эⅎ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="ſɭɜ ʃɜꞇ" type="CheckButton" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "ſɭɜ ʃɜꞇ"
+
+[node name="֭ſɭw }ʃᴜ" type="CheckButton" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "֭ſɭw }ʃᴜ"
+
+[node name="ſ͔ɭᴜ ᶅſɔ" type="OptionButton" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+item_count = 4
+selected = 0
+popup/item_0/text = "ſ͔ɭᴜ ᶅſɔ ꞁȷ̀ɔ ꞁȷ̀ɹ ſɭˬꞇᴜ"
+popup/item_0/id = 0
+popup/item_1/text = "txʷəlšucid"
+popup/item_1/id = 1
+popup/item_2/text = "ខ្មែរ"
+popup/item_2/id = 2
+popup/item_3/text = "English"
+popup/item_3/id = 3
+
+[connection signal="pressed" from="ſɭw ſᶘɜ" to="ſɭw ſᶘɜ" method="អំផាលិជា"]
+[connection signal="toggled" from="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/ſɭɜ ʃɜꞇ" to="." method="កុផុយ"]

@@ -16,7 +16,7 @@ func ពឺ():
 	if Input.is_action_just_pressed("ſןw") && (is_on_floor() || Kiitse.ហ្តេយាង្យុ == true):
 		velocity.y = ពពឺ
 	if Kiitse.ងៃពឹ == true:
-		velocity.y = ពពឺ
+		velocity.y = 2
 	if Input.is_action_just_pressed("֭ſɭɔⅎ ɭʃᴜƴ") && (!is_on_floor() || Kiitse.ហ្តេយាង្យុ == true):
 		velocity.y = -ពពឺ
 		
