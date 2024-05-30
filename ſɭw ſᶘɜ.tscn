@@ -42,10 +42,11 @@ shape_visible = false
 
 [node name="ſɭw ſᶘɜ" type="Popup" parent="ſɭw ſᶘɜ"]
 initial_position = 2
-size = Vector2i(400, 200)
+size = Vector2i(528, 256)
+visible = true
 borderless = false
 transparent = true
-min_size = Vector2i(400, 200)
+min_size = Vector2i(528, 256)
 theme = ExtResource("1_keqx8")
 
 [node name="PanelContainer" type="PanelContainer" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ"]
@@ -97,6 +98,6 @@ popup/item_3/text = "English"
 popup/item_3/id = 3
 
 [connection signal="pressed" from="ſɭw ſᶘɜ" to="ſɭw ſᶘɜ" method="អំផាលិជា"]
-[connection signal="pressed" from="ſɭw ſᶘɜ/ſɟɹᶗ‹" to="ſɭw ſᶘɜ" method="ខិរខិ"]
+[connection signal="pressed" from="ſɭw ſᶘɜ/ſɟɹᶗ‹" to="ſɭw ſᶘɜ" method="អំផាលិជា"]
 [connection signal="toggled" from="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/ſɭɜ ʃɜꞇ" to="." method="កុផុយ"]
 [connection signal="toggled" from="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/֭ſɭw }ʃᴜ" to="." method="ហឹនា"]
