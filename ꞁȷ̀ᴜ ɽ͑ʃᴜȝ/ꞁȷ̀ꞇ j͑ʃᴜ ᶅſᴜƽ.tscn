@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://c0ciekpyan7aj"]
+[gd_scene load_steps=24 format=3 uid="uid://c0ciekpyan7aj"]
 
 [ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_ofear"]
 [ext_resource type="Terrain3DStorage" uid="uid://mosxkv2hx5rl" path="res://ꞁȷ̀ɜƴ/ꞁȷ̀ɜƴ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƨ.res" id="2_ivcvy"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c1owmk4clfl8a" path="res://ſןᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ/ſᶘɔ ᶅſw ſɭɹ ſןᴜȝ.tscn" id="11_egxfb"]
 [ext_resource type="PackedScene" uid="uid://dkr6525e5mym5" path="res://ſןᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ/j͑ʃᴜ ֭ſɭᴜƽ ſןᴜȝ.tscn" id="12_j1gpl"]
 [ext_resource type="PackedScene" uid="uid://cqxt2lpu7fyc7" path="res://ɭ(ᴜͷ̗/ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ.tscn" id="14_1hgt7"]
+[ext_resource type="PackedScene" uid="uid://t601m2jge175" path="res://ɭ(ᴜͷ̗/jacaranda_tree_2k.gltf/jacaranda_tree_2k.gltf" id="15_b0ymn"]
 
 [sub_resource type="Gradient" id="Gradient_2rxlw"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -189,19 +190,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 12, -11)
 [node name="ſɟɔ" type="Node3D" parent="."]
 
 [node name="ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" parent="ſɟɔ" instance=ExtResource("14_1hgt7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 11, 14)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 8, 14)
 
 [node name="ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ2" parent="ſɟɔ" instance=ExtResource("14_1hgt7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 11, -16)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71, 11, -10)
 
 [node name="ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ3" parent="ſɟɔ" instance=ExtResource("14_1hgt7")]
-transform = Transform3D(1, 0, 0, 0, 2.2, 0, 0, 0, 1, 106, 18, -6)
+transform = Transform3D(1, 0, 0, 0, 2.2, 0, 0, 0, 1, 98, 18, -6)
 
 [node name="ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ4" parent="ſɟɔ" instance=ExtResource("14_1hgt7")]
 transform = Transform3D(1, 0, 0, 0, 2.2, 0, 0, 0, 1, 95, 11, 14)
 
-[node name="ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ5" parent="ſɟɔ" instance=ExtResource("14_1hgt7")]
-transform = Transform3D(1, 0, 0, 0, 2.2, 0, 0, 0, 1, 128, 13, 12)
+[node name="jacaranda_tree_2k" parent="ſɟɔ" instance=ExtResource("15_b0ymn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83, 0, 34)
 
-[node name="ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ6" parent="ſɟɔ" instance=ExtResource("14_1hgt7")]
-transform = Transform3D(1, 0, 0, 0, 2.2, 0, 0, 0, 1, 117, 13, 32)
+[node name="jacaranda_tree_2k2" parent="ſɟɔ" instance=ExtResource("15_b0ymn")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 23, 10, 47)
+
+[node name="jacaranda_tree_2k3" parent="ſɟɔ" instance=ExtResource("15_b0ymn")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 46, 10, 55)
+
+[node name="jacaranda_tree_2k4" parent="ſɟɔ" instance=ExtResource("15_b0ymn")]
+transform = Transform3D(-0.258819, 0, -0.965926, 0, 1, 0, 0.965926, 0, -0.258819, 74, 7, 69)
