@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://cqxt2lpu7fyc7"]
+
+[ext_resource type="Material" uid="uid://b16n5edyjcfld" path="res://֭ſɭᴜ ʃᴜ/j͑ʃͷ̗ᴜʞ.tres" id="1_ci60j"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_35oej"]
+height = 8.0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8s4el"]
+material = ExtResource("1_ci60j")
+top_radius = 4.0
+bottom_radius = 1.0
+height = 0.5
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_3ipf3"]
+material = ExtResource("1_ci60j")
+top_radius = 6.0
+bottom_radius = 1.0
+height = 0.5
+
+[node name="ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" type="Node3D"]
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+mesh = SubResource("CylinderMesh_35oej")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="CSGMesh3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("CylinderMesh_8s4el")
+
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGMesh3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+mesh = SubResource("CylinderMesh_3ipf3")
+
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="CSGMesh3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+mesh = SubResource("CylinderMesh_8s4el")
