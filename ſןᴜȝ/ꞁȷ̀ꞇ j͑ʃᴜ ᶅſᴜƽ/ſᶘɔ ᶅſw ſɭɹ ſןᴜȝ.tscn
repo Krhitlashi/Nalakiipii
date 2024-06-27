@@ -22,7 +22,7 @@ size = Vector3(6, 2.5, 8)
 
 [sub_resource type="BoxMesh" id="BoxMesh_wtugr"]
 material = ExtResource("1_uqmau")
-size = Vector3(1.5, 2, 8)
+size = Vector3(1.5, 2.125, 8)
 
 [sub_resource type="BoxMesh" id="BoxMesh_rdcou"]
 material = ExtResource("1_uqmau")
