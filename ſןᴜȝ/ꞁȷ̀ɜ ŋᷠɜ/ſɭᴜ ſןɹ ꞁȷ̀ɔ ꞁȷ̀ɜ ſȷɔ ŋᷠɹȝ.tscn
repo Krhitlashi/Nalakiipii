@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://c42u373da3re4"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mcvcy"]
+size = Vector3(8, 6, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h57c6"]
+size = Vector3(6, 6, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h58hr"]
+size = Vector3(3, 6, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l8ypd"]
+size = Vector3(6, 6, 0.5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_0vvos"]
+size = Vector3(2, 3.125, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sm064"]
+size = Vector3(6, 0.5, 4)
+
+[node name="ſɭᴜ ſןɹ ꞁȷ̀ɔ ꞁȷ̀ɜ ſȷɔ ŋᷠɹȝ" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, 0, 0, 0)
+mesh = SubResource("BoxMesh_mcvcy")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.997979, 0, -0.0635396, 0, 1, 0, 0.0635396, 0, 0.997979, 1, 0, -3)
+mesh = SubResource("BoxMesh_h57c6")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 5, 0, -2)
+mesh = SubResource("BoxMesh_h58hr")
+
+[node name="MeshInstance3D4" type="CSGMesh3D" parent="."]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 4, 0, 1)
+mesh = SubResource("BoxMesh_l8ypd")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+operation = 2
+mesh = SubResource("BoxMesh_0vvos")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, -0.0612607, 3, -0.80993)
+mesh = SubResource("BoxMesh_sm064")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 3.35415, 3, 0.345464)
+mesh = SubResource("BoxMesh_sm064")

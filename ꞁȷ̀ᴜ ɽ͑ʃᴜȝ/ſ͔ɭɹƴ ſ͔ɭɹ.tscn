@@ -182,6 +182,7 @@ mesh_lods = 4
 mesh_size = 24
 
 [node name="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ" type="CSGMesh3D" parent="."]
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_v6cii")
 
 [node name="MeshInstance3D" type="CSGMesh3D" parent="j͑ʃᴜ ı],ɔ j͑ʃᴜꞇ ſɭэ ֭ſɭэ"]
@@ -189,6 +190,7 @@ mesh = SubResource("CylinderMesh_lmned")
 
 [node name="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ" type="CSGMesh3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, -231)
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_v6cii")
 
 [node name="MeshInstance3D" type="CSGMesh3D" parent="ſɭw ſ̀ȷᴜꞇ j͑ʃɔ ı],ᴜƴ"]

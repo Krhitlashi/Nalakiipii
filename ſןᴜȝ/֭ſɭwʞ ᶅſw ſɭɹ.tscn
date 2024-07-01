@@ -66,6 +66,7 @@ radial_segments = 8
 [node name="֭ſɭwʞ ᶅſw ſɭɹ" type="Node3D"]
 
 [node name="MeshInstance3D2" type="CSGMesh3D" parent="."]
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_poeu3")
 
 [node name="MeshInstance3D" type="CSGMesh3D" parent="MeshInstance3D2"]
@@ -73,6 +74,7 @@ mesh = SubResource("CylinderMesh_7vnqr")
 
 [node name="MeshInstance3D5" type="CSGMesh3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_80esq")
 
 [node name="MeshInstance3D4" type="CSGMesh3D" parent="MeshInstance3D5"]
@@ -82,6 +84,7 @@ mesh = SubResource("CylinderMesh_23k8p")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="ſɟɔ }ʃɹ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_igcbd")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ſɟɔ }ʃɹ"]
@@ -90,6 +93,7 @@ shape = SubResource("ConvexPolygonShape3D_6a62q")
 
 [node name="ſᶘꞇ ɭl̀ɔ" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.5, 0)
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_1on7g")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="ſᶘꞇ ɭl̀ɔ"]

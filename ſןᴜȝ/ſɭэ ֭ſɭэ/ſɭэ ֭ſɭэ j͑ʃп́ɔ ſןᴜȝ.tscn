@@ -28,6 +28,7 @@ collision_layer = 5
 [node name="ɭʃэ ſ͔ɭэ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
 layers = 5
+visibility_range_end = 256.0
 mesh = SubResource("BoxMesh_84fx1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -37,6 +38,7 @@ shape = SubResource("ConvexPolygonShape3D_3eyk1")
 [node name="ɭʃэ ֭ſɭc̗ᴜ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25, 0, -5)
 layers = 5
+visibility_range_end = 256.0
 mesh = SubResource("BoxMesh_1ois1")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]
@@ -46,6 +48,7 @@ shape = SubResource("ConvexPolygonShape3D_4iwfp")
 [node name="ɭʃэ ֭ſɭc̗ᴜ ɿ" type="MeshInstance3D" parent="ſɭэ ֭ſɭэ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 0, -5)
 layers = 5
+visibility_range_end = 256.0
 mesh = SubResource("BoxMesh_1ois1")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="ſɭэ ֭ſɭэ"]

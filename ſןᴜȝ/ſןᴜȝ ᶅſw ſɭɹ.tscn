@@ -55,18 +55,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ſןᴜȝ ᶅſw ſɭɹ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 1)
+visibility_range_end = 256.0
 mesh = SubResource("BoxMesh_fp4to")
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D" instance=ExtResource("2_fauch")]
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D" instance=ExtResource("2_fauch")]
 transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 5, 6, 5)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D" instance=ExtResource("2_fauch")]
 transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 5, 6, -5)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D" instance=ExtResource("2_fauch")]
 transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -5, 6, -5)
+lod_bias = 0.001
+visibility_range_end = 256.0
 polygon = PackedVector2Array(0.935415, 2.25987, 0.625, 2.725, 0.25, 3, 1, 3, 1.5, 2.845, 1.875, 2.5, 2, 1.75, 2, -14, 1, -14, 1, 1)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="ſןᴜȝ ᶅſw ſɭɹ"]
@@ -75,19 +84,28 @@ shape = SubResource("ConvexPolygonShape3D_8upg2")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="ſןᴜȝ ᶅſw ſɭɹ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 23, 1)
+visibility_range_end = 256.0
 mesh = SubResource("BoxMesh_772fj")
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D2" instance=ExtResource("2_fauch")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -4, 6, 4)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D2" instance=ExtResource("2_fauch")]
 transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 4, 6, 4)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D2" instance=ExtResource("2_fauch")]
 transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 4, 6, -4)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D2" instance=ExtResource("2_fauch")]
 transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -4, 6, -4)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="ſןᴜȝ ᶅſw ſɭɹ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 1)
@@ -95,19 +113,28 @@ shape = SubResource("ConvexPolygonShape3D_1ga0l")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="ſןᴜȝ ᶅſw ſɭɹ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 39, 1)
+visibility_range_end = 256.0
 mesh = SubResource("BoxMesh_qgjtg")
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D3" instance=ExtResource("2_fauch")]
 transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -3, 6, 3)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ɿ" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D3" instance=ExtResource("2_fauch")]
 transform = Transform3D(-0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, -0.5, 3, 6, 3)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ ц" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D3" instance=ExtResource("2_fauch")]
 transform = Transform3D(-0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, -0.866025, 3, 6, -3)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="ſɭᴜc̗ ɭʃɜ }ʃꞇ э" parent="ſןᴜȝ ᶅſw ſɭɹ/MeshInstance3D3" instance=ExtResource("2_fauch")]
 transform = Transform3D(0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, 0.5, -3, 6, -3)
+lod_bias = 0.001
+visibility_range_end = 256.0
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="ſןᴜȝ ᶅſw ſɭɹ"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 1)

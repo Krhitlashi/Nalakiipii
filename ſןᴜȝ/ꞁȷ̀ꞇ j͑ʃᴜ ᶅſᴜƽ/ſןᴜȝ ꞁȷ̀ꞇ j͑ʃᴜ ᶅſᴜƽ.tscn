@@ -44,31 +44,29 @@ size = Vector3(1.25, 1.75, 0.125)
 
 [node name="ſןᴜȝ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" type="Node3D"]
 
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
-use_collision = true
-
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="CSGCombiner3D"]
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 0)
+lod_bias = 0.001
 mesh = SubResource("BoxMesh_dfx12")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D4"]
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="CSGMesh3D4"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -3, 0, 0)
 mesh = SubResource("CylinderMesh_xpdne")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D4"]
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGMesh3D4"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3, 0, 0)
 mesh = SubResource("CylinderMesh_xpdne")
 
-[node name="CSGMesh3D5" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D4"]
+[node name="CSGMesh3D5" type="CSGMesh3D" parent="CSGMesh3D4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 operation = 2
 mesh = SubResource("BoxMesh_ie4dw")
 
-[node name="CSGMesh3D5" type="CSGMesh3D" parent="CSGCombiner3D"]
+[node name="CSGMesh3D5" type="CSGMesh3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.75, 0)
 mesh = SubResource("BoxMesh_xexc5")
 
-[node name="CSGMesh3D12" type="CSGMesh3D" parent="CSGCombiner3D/CSGMesh3D5"]
+[node name="CSGMesh3D12" type="CSGMesh3D" parent="CSGMesh3D5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
 operation = 2
 mesh = SubResource("BoxMesh_p7sy7")
@@ -117,9 +115,9 @@ mesh = SubResource("BoxMesh_f4l8g")
 [node name="ſɭɔⰱ" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, 4)
 mesh = SubResource("BoxMesh_o72cr")
-skeleton = NodePath("../CSGCombiner3D")
+skeleton = NodePath("")
 
 [node name="ſɭɔⰱ ɿ" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7, -4)
 mesh = SubResource("BoxMesh_o72cr")
-skeleton = NodePath("../CSGCombiner3D")
+skeleton = NodePath("")

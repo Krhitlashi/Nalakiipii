@@ -54,10 +54,14 @@ height = 1.0
 [node name="ı],ͷ̗ɔ ſɟɔ ɿ" type="Node3D"]
 
 [node name="CSGMesh3D" type="MeshInstance3D" parent="."]
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_i4kuk")
 
 [node name="CSGMesh3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, 0.5, -2, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_7pf1s")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D2"]
@@ -74,6 +78,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D3" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.258819, -0.965926, 4.37114e-08, -0.965926, 0.258819, 7.57103e-08, -8.44439e-08, -2.26267e-08, -1, -0.5, -2, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_7pf1s")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D3"]
@@ -90,6 +96,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D4" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, 0.75, -1, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_28pqi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D4"]
@@ -106,6 +114,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D5" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.258819, -0.965926, 4.37114e-08, -0.965926, 0.258819, 7.57103e-08, -8.44439e-08, -2.26267e-08, -1, -0.75, -1, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_28pqi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D5"]
@@ -122,6 +132,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D6" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, 1, 1, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_qaun4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D6"]
@@ -138,6 +150,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D7" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.258819, -0.965926, 4.37114e-08, -0.965926, 0.258819, 7.57103e-08, -8.44439e-08, -2.26267e-08, -1, -1, 1, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_qaun4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D7"]
@@ -154,6 +168,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D8" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, 1, 0, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_qaun4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D8"]
@@ -170,6 +186,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D9" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.258819, -0.965926, 4.37114e-08, -0.965926, 0.258819, 7.57103e-08, -8.44439e-08, -2.26267e-08, -1, -1, 0, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_qaun4")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D9"]
@@ -186,6 +204,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D10" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, 0.75, 2, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_28pqi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D10"]
@@ -202,6 +222,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D11" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.258819, -0.965926, 4.37114e-08, -0.965926, 0.258819, 7.57103e-08, -8.44439e-08, -2.26267e-08, -1, -0.75, 2, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_28pqi")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D11"]
@@ -218,6 +240,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D12" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, 0.5, 3, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_7pf1s")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D12"]
@@ -234,6 +258,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D13" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.258819, -0.965926, 4.37114e-08, -0.965926, 0.258819, 7.57103e-08, -8.44439e-08, -2.26267e-08, -1, -0.5, 3, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_7pf1s")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D13"]
@@ -250,6 +276,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D14" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 0, 0, 1, 0.25, 4, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_nbq16")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D14"]
@@ -266,6 +294,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D15" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.258819, -0.965926, 4.37114e-08, -0.965926, 0.258819, 7.57103e-08, -8.44439e-08, -2.26267e-08, -1, -0.25, 4, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_nbq16")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D15"]
@@ -282,6 +312,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D16" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0, 1, 0.125, 4.5, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_wmf3n")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D16"]
@@ -298,6 +330,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D17" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.707107, -0.707107, 7.57103e-08, -0.707107, 0.707107, 4.37114e-08, -8.44439e-08, -2.26267e-08, -1, -0.125, 4.5, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_wmf3n")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D17"]
@@ -314,6 +348,8 @@ mesh = SubResource("PrismMesh_2syn3")
 
 [node name="CSGMesh3D18" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, -2.98023e-08, 0, 2.98023e-08, 1, 0, 0, 0, 1, 0, 5, 0)
+lod_bias = 0.001
+visibility_range_end = 128.0
 mesh = SubResource("CylinderMesh_wmf3n")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CSGMesh3D18"]
