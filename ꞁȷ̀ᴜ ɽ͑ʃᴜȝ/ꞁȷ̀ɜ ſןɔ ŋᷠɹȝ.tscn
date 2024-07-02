@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://dp2x2xeoclsre"]
+[gd_scene load_steps=21 format=3 uid="uid://dp2x2xeoclsre"]
 
 [ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_86q3y"]
 [ext_resource type="Terrain3DStorage" uid="uid://dlp6mb80sneji" path="res://ꞁȷ̀ɜƴ/ꞁȷ̀ɜƴ ꞁȷ̀ɜ ŋᷠɜ.res" id="2_8r86j"]
@@ -48,29 +48,45 @@ _shader_parameters = {
 "noise1_scale": null,
 "noise2_scale": null,
 "noise3_scale": null,
-"noise_texture": SubResource("NoiseTexture2D_maiqu")
+"noise_texture": SubResource("NoiseTexture2D_maiqu"),
+"vertex_normals_distance": 128.0
 }
 world_background = 0
 auto_shader = true
 
-[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_bsg2w"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wrkjs"]
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_pqsl1"]
+height_offset = 0.5
+density = 10.0
+material_override = SubResource("StandardMaterial3D_wrkjs")
+generated_type = 1
+
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_j72oa"]
+name = "Rock030_2K-PNG_Color"
 albedo_texture = ExtResource("3_qbdeg")
 normal_texture = ExtResource("4_otj6a")
 
-[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_3ikt4"]
-texture_id = 1
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_l336q"]
+name = "Grass003_2K-PNG_Color"
+id = 1
 albedo_texture = ExtResource("5_xi0tq")
 normal_texture = ExtResource("6_52vka")
 
-[sub_resource type="Terrain3DTexture" id="Terrain3DTexture_u31r5"]
+[sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_7qx63"]
 name = "j͑ʃɜ ſɭ,ᴜ j͑ʃᴜꞇ ꞁȷ̀ɜƴ"
-texture_id = 2
+id = 2
 albedo_color = Color(0.724643, 0.724643, 0.724643, 1)
 albedo_texture = ExtResource("7_sul30")
 normal_texture = ExtResource("8_flubh")
 
-[sub_resource type="Terrain3DTextureList" id="Terrain3DTextureList_kmumf"]
-textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_bsg2w"), SubResource("Terrain3DTexture_3ikt4"), SubResource("Terrain3DTexture_u31r5")])
+[sub_resource type="Terrain3DAssets" id="Terrain3DAssets_2idb1"]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_pqsl1")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_j72oa"), SubResource("Terrain3DTextureAsset_l336q"), SubResource("Terrain3DTextureAsset_7qx63")])
 
 [node name="ꞁȷ̀ɜ ŋᷠɜ" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99, -89, -73)
@@ -80,7 +96,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99, -89, -73)
 [node name="ꞁȷ̀ɜƴ" type="Terrain3D" parent="."]
 storage = ExtResource("2_8r86j")
 material = SubResource("Terrain3DMaterial_t88td")
-texture_list = SubResource("Terrain3DTextureList_kmumf")
+assets = SubResource("Terrain3DAssets_2idb1")
 render_cast_shadows = 0
 mesh_lods = 4
 
