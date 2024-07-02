@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c88mwaj53pmnl"]
+[gd_scene load_steps=22 format=3 uid="uid://c88mwaj53pmnl"]
 
 [ext_resource type="Script" path="res://j͑ʃɹ ſɭɹ ſןɹ }ʃꞇ/ı],ᴜ j͑ʃɔ ı],ᴜƴ.gd" id="1_els6t"]
 [ext_resource type="FontFile" uid="uid://b2i7crqy8aeg7" path="res://ꞁȷ̀ɹ ſɭˬꞇᴜ ıꞟ ıц ıı.otf" id="1_oa3xm"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dp2x2xeoclsre" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ɜ ſןɔ ŋᷠɹȝ.tscn" id="8_hvpc4"]
 [ext_resource type="Texture2D" uid="uid://cy1r8k28ilnsb" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/j͑ʃɔ ı],ꞇ ŋᷠɹ.tres" id="8_taxcg"]
 [ext_resource type="Texture2D" uid="uid://c2ds55prvuaac" path="res://֭ſɭᴜ ʃᴜ/ſɟᴜ ſᶘɹ }ʃᴜ/j͐ʃɔ ı],ꞇ ŋᷠɹ j͑ʃɹ ŋᷠɹ.tres" id="9_wkqbm"]
+[ext_resource type="PackedScene" uid="uid://bjvavt8jcopki" path="res://ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/j͐ʃc̭wȝ ııɩɿɔ.tscn" id="10_exyi6"]
 [ext_resource type="PackedScene" uid="uid://cn0ep4lk2dusv" path="res://ſɭw ſᶘɜ.tscn" id="14_04bpr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yjc5w"]
@@ -413,13 +414,18 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.952941, 0.737255, 0.807843, 1)
 
-[node name="őɭʄ őŋᷠwc̗ő" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
+[node name="őɭʄ őŋᷠwc̗ő" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
 layout_mode = 0
 offset_left = 440.0
 offset_top = -56.0
 offset_right = 472.0
 offset_bottom = -24.0
 rotation = 0.785398
+texture_normal = ExtResource("4_qh84k")
+texture_pressed = ExtResource("7_x3ksd")
+texture_hover = ExtResource("7_x3ksd")
+script = ExtResource("2_cwpsn")
+"អារាង" = ExtResource("10_exyi6")
 
 [node name="ſɭɔʞ" type="Label" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
 layout_mode = 0
@@ -438,21 +444,6 @@ vertical_alignment = 1
 position = Vector2(16, 16)
 shape = SubResource("RectangleShape2D_vhyn4")
 shape_visible = false
-
-[node name="ſɭɜ ɭl̀эƣ̋ ꞁȷ̀ɔ ı],ɹ ŋᷠɔ ſɭᴜꞇ }ʃɔ" type="ColorRect" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -12.0
-offset_top = -12.0
-offset_right = 12.0
-offset_bottom = 12.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.952941, 0.737255, 0.807843, 1)
 
 [node name="ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" type="TextureButton" parent="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ"]
 layout_mode = 0
@@ -504,5 +495,7 @@ grow_vertical = 1
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ꞁȷ̀ꞇ őɭʃɜ őſןɜꞇᴜ̩" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʃꞇc̗/ʃᴜ j͐ʃɹ ı],ᴜ/ɭʃɔƽᴜ̩ ɭʃɜꞇᶗ‹ő" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő" method="ខិរខិ"]
+[connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/őɭʄ őŋᷠwc̗ő" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" method="ខិរខិ"]
 [connection signal="pressed" from="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ/ſɟᴜ ſᶘɹ }ʃᴜ" to="j͑ʃɔ ı],ᴜƴ/ꞁȷ̀ᴜ ɽ͑ʃᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ɭḷᴜƨ" method="ខិរខិ"]

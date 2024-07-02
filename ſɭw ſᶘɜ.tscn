@@ -77,10 +77,16 @@ layout_mode = 2
 size_flags_vertical = 0
 text = "ſɭɜ ʃɜꞇ"
 
+[node name="TouchScreenButton" type="TouchScreenButton" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/ſɭɜ ʃɜꞇ"]
+scale = Vector2(1, 0.05)
+
 [node name="֭ſɭw }ʃᴜ" type="CheckButton" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 0
 text = "֭ſɭw }ʃᴜ"
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/֭ſɭw }ʃᴜ"]
+scale = Vector2(1, 0.05)
 
 [node name="ſ͔ɭᴜ ᶅſɔ" type="OptionButton" parent="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -99,4 +105,6 @@ popup/item_3/id = 3
 [connection signal="pressed" from="ſɭw ſᶘɜ" to="ſɭw ſᶘɜ" method="អំផាលិជា"]
 [connection signal="pressed" from="ſɭw ſᶘɜ/ſɟɹᶗ‹" to="ſɭw ſᶘɜ" method="អំផាលិជា"]
 [connection signal="toggled" from="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/ſɭɜ ʃɜꞇ" to="." method="កុផុយ"]
+[connection signal="released" from="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/ſɭɜ ʃɜꞇ/TouchScreenButton" to="." method="កុផុយ"]
 [connection signal="toggled" from="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/֭ſɭw }ʃᴜ" to="." method="ហឹនា"]
+[connection signal="released" from="ſɭw ſᶘɜ/ſɭw ſᶘɜ/PanelContainer/HBoxContainer/VBoxContainer/֭ſɭw }ʃᴜ/TouchScreenButton" to="." method="ហឹនា"]
