@@ -81,6 +81,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99, -89, -73)
 storage = ExtResource("2_8r86j")
 material = SubResource("Terrain3DMaterial_t88td")
 texture_list = SubResource("Terrain3DTextureList_kmumf")
+render_cast_shadows = 0
 mesh_lods = 4
 
 [node name="ſ͕ɭɔ }ʃᴜ" parent="." instance=ExtResource("7_mrefy")]

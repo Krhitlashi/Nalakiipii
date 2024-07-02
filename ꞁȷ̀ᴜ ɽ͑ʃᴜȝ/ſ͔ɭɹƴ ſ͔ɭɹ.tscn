@@ -178,6 +178,7 @@ points = PackedVector3Array(-1, -0.125, -1, -1, 0.125, -1, 1, -0.125, -1, -1, -0
 storage = ExtResource("1_xlteh")
 material = SubResource("Terrain3DMaterial_cmjm4")
 texture_list = SubResource("Terrain3DTextureList_416dt")
+render_cast_shadows = 0
 mesh_lods = 4
 mesh_size = 24
 

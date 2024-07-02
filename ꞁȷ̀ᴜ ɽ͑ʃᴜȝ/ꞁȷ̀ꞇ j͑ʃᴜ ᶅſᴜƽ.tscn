@@ -88,6 +88,7 @@ textures = Array[Terrain3DTexture]([SubResource("Terrain3DTexture_tgofi"), SubRe
 storage = ExtResource("2_ivcvy")
 material = SubResource("Terrain3DMaterial_r73t7")
 texture_list = SubResource("Terrain3DTextureList_u5qpq")
+render_cast_shadows = 0
 mesh_lods = 4
 
 [node name="ſ͕ɭɔ }ʃᴜ" parent="." instance=ExtResource("7_syeqf")]
