@@ -64,6 +64,7 @@ auto_shader = true
 name = "ſɟɔ"
 density = 0.0168193
 scene_file = ExtResource("3_g2ae5")
+cast_shadows = 0
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_65sku"]
 name = "ɭʃэ ſɭɔȝ"
