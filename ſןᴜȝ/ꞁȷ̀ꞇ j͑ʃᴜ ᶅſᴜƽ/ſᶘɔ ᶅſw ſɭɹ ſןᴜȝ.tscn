@@ -4,7 +4,7 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_c8xxb"]
 material = ExtResource("1_uqmau")
-size = Vector3(6, 2, 8)
+size = Vector3(6, 1.5, 8)
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_keuns"]
 material = ExtResource("1_uqmau")
@@ -44,21 +44,23 @@ size = Vector3(1.25, 1.75, 0.125)
 
 [node name="ſᶘɔ ᶅſw ſɭɹ ſןᴜȝ" type="Node3D"]
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.25, 0)
 lod_bias = 0.001
 mesh = SubResource("BoxMesh_c8xxb")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="CSGMesh3D4"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -3, 0, 0)
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -3, 10, 0)
 mesh = SubResource("CylinderMesh_keuns")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGMesh3D4"]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3, 0, 0)
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 3, 10, 0)
 mesh = SubResource("CylinderMesh_keuns")
 
-[node name="CSGMesh3D5" type="CSGMesh3D" parent="CSGMesh3D4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+[node name="CSGMesh3D5" type="CSGMesh3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 0)
 operation = 2
 mesh = SubResource("BoxMesh_saapt")
 

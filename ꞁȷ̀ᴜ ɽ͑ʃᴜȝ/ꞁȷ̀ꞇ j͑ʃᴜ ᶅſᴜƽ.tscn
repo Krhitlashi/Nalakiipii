@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c0ciekpyan7aj"]
+[gd_scene load_steps=26 format=3 uid="uid://c0ciekpyan7aj"]
 
 [ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_ofear"]
 [ext_resource type="Terrain3DStorage" uid="uid://mosxkv2hx5rl" path="res://ꞁȷ̀ɜƴ/ꞁȷ̀ɜƴ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƨ.res" id="2_ivcvy"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://c1owmk4clfl8a" path="res://ſןᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ/ſᶘɔ ᶅſw ſɭɹ ſןᴜȝ.tscn" id="11_egxfb"]
 [ext_resource type="PackedScene" uid="uid://dkr6525e5mym5" path="res://ſןᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ/j͑ʃᴜ ֭ſɭᴜƽ ſןᴜȝ.tscn" id="12_j1gpl"]
 [ext_resource type="PackedScene" uid="uid://cqxt2lpu7fyc7" path="res://ɭ(ᴜͷ̗/ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ.tscn" id="14_32532"]
+[ext_resource type="PackedScene" uid="uid://bhtp863gfiqf1" path="res://ſןᴜȝ/ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ/ŋᷠɹ ſɭᴜ ɭʃɜ ŋᷠᴜ.tscn" id="15_2uucq"]
 
 [sub_resource type="Gradient" id="Gradient_2rxlw"]
 offsets = PackedFloat32Array(0.2, 1)
@@ -179,6 +180,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 12, -11)
 
 [node name="j͑ʃᴜ ֭ſɭᴜƽ ſןᴜȝ" parent="ı/ı" instance=ExtResource("12_j1gpl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 12, -11)
+
+[node name="ŋᷠɹ ſɭᴜ ɭʃɜ ŋᷠᴜ" parent="ı/ı" instance=ExtResource("15_2uucq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 13, -11)
+
+[node name="ŋᷠɹ ſɭᴜ ɭʃɜ ŋᷠᴜ ɿ" parent="ı/ı" instance=ExtResource("15_2uucq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63, 13, -11)
 
 [node name="ɿ" type="Node3D" parent="ı"]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
