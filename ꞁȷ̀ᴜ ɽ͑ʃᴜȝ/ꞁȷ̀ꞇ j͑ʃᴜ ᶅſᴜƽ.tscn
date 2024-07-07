@@ -1,9 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://c0ciekpyan7aj"]
+[gd_scene load_steps=25 format=3 uid="uid://c0ciekpyan7aj"]
 
 [ext_resource type="PackedScene" uid="uid://cp2glkxgu771u" path="res://ſɟᴜ }ʃᴜ.tscn" id="1_ofear"]
 [ext_resource type="Terrain3DStorage" uid="uid://mosxkv2hx5rl" path="res://ꞁȷ̀ɜƴ/ꞁȷ̀ɜƴ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƨ.res" id="2_ivcvy"]
 [ext_resource type="Texture2D" uid="uid://cq4l148jf3mvx" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_Color.png" id="3_fnmya"]
-[ext_resource type="PackedScene" uid="uid://bc0he6tuxk0od" path="res://ɭ(ᴜͷ̗/Jacaranda Tree/jacaranda_tree_1k.gltf" id="3_g2ae5"]
 [ext_resource type="Texture2D" uid="uid://drwd7ovihyraq" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Grass003_2K-PNG_NormalGL.png" id="4_tnxks"]
 [ext_resource type="Texture2D" uid="uid://dvmtxexfhe8gh" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_Color.png" id="5_u87fl"]
 [ext_resource type="Texture2D" uid="uid://byypd80qjr7un" path="res://֭ſɭᴜ ʃᴜ/ꞁȷ̀ɜƴ/Rock030_2K-PNG_NormalGL.png" id="6_jf0na"]
@@ -62,8 +61,8 @@ auto_shader = true
 
 [sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_qhkix"]
 name = "ſɟɔ"
-density = 0.0168193
-scene_file = ExtResource("3_g2ae5")
+density = 1.25
+scene_file = ExtResource("14_32532")
 cast_shadows = 0
 
 [sub_resource type="Terrain3DTextureAsset" id="Terrain3DTextureAsset_65sku"]

@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqxt2lpu7fyc7"]
+[gd_scene load_steps=8 format=3 uid="uid://cqxt2lpu7fyc7"]
 
 [ext_resource type="Material" uid="uid://b16n5edyjcfld" path="res://֭ſɭᴜ ʃᴜ/j͑ʃͷ̗ᴜʞ.tres" id="1_ci60j"]
+[ext_resource type="Material" uid="uid://uin6ou7p74p2" path="res://֭ſɭᴜ ʃᴜ/ſɟɹ j͐ʃᴜɔ˞.tres" id="1_hctno"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_35oej"]
+material = ExtResource("1_hctno")
 height = 8.0
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_8s4el"]
@@ -17,19 +19,38 @@ top_radius = 6.0
 bottom_radius = 1.0
 height = 0.5
 
+[sub_resource type="CylinderMesh" id="CylinderMesh_7v35d"]
+material = ExtResource("1_ci60j")
+top_radius = 3.0
+bottom_radius = 1.0
+height = 0.5
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gnnri"]
+material = ExtResource("1_ci60j")
+top_radius = 5.0
+bottom_radius = 1.0
+height = 0.5
+
 [node name="ſɟɔ ꞁȷ̀ꞇ j͑ʃᴜ ᶅſᴜƽ" type="Node3D"]
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CylinderMesh_35oej")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="CSGMesh3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 mesh = SubResource("CylinderMesh_8s4el")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="CSGMesh3D"]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MeshInstance3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 mesh = SubResource("CylinderMesh_3ipf3")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="CSGMesh3D"]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="MeshInstance3D"]
+mesh = SubResource("CylinderMesh_7v35d")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CylinderMesh_gnnri")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="MeshInstance3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 mesh = SubResource("CylinderMesh_8s4el")
